@@ -1,0 +1,433 @@
+{
+  "version": 2,
+  "projects": {
+    "a11y-tests": {
+      "root": "apps/a11y-tests",
+      "type": "library"
+    },
+    "codesandbox-react-northstar-template": {
+      "root": "apps/codesandbox-react-northstar-template",
+      "type": "library"
+    },
+    "codesandbox-react-template": {
+      "root": "apps/codesandbox-react-template",
+      "type": "library"
+    },
+    "perf-test": {
+      "root": "apps/perf-test",
+      "type": "library"
+    },
+    "@fluentui/pr-deploy-site": {
+      "root": "apps/pr-deploy-site",
+      "type": "library"
+    },
+    "@fluentui/public-docsite": {
+      "root": "apps/public-docsite",
+      "type": "library"
+    },
+    "@fluentui/public-docsite-resources": {
+      "root": "apps/public-docsite-resources",
+      "type": "library"
+    },
+    "server-rendered-app": {
+      "root": "apps/server-rendered-app",
+      "type": "library"
+    },
+    "ssr-tests": {
+      "root": "apps/ssr-tests",
+      "type": "library"
+    },
+    "test-bundles": {
+      "root": "apps/test-bundles",
+      "type": "library"
+    },
+    "theming-designer": {
+      "root": "apps/theming-designer",
+      "type": "library"
+    },
+    "todo-app": {
+      "root": "apps/todo-app",
+      "type": "library"
+    },
+    "vr-tests": {
+      "root": "apps/vr-tests",
+      "type": "library"
+    },
+    "@fluentui/a11y-testing": {
+      "root": "packages/a11y-testing",
+      "type": "library"
+    },
+    "@fluentui/api-docs": {
+      "root": "packages/api-docs",
+      "type": "library"
+    },
+    "@fluentui/azure-themes": {
+      "root": "packages/azure-themes",
+      "type": "library"
+    },
+    "@fluentui/codemods": {
+      "root": "packages/codemods",
+      "type": "library"
+    },
+    "@fluentui/common-styles": {
+      "root": "packages/common-styles",
+      "type": "library"
+    },
+    "@fluentui/cra-template": {
+      "root": "packages/cra-template",
+      "type": "library"
+    },
+    "@fluentui/date-time-utilities": {
+      "root": "packages/date-time-utilities",
+      "type": "library"
+    },
+    "@fluentui/dom-utilities": {
+      "root": "packages/dom-utilities",
+      "type": "library"
+    },
+    "@fluentui/eslint-plugin": {
+      "root": "packages/eslint-plugin",
+      "type": "library"
+    },
+    "@fluentui/example-data": {
+      "root": "packages/example-data",
+      "type": "library"
+    },
+    "@fluentui/ability-attributes": {
+      "root": "packages/fluentui/ability-attributes",
+      "type": "library"
+    },
+    "@fluentui/accessibility": {
+      "root": "packages/fluentui/accessibility",
+      "type": "library"
+    },
+    "@fluentui/circulars-test": {
+      "root": "packages/fluentui/circulars-test",
+      "type": "library"
+    },
+    "@fluentui/code-sandbox": {
+      "root": "packages/fluentui/code-sandbox",
+      "type": "library"
+    },
+    "@fluentui/digest": {
+      "root": "packages/fluentui/digest",
+      "type": "library"
+    },
+    "@fluentui/docs": {
+      "root": "packages/fluentui/docs",
+      "type": "library"
+    },
+    "@fluentui/docs-components": {
+      "root": "packages/fluentui/docs-components",
+      "type": "library"
+    },
+    "@fluentui/e2e": {
+      "root": "packages/fluentui/e2e",
+      "type": "library"
+    },
+    "@fluentui/local-sandbox": {
+      "root": "packages/fluentui/local-sandbox",
+      "type": "library"
+    },
+    "@fluentui/noop": {
+      "root": "packages/fluentui",
+      "type": "library"
+    },
+    "@fluentui/perf": {
+      "root": "packages/fluentui/perf",
+      "type": "library"
+    },
+    "@fluentui/perf-test": {
+      "root": "packages/fluentui/perf-test",
+      "type": "library"
+    },
+    "@fluentui/projects-test": {
+      "root": "packages/fluentui/projects-test",
+      "type": "library"
+    },
+    "@fluentui/react-bindings": {
+      "root": "packages/fluentui/react-bindings",
+      "type": "library"
+    },
+    "@fluentui/react-builder": {
+      "root": "packages/fluentui/react-builder",
+      "type": "library"
+    },
+    "@fluentui/react-component-event-listener": {
+      "root": "packages/fluentui/react-component-event-listener",
+      "type": "library"
+    },
+    "@fluentui/react-component-nesting-registry": {
+      "root": "packages/fluentui/react-component-nesting-registry",
+      "type": "library"
+    },
+    "@fluentui/react-component-ref": {
+      "root": "packages/fluentui/react-component-ref",
+      "type": "library"
+    },
+    "@fluentui/react-context-selector": {
+      "root": "packages/fluentui/react-context-selector",
+      "type": "library"
+    },
+    "@fluentui/react-icons-northstar": {
+      "root": "packages/fluentui/react-icons-northstar",
+      "type": "library"
+    },
+    "@fluentui/react-northstar": {
+      "root": "packages/fluentui/react-northstar",
+      "type": "library"
+    },
+    "@fluentui/react-northstar-emotion-renderer": {
+      "root": "packages/fluentui/react-northstar-emotion-renderer",
+      "type": "library"
+    },
+    "@fluentui/react-northstar-fela-renderer": {
+      "root": "packages/fluentui/react-northstar-fela-renderer",
+      "type": "library"
+    },
+    "@fluentui/react-northstar-prototypes": {
+      "root": "packages/fluentui/react-northstar-prototypes",
+      "type": "library"
+    },
+    "@fluentui/react-northstar-styles-renderer": {
+      "root": "packages/fluentui/react-northstar-styles-renderer",
+      "type": "library"
+    },
+    "@fluentui/react-proptypes": {
+      "root": "packages/fluentui/react-proptypes",
+      "type": "library"
+    },
+    "@fluentui/react-telemetry": {
+      "root": "packages/fluentui/react-telemetry",
+      "type": "library"
+    },
+    "@fluentui/state": {
+      "root": "packages/fluentui/state",
+      "type": "library"
+    },
+    "@fluentui/styles": {
+      "root": "packages/fluentui/styles",
+      "type": "library"
+    },
+    "@fluentui/font-icons-mdl2": {
+      "root": "packages/font-icons-mdl2",
+      "type": "library"
+    },
+    "@fluentui/foundation-legacy": {
+      "root": "packages/foundation-legacy",
+      "type": "library"
+    },
+    "@fluentui/ie11-polyfills": {
+      "root": "packages/ie11-polyfills",
+      "type": "library"
+    },
+    "@fluentui/jest-serializer-merge-styles": {
+      "root": "packages/jest-serializer-merge-styles",
+      "type": "library"
+    },
+    "@fluentui/keyboard-key": {
+      "root": "packages/keyboard-key",
+      "type": "library"
+    },
+    "@fluentui/make-styles": {
+      "root": "packages/make-styles",
+      "type": "library"
+    },
+    "@fluentui/merge-styles": {
+      "root": "packages/merge-styles",
+      "type": "library"
+    },
+    "@fluentui/monaco-editor": {
+      "root": "packages/monaco-editor",
+      "type": "library"
+    },
+    "@fluentui/react": {
+      "root": "packages/react",
+      "type": "library"
+    },
+    "@fluentui/react-avatar": {
+      "root": "packages/react-avatar",
+      "type": "library"
+    },
+    "@fluentui/react-button": {
+      "root": "packages/react-button",
+      "type": "library"
+    },
+    "@fluentui/react-cards": {
+      "root": "packages/react-cards",
+      "type": "library"
+    },
+    "@fluentui/react-charting": {
+      "root": "packages/react-charting",
+      "type": "library"
+    },
+    "@fluentui/react-checkbox": {
+      "root": "packages/react-checkbox",
+      "type": "library"
+    },
+    "@fluentui/react-compose": {
+      "root": "packages/react-compose",
+      "type": "library"
+    },
+    "@fluentui/react-conformance": {
+      "root": "packages/react-conformance",
+      "type": "library"
+    },
+    "@fluentui/react-date-time": {
+      "root": "packages/react-date-time",
+      "type": "library"
+    },
+    "@fluentui/react-docsite-components": {
+      "root": "packages/react-docsite-components",
+      "type": "library"
+    },
+    "@fluentui/react-examples": {
+      "root": "packages/react-examples",
+      "type": "library"
+    },
+    "@fluentui/react-experiments": {
+      "root": "packages/react-experiments",
+      "type": "library"
+    },
+    "@fluentui/react-file-type-icons": {
+      "root": "packages/react-file-type-icons",
+      "type": "library"
+    },
+    "@fluentui/react-flex": {
+      "root": "packages/react-flex",
+      "type": "library"
+    },
+    "@fluentui/react-focus": {
+      "root": "packages/react-focus",
+      "type": "library"
+    },
+    "@fluentui/react-hooks": {
+      "root": "packages/react-hooks",
+      "type": "library"
+    },
+    "@fluentui/react-icons-mdl2": {
+      "root": "packages/react-icons-mdl2",
+      "type": "library"
+    },
+    "@fluentui/react-image": {
+      "root": "packages/react-image",
+      "type": "library"
+    },
+    "@fluentui/react-internal": {
+      "root": "packages/react-internal",
+      "type": "library"
+    },
+    "@fluentui/react-link": {
+      "root": "packages/react-link",
+      "type": "library"
+    },
+    "@fluentui/react-make-styles": {
+      "root": "packages/react-make-styles",
+      "type": "library"
+    },
+    "@fluentui/react-menu": {
+      "root": "packages/react-menu",
+      "type": "library"
+    },
+    "@fluentui/react-monaco-editor": {
+      "root": "packages/react-monaco-editor",
+      "type": "library"
+    },
+    "@fluentui/react-provider": {
+      "root": "packages/react-provider",
+      "type": "library"
+    },
+    "@fluentui/react-shared-contexts": {
+      "root": "packages/react-shared-contexts",
+      "type": "library"
+    },
+    "@fluentui/react-slider": {
+      "root": "packages/react-slider",
+      "type": "library"
+    },
+    "@fluentui/react-stylesheets": {
+      "root": "packages/react-stylesheets",
+      "type": "library"
+    },
+    "@fluentui/react-tabs": {
+      "root": "packages/react-tabs",
+      "type": "library"
+    },
+    "@fluentui/react-text": {
+      "root": "packages/react-text",
+      "type": "library"
+    },
+    "@fluentui/react-theme": {
+      "root": "packages/react-theme",
+      "type": "library"
+    },
+    "@fluentui/react-theme-provider": {
+      "root": "packages/react-theme-provider",
+      "type": "library"
+    },
+    "@fluentui/react-toggle": {
+      "root": "packages/react-toggle",
+      "type": "library"
+    },
+    "@fluentui/react-utilities": {
+      "root": "packages/react-utilities",
+      "type": "library"
+    },
+    "@fluentui/react-utils": {
+      "root": "packages/react-utils",
+      "type": "library"
+    },
+    "@fluentui/react-window-provider": {
+      "root": "packages/react-window-provider",
+      "type": "library"
+    },
+    "@fluentui/scheme-utilities": {
+      "root": "packages/scheme-utilities",
+      "type": "library"
+    },
+    "@fluentui/set-version": {
+      "root": "packages/set-version",
+      "type": "library"
+    },
+    "@fluentui/storybook": {
+      "root": "packages/storybook",
+      "type": "library"
+    },
+    "@fluentui/style-utilities": {
+      "root": "packages/style-utilities",
+      "type": "library"
+    },
+    "@fluentui/test-utilities": {
+      "root": "packages/test-utilities",
+      "type": "library"
+    },
+    "@fluentui/theme": {
+      "root": "packages/theme",
+      "type": "library"
+    },
+    "@fluentui/theme-samples": {
+      "root": "packages/theme-samples",
+      "type": "library"
+    },
+    "@fluentui/utilities": {
+      "root": "packages/utilities",
+      "type": "library"
+    },
+    "@fluentui/web-components": {
+      "root": "packages/web-components",
+      "type": "library"
+    },
+    "@fluentui/webpack-utilities": {
+      "root": "packages/webpack-utilities",
+      "type": "library"
+    },
+    "@fluentui/scripts": {
+      "root": "scripts",
+      "type": "library"
+    },
+    "custom-global": {
+      "root": "typings/custom-global",
+      "type": "library"
+    }
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "npmScope": "fluent-ui-react-repo",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "package", "prepare"],
+        "strictlyOrderedTargets": ["build", "package", "prepare"]
+      }
+    }
+  },
+  "projects": {
+    "a11y-tests": {
+      "implicitDependencies": []
+    },
+    "codesandbox-react-northstar-template": {
+      "implicitDependencies": []
+    },
+    "codesandbox-react-template": {
+      "implicitDependencies": []
+    },
+    "perf-test": {
+      "implicitDependencies": []
+    },
+    "@fluentui/pr-deploy-site": {
+      "implicitDependencies": []
+    },
+    "@fluentui/public-docsite": {
+      "implicitDependencies": []
+    },
+    "@fluentui/public-docsite-resources": {
+      "implicitDependencies": []
+    },
+    "server-rendered-app": {
+      "implicitDependencies": []
+    },
+    "ssr-tests": {
+      "implicitDependencies": []
+    },
+    "test-bundles": {
+      "implicitDependencies": []
+    },
+    "theming-designer": {
+      "implicitDependencies": []
+    },
+    "todo-app": {
+      "implicitDependencies": []
+    },
+    "vr-tests": {
+      "implicitDependencies": []
+    },
+    "@fluentui/a11y-testing": {
+      "implicitDependencies": []
+    },
+    "@fluentui/api-docs": {
+      "implicitDependencies": []
+    },
+    "@fluentui/azure-themes": {
+      "implicitDependencies": []
+    },
+    "@fluentui/codemods": {
+      "implicitDependencies": []
+    },
+    "@fluentui/common-styles": {
+      "implicitDependencies": []
+    },
+    "@fluentui/cra-template": {
+      "implicitDependencies": []
+    },
+    "@fluentui/date-time-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/dom-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/eslint-plugin": {
+      "implicitDependencies": []
+    },
+    "@fluentui/example-data": {
+      "implicitDependencies": []
+    },
+    "@fluentui/ability-attributes": {
+      "implicitDependencies": []
+    },
+    "@fluentui/accessibility": {
+      "implicitDependencies": []
+    },
+    "@fluentui/circulars-test": {
+      "implicitDependencies": []
+    },
+    "@fluentui/code-sandbox": {
+      "implicitDependencies": []
+    },
+    "@fluentui/digest": {
+      "implicitDependencies": []
+    },
+    "@fluentui/docs": {
+      "implicitDependencies": []
+    },
+    "@fluentui/docs-components": {
+      "implicitDependencies": []
+    },
+    "@fluentui/e2e": {
+      "implicitDependencies": []
+    },
+    "@fluentui/local-sandbox": {
+      "implicitDependencies": []
+    },
+    "@fluentui/noop": {
+      "implicitDependencies": []
+    },
+    "@fluentui/perf": {
+      "implicitDependencies": []
+    },
+    "@fluentui/perf-test": {
+      "implicitDependencies": []
+    },
+    "@fluentui/projects-test": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-bindings": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-builder": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-component-event-listener": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-component-nesting-registry": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-component-ref": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-context-selector": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-icons-northstar": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-northstar": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-northstar-emotion-renderer": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-northstar-fela-renderer": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-northstar-prototypes": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-northstar-styles-renderer": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-proptypes": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-telemetry": {
+      "implicitDependencies": []
+    },
+    "@fluentui/state": {
+      "implicitDependencies": []
+    },
+    "@fluentui/styles": {
+      "implicitDependencies": []
+    },
+    "@fluentui/font-icons-mdl2": {
+      "implicitDependencies": []
+    },
+    "@fluentui/foundation-legacy": {
+      "implicitDependencies": []
+    },
+    "@fluentui/ie11-polyfills": {
+      "implicitDependencies": []
+    },
+    "@fluentui/jest-serializer-merge-styles": {
+      "implicitDependencies": []
+    },
+    "@fluentui/keyboard-key": {
+      "implicitDependencies": []
+    },
+    "@fluentui/make-styles": {
+      "implicitDependencies": []
+    },
+    "@fluentui/merge-styles": {
+      "implicitDependencies": []
+    },
+    "@fluentui/monaco-editor": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-avatar": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-button": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-cards": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-charting": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-checkbox": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-compose": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-conformance": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-date-time": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-docsite-components": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-examples": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-experiments": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-file-type-icons": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-flex": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-focus": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-hooks": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-icons-mdl2": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-image": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-internal": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-link": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-make-styles": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-menu": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-monaco-editor": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-provider": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-shared-contexts": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-slider": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-stylesheets": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-tabs": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-text": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-theme": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-theme-provider": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-toggle": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-utils": {
+      "implicitDependencies": []
+    },
+    "@fluentui/react-window-provider": {
+      "implicitDependencies": []
+    },
+    "@fluentui/scheme-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/set-version": {
+      "implicitDependencies": []
+    },
+    "@fluentui/storybook": {
+      "implicitDependencies": []
+    },
+    "@fluentui/style-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/test-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/theme": {
+      "implicitDependencies": []
+    },
+    "@fluentui/theme-samples": {
+      "implicitDependencies": []
+    },
+    "@fluentui/utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/web-components": {
+      "implicitDependencies": []
+    },
+    "@fluentui/webpack-utilities": {
+      "implicitDependencies": []
+    },
+    "@fluentui/scripts": {
+      "implicitDependencies": []
+    },
+    "custom-global": {
+      "implicitDependencies": []
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
+  }
+}
