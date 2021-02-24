@@ -12,5 +12,5 @@
     "preserveConstEnums": true,
     "types": ["jest", "custom-global"]
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

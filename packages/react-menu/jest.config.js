@@ -1,9 +1,18 @@
-const { createConfig, resolveMergeStylesSerializer } = require('@fluentui/scripts/jest/jest-resources');
-const path = require('path');
-
-const config = createConfig({
-  setupFiles: [path.resolve(path.join(__dirname, 'config', 'tests.js'))],
-  snapshotSerializers: [resolveMergeStylesSerializer()],
-});
-
-module.exports = config;
+/**
+ * @type {jest.InitialOptions}
+ */
+module.exports = {
+  displayName: 'react-menu',
+  preset: '../../jest.preset.js',
+  globals: {
+    'ts-jest': {
+      tsConfig: '<rootDir>/tsconfig.json',
+      diagnostics: false,
+    },
+  },
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
+  coverageDirectory: '../../coverage/packages/react-button',
+  setupFilesAfterEnv: ['./config/tests.js'],
+};
