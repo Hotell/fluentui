@@ -2,8 +2,7 @@
   "name": "@fluentui/react-menu",
   "version": "9.0.0-beta.5",
   "description": "Fluent UI menu component",
-  "main": "lib-commonjs/index.js",
-  "module": "lib/index.js",
+  "module": "dist/esbuild.min.js",
   "typings": "lib/index.d.ts",
   "sideEffects": false,
   "repository": {
@@ -24,7 +23,11 @@
     "start": "yarn storybook",
     "storybook": "node ../../scripts/storybook/runner",
     "test": "jest --passWithNoTests",
-    "type-check": "tsc -b tsconfig.json"
+    "type-check": "tsc -b tsconfig.json",
+    "bundle:new": "esbuild --bundle src/index.ts --outfile=./dist/esm.js --tsconfig=tsconfig.lib.json --external:@fluentui/react-* --platform=browser",
+    "bundle:esbuild": "node ./esbuild.config.js",
+    "bundle:rollup": "rollup -c rollup.config.js",
+    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:rollup && terser -c -m -o dist/esbuild.min-tersed.js dist/esbuild.min.js && ls -lah dist/"
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",
@@ -43,6 +46,7 @@
     "react-test-renderer": "^16.3.0"
   },
   "dependencies": {
+    "@fluentui/react-theme": "^9.0.0-beta.4",
     "@fluentui/keyboard-keys": "9.0.0-beta.1",
     "@fluentui/react-context-selector": "9.0.0-beta.4",
     "@fluentui/react-icons": "^2.0.159-beta.10",
