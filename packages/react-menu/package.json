@@ -2,7 +2,7 @@
   "name": "@fluentui/react-menu",
   "version": "9.0.0-beta.5",
   "description": "Fluent UI menu component",
-  "module": "dist/esbuild.min.js",
+  "module": "lib/index.js",
   "typings": "lib/index.d.ts",
   "sideEffects": false,
   "repository": {
@@ -14,7 +14,12 @@
     "docs": "api-extractor run --config=config/api-extractor.local.json --local",
     "build:local": "tsc -p ./tsconfig.lib.json --module esnext --emitDeclarationOnly && node ../../scripts/typescript/normalize-import --output ./dist/packages/react-menu/src && yarn docs",
     "build": "just-scripts build",
-    "bundle-size": "bundle-size measure",
+    "bundle-size:bench": "node bundle-size.runner",
+    "bundle-size": "yarn bundle-size:webpack && yarn bundle-size:esbuild",
+    "bundle-size:webpack": "bundle-size measure -q",
+    "bundle-size:esbuild": "node ./bundle-size.esbuild.js",
+    "bundle-size:rollup": "rollup -c bundle-size.rollup.js",
+    "bundle-size:format": "node ./bundle-size.format.js",
     "clean": "just-scripts clean",
     "code-style": "just-scripts code-style",
     "e2e": "e2e",
@@ -27,7 +32,7 @@
     "bundle:new": "esbuild --bundle src/index.ts --outfile=./dist/esm.js --tsconfig=tsconfig.lib.json --external:@fluentui/react-* --platform=browser",
     "bundle:esbuild": "node ./esbuild.config.js",
     "bundle:rollup": "rollup -c rollup.config.js",
-    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:rollup && terser -c -m -o dist/esbuild.min-tersed.js dist/esbuild.min.js && ls -lah dist/"
+    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:rollup && terser -c -m -o dist/esbuild.min-tersed.js dist/esbuild.min.js"
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",

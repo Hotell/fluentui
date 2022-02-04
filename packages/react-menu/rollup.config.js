@@ -12,9 +12,6 @@ import pkg from './package.json';
 
 const implicitDeps = ['@fluentui/react-theme'];
 
-// const tsPathAliases = pathsToModuleNameMapper(tsConfigRoot.compilerOptions.paths, {
-//   prefix: `${path.relative(process.cwd(), __dirname)}`,
-// });
 const tsPathAliases = Object.entries(tsConfigRoot.compilerOptions.paths).reduce((acc, [pkgName, pkgPath]) => {
   acc[pkgName] = pkgPath[0];
   return acc;
@@ -25,12 +22,12 @@ const isProduction = process.env.NODE_ENV === 'production';
 const externalDeps = Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies }); /* .concat(implicitDeps) */
 const nodeDeps = [];
 
-console.log(
-  `NODE_ENV: ${JSON.stringify(process.env.NODE_ENV)}\n`,
-  `Build executed in  ${isProduction ? 'PRODUCTION MODE' : 'NON PRODUCTION'}\n`,
-  { externalDeps },
-  { tsPathAliases },
-);
+// console.log(
+//   `NODE_ENV: ${JSON.stringify(process.env.NODE_ENV)}\n`,
+//   `Build executed in  ${isProduction ? 'PRODUCTION MODE' : 'NON PRODUCTION'}\n`,
+//   { externalDeps },
+//   { tsPathAliases },
+// );
 
 /**
  * @type {import('rollup').RollupOptions}
@@ -43,7 +40,7 @@ const config = {
       babelHelpers: 'bundled',
       exclude: 'node_modules/**',
       // include: ['src/**/*.tsx', 'src/**/*.ts'],
-      extensions: [/* '.js', '.jsx', '.es6', '.es', '.mjs',  */ '.ts', '.tsx'],
+      extensions: ['.ts', '.tsx'],
       presets: [
         '@babel/preset-react',
         [
@@ -54,6 +51,8 @@ const config = {
             targets: 'last 1 version, not IE 11, not dead',
             loose: true,
             modules: false,
+            // turn off following transform to be on par with what esbuild does
+            exclude: ['@babel/plugin-proposal-optional-chaining'],
           },
         ],
         ['@babel/preset-typescript'],
