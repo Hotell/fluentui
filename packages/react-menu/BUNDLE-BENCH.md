@@ -105,6 +105,10 @@ Rollup:
 
 ## Summary
 
+> **NOTE:**
+>
+> we also tried running terser on minified bundles by esbuild. There was **NO SIZE DIFFERENCE** - that's why those results are not included in this document.
+
 Based on our measurements we have following recommendations:
 
 - best possible approach **how to ship package to NPM** is ship only transpiled file to vanilla javascript
