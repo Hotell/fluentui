@@ -2,9 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 const chalk = require('chalk');
-const gzipSize = require('gzip-size');
-const prettyBytes = require('pretty-bytes');
 
+const { printPackageBundleSizes } = require('./bundle-size.utils');
 const pkgJson = require('./package.json');
 
 const COMMAND_PREFIX = `${chalk.cyan('>')} ${chalk.inverse(chalk.bold(chalk.cyan(' BUNDLE BENCH ')))}`;
@@ -54,42 +53,6 @@ function main() {
   console.log('== CREATING APP BUNDLES: DONE ==');
 
   cleanup();
-}
-
-function printPackageBundleSizes() {
-  const root = path.join(__dirname, 'dist');
-  const bundleNames = {
-    rollup: ['rollup.js', 'rollup.min.js'],
-    esbuild: ['esbuild.js', 'esbuild.min.js'],
-  };
-
-  const bundleFiles = Object.values(bundleNames).reduce((acc, [normal, minified]) => {
-    acc[normal] = {
-      content: fs.readFileSync(path.join(root, normal), 'utf-8'),
-      size: fs.statSync(path.join(root, normal)).size,
-    };
-    acc[minified] = {
-      content: fs.readFileSync(path.join(root, minified), 'utf-8'),
-      size: fs.statSync(path.join(root, minified)).size,
-    };
-
-    return acc;
-  }, {});
-
-  const data = Object.entries(bundleFiles).reduce((acc, [fileName, config]) => {
-    acc[fileName] = {
-      raw: config.size,
-      min: formatBytes(config.size),
-      gzip: formatBytes(gzipSize.sync(config.content)),
-    };
-    return acc;
-  }, {});
-
-  console.table(data);
-
-  function formatBytes(value) {
-    return prettyBytes(value, { maximumFractionDigits: 3 });
-  }
 }
 
 function cleanup() {
