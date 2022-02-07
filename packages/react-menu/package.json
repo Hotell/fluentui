@@ -32,7 +32,8 @@
     "bundle:new": "esbuild --bundle src/index.ts --outfile=./dist/esm.js --tsconfig=tsconfig.lib.json --external:@fluentui/react-* --platform=browser",
     "bundle:esbuild": "node ./esbuild.config.js",
     "bundle:rollup": "rollup -c rollup.config.js",
-    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:rollup"
+    "bundle:swc": "spack &&  swc ./dist/swc.js -o ./dist/swc.min.js",
+    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:swc && yarn bundle:rollup"
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",

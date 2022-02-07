@@ -14,6 +14,7 @@ const bundlesForBench = [
   },
   { title: 'Creating App Bundle with bundled package via rollup', path: 'dist/rollup.min.js' },
   { title: 'Creating App Bundle with bundled package via esbuild', path: 'dist/esbuild.min.js' },
+  { title: 'Creating App Bundle with bundled package via swc', path: 'dist/swc.min.js' },
 ];
 
 const bundlePackageCommand = 'yarn bundle:bench';

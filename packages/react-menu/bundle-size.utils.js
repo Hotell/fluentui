@@ -45,6 +45,7 @@ function printPackageBundleSizes() {
   const bundleNames = {
     rollup: ['rollup.js', 'rollup.min.js'],
     esbuild: ['esbuild.js', 'esbuild.min.js', 'esbuild-terser.min.js'],
+    swc: ['swc.js', 'swc.min.js'],
   };
 
   const bundleFiles = Object.values(bundleNames).reduce((acc, [normal, minified, additionalMinified]) => {
