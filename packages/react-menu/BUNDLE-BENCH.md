@@ -12,6 +12,8 @@ yarn workspace @fluentui/react-menu bundle-size:bench
 
 ## Package(react-menu) Bundles
 
+Following table shows file sizes of rolluped(bundled) and minified library files with various compilers.
+
 ```
 ┌───────────────────────┬───────┬─────────────┬─────────────┐
 │        (index)        │  raw  │     min     │    gzip     │
@@ -26,9 +28,18 @@ yarn workspace @fluentui/react-menu bundle-size:bench
 └───────────────────────┴───────┴─────────────┴─────────────┘
 ```
 
-## App(Fixture) Bundles
+## Application(Fixture) Bundles
 
-### Bundle with transpiled only files
+To understand library packaging methods real impact on consumer based on their tooling we provide bundle-size benchmarks for various combination of approaches.
+
+Every benchmark contains application fixtures build executed via following tools:
+
+- webpack
+- esbuild
+- swc
+- rollup
+
+### App consuming `Transpiled files`
 
 ```
 Webpack:
@@ -54,9 +65,16 @@ Rollup:
 │      Menu.min.js       │ 120390 │ '120.39 kB'  │ '36.878 kB' │
 │ Menu.Selectable.min.js │ 122636 │ '122.636 kB' │ '37.213 kB' │
 └────────────────────────┴────────┴──────────────┴─────────────┘
+SWC:
+┌────────────────────────┬─────────┬────────────┬────────────┐
+│        (index)         │   raw   │    min     │    gzip    │
+├────────────────────────┼─────────┼────────────┼────────────┤
+│      Menu.min.js       │ 9556077 │ '9.556 MB' │ '1.562 MB' │
+│ Menu.Selectable.min.js │ 9556111 │ '9.556 MB' │ '1.562 MB' │
+└────────────────────────┴─────────┴────────────┴────────────┘
 ```
 
-### Bundle with bundled package via rollup
+### App consuming `Rollup` bundled library
 
 ```
 Webpack:
@@ -82,9 +100,16 @@ Rollup:
 │      Menu.min.js       │ 139557 │ '139.557 kB' │ '43.082 kB' │
 │ Menu.Selectable.min.js │ 139590 │ '139.59 kB'  │ '43.102 kB' │
 └────────────────────────┴────────┴──────────────┴─────────────┘
+SWC:
+┌────────────────────────┬─────────┬────────────┬────────────┐
+│        (index)         │   raw   │    min     │    gzip    │
+├────────────────────────┼─────────┼────────────┼────────────┤
+│      Menu.min.js       │ 9602577 │ '9.603 MB' │ '1.569 MB' │
+│ Menu.Selectable.min.js │ 9602586 │ '9.603 MB' │ '1.569 MB' │
+└────────────────────────┴─────────┴────────────┴────────────┘
 ```
 
-### Bundle with bundled package via esbuild
+### App consuming `ESbuild` bundled library
 
 ```
 Webpack:
@@ -110,9 +135,16 @@ Rollup:
 │      Menu.min.js       │ 140208 │ '140.208 kB' │ '43.242 kB' │
 │ Menu.Selectable.min.js │ 140237 │ '140.237 kB' │ '43.262 kB' │
 └────────────────────────┴────────┴──────────────┴─────────────┘
+SWC:
+┌────────────────────────┬─────────┬────────────┬────────────┐
+│        (index)         │   raw   │    min     │    gzip    │
+├────────────────────────┼─────────┼────────────┼────────────┤
+│      Menu.min.js       │ 9602873 │ '9.603 MB' │ '1.569 MB' │
+│ Menu.Selectable.min.js │ 9602882 │ '9.603 MB' │ '1.569 MB' │
+└────────────────────────┴─────────┴────────────┴────────────┘
 ```
 
-### Bundle with bundled package via swc
+### App consuming `swc` bundled library
 
 ```
 Webpack:
@@ -138,17 +170,56 @@ Rollup:
 │      Menu.min.js       │ 140983 │ '140.983 kB' │ '43.452 kB' │
 │ Menu.Selectable.min.js │ 141016 │ '141.016 kB' │ '43.471 kB' │
 └────────────────────────┴────────┴──────────────┴─────────────┘
+SWC:
+┌────────────────────────┬─────────┬────────────┬────────────┐
+│        (index)         │   raw   │    min     │    gzip    │
+├────────────────────────┼─────────┼────────────┼────────────┤
+│      Menu.min.js       │ 9607505 │ '9.608 MB' │ '1.569 MB' │
+│ Menu.Selectable.min.js │ 9607539 │ '9.608 MB' │ '1.569 MB' │
+└────────────────────────┴─────────┴────────────┴────────────┘
 ```
 
 ## Summary
 
 > **NOTE:**
 >
-> Results contain also postprocessing of esbuild minification via Terser, to better showcase the differences of bundle minification if any.
+> Results contain also postprocessing of esbuild minified bundle via Terser, to better showcase the differences of bundle minification.
 >
-> Based on results, while Terser is able to shave some bytes off, the final result is **insignificant**
+> Based on results, while Terser is able to shave off some additional bytes, the final result is **insignificant**
 
-Based on our measurements we have following recommendations:
+### Observations based on our measurements:
 
-- best possible approach **how to ship package to NPM** is ship only transpiled file to vanilla javascript
-- best possible approach **how to bundle packages in applications** is via using webpack
+_Rollup:_
+
+- is best industry choice when bundling package(library) code into one file (smallest output)
+
+_Webpack:_
+
+- performs best for both use cases (transpiled only library `'31.718 kB'` vs. bundled library)
+- the best result for bundled library consumption scenario is when library is bundled via `rollup.js` - `'38.01 kB'`, although the difference in comparison with using (esbuild/swc for bundling) is negligible
+
+```
+┌────────────────────────┬───────────────┬───────────┬──────────────┬─────────────┐
+│                        │  transpiled   │  rollup   │     esbuild  │    swc      │
+│                        │    only       │           │              │             │
+├────────────────────────┼───────────────┼───────────┼──────────────┼─────────────┤
+│      Menu.min.js       │ 31.718 kB     │ 38.01 kB  │ 38.139 kB    │  38.26 kB   │
+└────────────────────────┴───────────────┴───────────┴──────────────┴─────────────┘
+```
+
+_SWC:_
+
+- bundling apps with raw `swc` is very bad idea (docs explicitly mention that this should not be used in production/work in progress)
+- _NOTE:_ we found some extent of bugs in the tooling during creating this benchmark
+
+_ESBuild:_
+
+- is fastest
+- most consistent
+  - same bundle size for both use cases with all scenarios (bundling application that uses transpiled only package or rollup-ed/bundled package)
+- running terser to postprocess esbuild minified output improves final bundle size, but the difference is negligible
+
+### Based on our measurements we have following recommendations:
+
+- best possible approach **how to ship package to NPM** is ship `transpiled files to vanilla javascript without bundling`
+- best possible approach **how to bundle packages in applications for production** is with `webpack`
