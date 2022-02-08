@@ -18,6 +18,7 @@
     "bundle-size": "yarn bundle-size:webpack && yarn bundle-size:esbuild",
     "bundle-size:webpack": "bundle-size measure -q",
     "bundle-size:esbuild": "node ./bundle-size.esbuild.js",
+    "bundle-size:swc": "node ./bundle-size.swc.js",
     "bundle-size:rollup": "rollup -c bundle-size.rollup.js",
     "bundle-size:format": "node ./bundle-size.format.js",
     "clean": "just-scripts clean",

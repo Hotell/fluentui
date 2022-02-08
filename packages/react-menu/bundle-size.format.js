@@ -12,6 +12,9 @@ function main() {
     console.log('ESBuild:');
     printBundleSize({ distFolderName: 'bundle-size-esbuild' });
 
+    console.log('SWC:');
+    printBundleSize({ distFolderName: 'bundle-size-swc' });
+
     console.log('Rollup:');
     printBundleSize({ distFolderName: 'bundle-size-rollup' });
   }

@@ -7,6 +7,7 @@
   "module": {
     "type": "es6"
   },
+  "sourceMaps": false,
   "minify": true,
   "jsc": {
     "target": "es2019",

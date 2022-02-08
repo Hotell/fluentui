@@ -18,7 +18,12 @@ const bundlesForBench = [
 ];
 
 const bundlePackageCommand = 'yarn bundle:bench';
-const bundleCommands = ['yarn bundle-size:webpack', 'yarn bundle-size:esbuild', 'yarn bundle-size:rollup'];
+const bundleCommands = [
+  'yarn bundle-size:webpack',
+  'yarn bundle-size:esbuild',
+  'yarn bundle-size:swc',
+  'yarn bundle-size:rollup',
+];
 const outputCommand = 'yarn bundle-size:format';
 
 main();
