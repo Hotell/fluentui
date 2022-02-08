@@ -12,7 +12,10 @@ yarn workspace @fluentui/react-menu bundle-size:bench
 
 ## Package(react-menu) Bundles
 
-Following table shows file sizes of rolluped(bundled) and minified library files with various compilers.
+Following table shows file sizes of rolluped(bundled) and minified library files with various compilers/bundlers.
+
+> NOTE:
+> webpack library bundling is [experimental](https://github.com/webpack/webpack/issues/2933#issuecomment-774253975) and turns out the produced snapshot will not work (Only Rollup complained that something is wrong)
 
 ```
 ┌───────────────────────┬───────┬─────────────┬─────────────┐
@@ -20,6 +23,8 @@ Following table shows file sizes of rolluped(bundled) and minified library files
 ├───────────────────────┼───────┼─────────────┼─────────────┤
 │       rollup.js       │ 53237 │ '53.237 kB' │ '10.623 kB' │
 │     rollup.min.js     │ 20314 │ '20.314 kB' │ '6.041 kB'  │
+│      webpack.js       │ 82299 │ '82.299 kB' │ '13.753 kB' │
+│    webpack.min.js     │ 24642 │ '24.642 kB' │ '7.011 kB'  │
 │      esbuild.js       │ 52335 │ '52.335 kB' │ '9.335 kB'  │
 │    esbuild.min.js     │ 24959 │ '24.959 kB' │ '7.321 kB'  │
 │ esbuild-terser.min.js │ 24987 │ '24.987 kB' │ '7.067 kB'  │

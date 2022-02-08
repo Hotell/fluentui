@@ -34,7 +34,8 @@
     "bundle:esbuild": "node ./esbuild.config.js",
     "bundle:rollup": "rollup -c rollup.config.js",
     "bundle:swc": "spack &&  swc ./dist/swc.js -o ./dist/swc.min.js",
-    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:swc && yarn bundle:rollup"
+    "bundle:webpack": "webpack --config webpack.config.js",
+    "bundle:bench": "rm -rf dist && yarn bundle:esbuild && yarn bundle:swc && yarn bundle:rollup && yarn bundle:webpack"
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",

@@ -13,6 +13,7 @@ const bundlesForBench = [
     path: 'lib/index.js',
   },
   { title: 'Creating App Bundle with bundled package via rollup', path: 'dist/rollup.min.js' },
+  // { title: 'Creating App Bundle with bundled package via webpack', path: 'dist/webpack.min.js' },
   { title: 'Creating App Bundle with bundled package via esbuild', path: 'dist/esbuild.min.js' },
   { title: 'Creating App Bundle with bundled package via swc', path: 'dist/swc.min.js' },
 ];

@@ -9,14 +9,14 @@ function main() {
     console.log('Webpack:');
     printBundleSize({ distFolderName: 'bundle-size' });
 
+    console.log('Rollup:');
+    printBundleSize({ distFolderName: 'bundle-size-rollup' });
+
     console.log('ESBuild:');
     printBundleSize({ distFolderName: 'bundle-size-esbuild' });
 
     console.log('SWC:');
     printBundleSize({ distFolderName: 'bundle-size-swc' });
-
-    console.log('Rollup:');
-    printBundleSize({ distFolderName: 'bundle-size-rollup' });
   }
 
   if (args[0] === '--libs') {

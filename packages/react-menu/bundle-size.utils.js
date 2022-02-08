@@ -44,6 +44,7 @@ function printBundleSize(options) {
 function printPackageBundleSizes() {
   const bundleNames = {
     rollup: ['rollup.js', 'rollup.min.js'],
+    webpack: ['webpack.js', 'webpack.min.js'],
     esbuild: ['esbuild.js', 'esbuild.min.js', 'esbuild-terser.min.js'],
     swc: ['swc.js', 'swc.min.js'],
   };

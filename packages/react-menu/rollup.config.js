@@ -1,33 +1,14 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { terser } from 'rollup-plugin-terser';
 import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { babel } from '@rollup/plugin-babel';
-import alias from '@rollup/plugin-alias';
-import * as path from 'path';
-import { pathsToModuleNameMapper } from 'ts-jest/utils';
 
-import tsConfigRoot from '../../tsconfig.base.json';
 import pkg from './package.json';
-
-const implicitDeps = ['@fluentui/react-theme'];
-
-const tsPathAliases = Object.entries(tsConfigRoot.compilerOptions.paths).reduce((acc, [pkgName, pkgPath]) => {
-  acc[pkgName] = pkgPath[0];
-  return acc;
-}, {});
-
-const isProduction = process.env.NODE_ENV === 'production';
 
 const externalDeps = Object.keys({ ...pkg.dependencies, ...pkg.peerDependencies }); /* .concat(implicitDeps) */
 const nodeDeps = [];
-
-// console.log(
-//   `NODE_ENV: ${JSON.stringify(process.env.NODE_ENV)}\n`,
-//   `Build executed in  ${isProduction ? 'PRODUCTION MODE' : 'NON PRODUCTION'}\n`,
-//   { externalDeps },
-//   { tsPathAliases },
-// );
 
 /**
  * @type {import('rollup').RollupOptions}
