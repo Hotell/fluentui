@@ -102,12 +102,12 @@ export function copyCompiled() {
 
       dest: paths.commonJs.out,
     }),
-    fs.existsSync(paths.amd.in)
-      ? copyTask({
-          paths: [paths.amd.in],
-          dest: paths.amd.out,
-        })
-      : null,
+    // fs.existsSync(paths.amd.in)
+    //   ? copyTask({
+    //       paths: [paths.amd.in],
+    //       dest: paths.amd.out,
+    //     })
+    //   : null,
   ].filter(Boolean) as TaskFunction[];
 
   return series(...tasks);

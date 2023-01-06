@@ -12,40 +12,49 @@ function addSourceMappingUrl(code: string, loc: string): string {
 }
 
 export async function babel() {
-  const files = glob.sync('{lib,lib-commonjs}/**/*.js');
+  // const files = glob.sync('{lib}/**/*.js');
+  // const files = glob.sync('{lib,lib-commonjs}/**/*.js');
+  // const files = glob.sync('{lib-commonjs}/**/*.js');
 
-  for (const filename of files) {
-    const filePath = path.resolve(process.cwd(), filename);
+  // await transpile(glob.sync('lib-commonjs/**/*.js'));
+  await transpile(glob.sync('lib/**/*.js'));
 
-    const codeBuffer = await fs.promises.readFile(filePath);
-    const sourceCode = codeBuffer.toString().replace(EOL_REGEX, '\n');
+  async function transpile(files: string[]) {
+    for (const filename of files) {
+      const filePath = path.resolve(process.cwd(), filename);
 
-    const result = (await transformAsync(sourceCode, {
-      ast: false,
-      sourceMaps: true,
+      console.log({ filePath });
 
-      babelrc: true,
-      // to avoid leaking of global configs
-      babelrcRoots: [process.cwd()],
+      const codeBuffer = await fs.promises.readFile(filePath);
+      const sourceCode = codeBuffer.toString().replace(EOL_REGEX, '\n');
 
-      caller: { name: 'just-scripts' },
-      filename: filePath,
+      const result = (await transformAsync(sourceCode, {
+        ast: false,
+        sourceMaps: true,
 
-      sourceFileName: path.basename(filename),
-    })) /* Bad `transformAsync` types. it can be null only if 2nd param is null(config)*/ as NonNullableRecord<BabelFileResult>;
-    const resultCode = addSourceMappingUrl(result.code, path.basename(filename) + '.map');
+        babelrc: true,
+        // to avoid leaking of global configs
+        babelrcRoots: [process.cwd()],
 
-    if (resultCode === sourceCode) {
-      logger.verbose(`babel: skipped ${filePath}`);
-      continue;
-    } else {
-      logger.verbose(`babel: transformed ${filePath}`);
+        caller: { name: 'just-scripts' },
+        filename: filePath,
+
+        sourceFileName: path.basename(filename),
+      })) /* Bad `transformAsync` types. it can be null only if 2nd param is null(config)*/ as NonNullableRecord<BabelFileResult>;
+      const resultCode = addSourceMappingUrl(result.code, path.basename(filename) + '.map');
+
+      if (resultCode === sourceCode) {
+        logger.verbose(`babel: skipped ${filePath}`);
+        continue;
+      } else {
+        logger.verbose(`babel: transformed ${filePath}`);
+      }
+
+      const sourceMapFile = filePath + '.map';
+
+      await fs.promises.writeFile(filePath, resultCode);
+      await fs.promises.writeFile(sourceMapFile, JSON.stringify(result.map));
     }
-
-    const sourceMapFile = filePath + '.map';
-
-    await fs.promises.writeFile(filePath, resultCode);
-    await fs.promises.writeFile(sourceMapFile, JSON.stringify(result.map));
   }
 }
 

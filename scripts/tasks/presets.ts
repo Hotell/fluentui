@@ -103,16 +103,16 @@ export function preset() {
     // default behaviour
     if (!moduleFlag) {
       return parallel(
-        'ts:commonjs',
+        // 'ts:commonjs',
         'ts:esm',
-        condition('ts:amd', () => !!args.production && !isConvergedPackage()),
+        // condition('ts:amd', () => !!args.production && !isConvergedPackage()),
       );
     }
 
     return parallel(
       condition('ts:commonjs', () => moduleFlag.cjs),
       condition('ts:esm', () => moduleFlag.esm),
-      condition('ts:amd', () => moduleFlag.amd),
+      // condition('ts:amd', () => moduleFlag.amd),
     );
   });
 
