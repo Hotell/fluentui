@@ -1,1 +1,2 @@
-export { safeLaunchOptions } from './puppeteer.config';
+export { safeLaunchOptions } from './config';
+export { launch, visitUrl } from './utils';

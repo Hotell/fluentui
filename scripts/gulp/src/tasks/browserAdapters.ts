@@ -1,9 +1,9 @@
 import { spawn, spawnSync } from 'child_process';
-import CDP from 'chrome-remote-interface';
-import puppeteer from 'puppeteer';
 import * as net from 'net';
 
-import { safeLaunchOptions } from '@fluentui/scripts-puppeteer';
+import { launch } from '@fluentui/scripts-puppeteer';
+import CDP from 'chrome-remote-interface';
+import * as puppeteer from 'puppeteer';
 
 export type Page = {
   executeJavaScript: <R>(code: string) => Promise<R>;
@@ -17,28 +17,30 @@ export type Browser = {
 };
 
 export async function createChrome(): Promise<Browser> {
-  const options = safeLaunchOptions();
-  let browser: puppeteer.Browser | undefined;
-  let attempt = 1;
-  while (!browser) {
-    try {
-      browser = await puppeteer.launch(options);
-    } catch (err) {
-      if (attempt === 5) {
-        console.error(`Puppeteer failed to launch after 5 attempts`);
-        throw err;
-      }
-      console.warn('Puppeteer failed to launch (will retry):');
-      console.warn(err);
-      attempt++;
-    }
-  }
+  // const options = safeLaunchOptions();
+  // let browser: puppeteer.Browser | undefined;
+  // let attempt = 1;
+  // while (!browser) {
+  //   try {
+  //     browser = await puppeteer.launch(options);
+  //   } catch (err) {
+  //     if (attempt === 5) {
+  //       console.error(`Puppeteer failed to launch after 5 attempts`);
+  //       throw err;
+  //     }
+  //     console.warn('Puppeteer failed to launch (will retry):');
+  //     console.warn(err);
+  //     attempt++;
+  //   }
+  // }
+
+  const browser = await launch();
 
   console.log(`Chromium version: ${await browser.version()}`);
 
   return {
     openPage: async url => {
-      const page = await (browser as puppeteer.Browser).newPage();
+      const page = await browser.newPage();
 
       await page.goto(url);
 

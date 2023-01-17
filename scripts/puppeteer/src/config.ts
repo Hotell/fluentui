@@ -1,6 +1,4 @@
-import { launch } from 'puppeteer';
-
-type LaunchOptions = NonNullable<Parameters<typeof launch>[0]>;
+import { LaunchOptions } from './types';
 
 /** Common set of args to be passed to Chromium. */
 const chromiumArgs = [
@@ -9,8 +7,8 @@ const chromiumArgs = [
 ].filter(Boolean) as NonNullable<LaunchOptions['args']>;
 
 export const safeLaunchOptions = (launchOptions?: LaunchOptions): LaunchOptions => {
-  const mergedChromiumArgs = [...((launchOptions && launchOptions.args) || []), ...chromiumArgs];
+  const { args, ...rest } = launchOptions ?? {};
+  const mergedChromiumArgs = [...(args ?? []), ...chromiumArgs];
 
-  // eslint-disable-next-line prefer-object-spread
-  return Object.assign({}, launchOptions, { args: mergedChromiumArgs });
+  return { ...rest, args: mergedChromiumArgs };
 };

@@ -10,6 +10,7 @@ describe('visitUrl', () => {
 
     jest.spyOn(console, 'warn').mockImplementation(noop);
     jest.spyOn(console, 'error').mockImplementation(noop);
+    jest.spyOn(console, 'log').mockImplementation(noop);
 
     const pageMock: Partial<Page> = {
       goto: jest.fn().mockImplementation(() => Promise.reject(new Error('page wont open - mock'))),
