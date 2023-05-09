@@ -88,7 +88,8 @@
       "@fluentui/react-utilities": ["packages/react-components/react-utilities/src/index.ts"],
       "@fluentui/react-virtualizer": ["packages/react-components/react-virtualizer/src/index.ts"],
       "@fluentui/theme-designer": ["packages/react-components/theme-designer/src/index.ts"],
-      "@fluentui/tokens": ["packages/tokens/src/index.ts"]
+      "@fluentui/tokens": ["packages/tokens/src/index.ts"],
+      "@fluentui/dts": ["packages/dts/src/index.ts"]
     }
   },
   "exclude": ["node_modules"]

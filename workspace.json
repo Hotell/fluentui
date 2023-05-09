@@ -1160,6 +1160,13 @@
       "projectType": "library",
       "implicitDependencies": [],
       "tags": ["v8", "platform:node"]
+    },
+    "dts": {
+      "root": "packages/dts",
+      "projectType": "library",
+      "implicitDependencies": [],
+      "sourceRoot": "packages/dts/src",
+      "tags": ["platform:node"]
     }
   }
 }
