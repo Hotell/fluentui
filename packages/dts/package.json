@@ -4,6 +4,9 @@
   "description": "foo",
   "private": true,
   "main": "lib-commonjs/index.js",
+  "bin": {
+    "dts": "./bin/index.js"
+  },
   "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
