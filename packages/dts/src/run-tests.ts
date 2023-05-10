@@ -47,7 +47,8 @@ export async function runTests(options: { dtsDirPath: string } & Config) {
   checkTsconfig(compilerOptions);
 
   console.log(`checking from TS v${minVersion} to v${maxVersion}`);
-  const tsCheckVersions = shipped.slice(supported.indexOf(minVersion), supported.indexOf(maxVersion));
+  const tsCheckVersions = shipped.slice(supported.indexOf(minVersion), supported.indexOf(maxVersion) + 1);
+
   for (const tsVersion of tsCheckVersions) {
     const versionPath = getTypeScriptPath(tsVersion, undefined);
     await testTypesVersion({ versionPath, dtsDirPath, tsVersion });
