@@ -26,16 +26,17 @@ export function getProgram(
 
 function createProgram(configFile: string, ts: typeof TS): TS.Program {
   const projectDirectory = path.dirname(configFile);
-  const { config } = TS.readConfigFile(configFile, TS.sys.readFile);
+  const { config } = ts.readConfigFile(configFile, TS.sys.readFile);
   const parseConfigHost: TS.ParseConfigHost = {
     fileExists: fs.existsSync,
     readDirectory: TS.sys.readDirectory,
     readFile: file => fs.readFileSync(file, 'utf8'),
     useCaseSensitiveFileNames: true,
   };
-  const parsed = TS.parseJsonConfigFileContent(config, parseConfigHost, path.resolve(projectDirectory), {
+  const parsed = ts.parseJsonConfigFileContent(config, parseConfigHost, path.resolve(projectDirectory), {
     noEmit: true,
   });
-  const host = TS.createCompilerHost(parsed.options, true);
-  return TS.createProgram(parsed.fileNames, parsed.options, host);
+
+  const host = ts.createCompilerHost(parsed.options, true);
+  return ts.createProgram(parsed.fileNames, parsed.options, host);
 }
