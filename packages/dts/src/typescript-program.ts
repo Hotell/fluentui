@@ -1,4 +1,4 @@
-import * as TS from 'typescript';
+import type * as TS from 'typescript';
 import * as path from 'path';
 import * as fs from 'fs';
 
@@ -26,10 +26,10 @@ export function getProgram(
 
 function createProgram(configFile: string, ts: typeof TS): TS.Program {
   const projectDirectory = path.dirname(configFile);
-  const { config } = ts.readConfigFile(configFile, TS.sys.readFile);
+  const { config } = ts.readConfigFile(configFile, ts.sys.readFile);
   const parseConfigHost: TS.ParseConfigHost = {
     fileExists: fs.existsSync,
-    readDirectory: TS.sys.readDirectory,
+    readDirectory: ts.sys.readDirectory,
     readFile: file => fs.readFileSync(file, 'utf8'),
     useCaseSensitiveFileNames: true,
   };
