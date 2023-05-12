@@ -8,6 +8,7 @@ import { getCompilerOptions } from './utils';
 import { getProgram } from './typescript-program';
 import { Config } from './config';
 import assert = require('node:assert');
+import { Logger } from './logger';
 
 function getMaxVersion(v1: TypeScriptVersion, v2: TypeScriptVersion): TypeScriptVersion {
   assert(supported.indexOf(v1) !== -1);
@@ -35,8 +36,8 @@ function getNextVersion(version: (typeof supported)[number]): string {
   return supported[index + 1];
 }
 
-export async function runTests(options: { dtsDirPath: string } & Config) {
-  const { dtsDirPath, tsMinVersion, tsMaxVersion } = options;
+export async function runTests(options: { dtsDirPath: string; logger: Logger } & Config) {
+  const { logger, dtsDirPath, tsMinVersion, tsMaxVersion, warnOnly } = options;
   // get d.ts from package - defined via types,exports.types
   // const dtsContents = await fs.readFile(path.join(dtsDirPath, 'index.d.ts'), 'utf-8');
 
@@ -46,19 +47,29 @@ export async function runTests(options: { dtsDirPath: string } & Config) {
   const compilerOptions = await getCompilerOptions(dtsDirPath);
   checkTsconfig(compilerOptions);
 
-  console.log(`checking from TS v${minVersion} to v${maxVersion}`);
+  logger.info(`🧪 Checking declaration files against TS versions - from v${minVersion} to v${maxVersion}\n`);
   const tsCheckVersions = shipped.slice(supported.indexOf(minVersion), supported.indexOf(maxVersion) + 1);
 
+  const tsVersionViolations: boolean[] = [];
   for (const tsVersion of tsCheckVersions) {
     const versionPath = getTypeScriptPath(tsVersion, undefined);
-    await testTypesVersion({ versionPath, dtsDirPath, tsVersion });
-    // await testTypesVersion(versionPath, low, hi, isOlderVersion, dt, expectOnly, undefined, isLatest);
+    tsVersionViolations.push(await testTypesVersion({ versionPath, dtsDirPath, tsVersion, logger }));
+  }
+
+  if (tsVersionViolations.some(Boolean) && !warnOnly) {
+    process.exit(1);
   }
 }
 
-async function testTypesVersion(options: { versionPath: string; dtsDirPath: string; tsVersion: string }) {
-  const { versionPath, dtsDirPath, tsVersion } = options;
-  console.info(`Checking ${dtsDirPath} -> against TS@${tsVersion}`);
+async function testTypesVersion(options: {
+  versionPath: string;
+  dtsDirPath: string;
+  tsVersion: string;
+  logger: Logger;
+}) {
+  const { versionPath, dtsDirPath, tsVersion, logger } = options;
+  logger.info(`Checking against TS@${tsVersion}`);
+  logger.info(`${dtsDirPath}`);
 
   const tsconfigPath = path.join(dtsDirPath, 'tsconfig.json');
 
@@ -74,15 +85,20 @@ async function testTypesVersion(options: { versionPath: string; dtsDirPath: stri
     /* , lintProgram */
   );
   const diagnostics = ts.getPreEmitDiagnostics(program);
+
   if (!diagnostics.length) {
-    return undefined;
+    logger.success('All good');
+    return false;
   }
+
   const showDiags = ts.formatDiagnostics(diagnostics, {
     getCanonicalFileName: (filename: string) => filename,
     getCurrentDirectory: () => dtsDirPath,
     getNewLine: () => '\n',
   });
-  const message = `Errors in typescript@${tsVersion} for external dependencies:\n${showDiags}`;
+  const message = `Errors in typescript@${tsVersion}:\n${showDiags}`;
 
-  console.error(message);
+  logger.error(message);
+
+  return true;
 }

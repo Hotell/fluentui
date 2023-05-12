@@ -6,6 +6,7 @@ export interface Config {
   tsMinVersion: TypeScriptVersion;
   tsMaxVersion: TypeScriptVersion;
   warnOnly?: boolean;
+  verbose?: boolean;
 }
 
 const configDefaults: Config = { tsMinVersion: '4.3', tsMaxVersion: '5.0' };

@@ -7,38 +7,42 @@ import * as process from 'process';
 import { TypeScriptVersion } from '@definitelytyped/typescript-versions';
 import { pathExists, writeJsonFile } from './utils';
 import { latest, shipped } from './typescript-versions';
+import { Logger } from './logger';
 
 export type TsVersion = TypeScriptVersion | 'local';
 
 const installsDir = path.join(os.homedir(), '.dts', 'typescript-installs');
 
-export async function installAllTypeScriptVersions() {
+export async function installAllTypeScriptVersions(logger: Logger) {
+  logger.log('Installing TypeScript versions\n');
   for (const version of shipped) {
-    await install(version);
+    await install(version, logger);
   }
-  await installTypeScriptNext();
+  await installTypeScriptNext(logger);
+  logger.log('');
 }
 
-export async function installTypeScriptNext() {
-  await install('next');
+export async function installTypeScriptNext(logger: Logger) {
+  await install('next', logger);
 }
 
-async function install(version: string): Promise<void> {
+async function install(version: string, logger: Logger): Promise<void> {
   // async function install(version: TsVersion | 'next'): Promise<void> {
   if (version === 'local') {
     return;
   }
-  const dir = installDir(version);
-  if (!(await pathExists(dir))) {
-    console.log(`Installing to ${dir}...`);
-    await fs.mkdir(dir, { recursive: true });
-    await writeJsonFile(path.join(dir, 'package.json'), createPackageJson(version));
-    await execAndThrowErrors('npm install --ignore-scripts --no-shrinkwrap --no-package-lock --no-bin-links', dir);
-    console.log('Installed!');
-    console.log('');
-  } else {
-    console.log(`install cached ${dir}`);
+  const dir = getInstallDir(version);
+
+  if (await pathExists(dir)) {
+    logger.log(`Installed from cache - ${dir}`);
+    return;
   }
+
+  logger.log(`Installing to ${dir}...`);
+  await fs.mkdir(dir, { recursive: true });
+  await writeJsonFile(path.join(dir, 'package.json'), createPackageJson(version));
+  await execAndThrowErrors('npm install --ignore-scripts --no-shrinkwrap --no-package-lock --no-bin-links', dir);
+  logger.log('Installed!\n');
 }
 
 export function cleanTypeScriptInstalls(): Promise<void> {
@@ -50,15 +54,16 @@ export function getTypeScriptPath(version: string, tsLocal: string | undefined):
   if (version === 'local') {
     return tsLocal! + '/typescript.js';
   }
-  return path.join(installDir(version), 'node_modules', 'typescript');
+  return path.join(getInstallDir(version), 'node_modules', 'typescript');
 }
 
 // function installDir(version: TsVersion | 'next'): string {
-function installDir(version: string): string {
+function getInstallDir(version: string): string {
   assert(version !== 'local');
   if (version === 'next') {
     version = latest;
   }
+
   return path.join(installsDir, version);
 }
 
