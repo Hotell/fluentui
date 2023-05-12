@@ -1,12 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
+    "Record<string,any>": {
+      "type": "object"
+    },
     "TypeScriptVersion": {
       "enum": ["3.9", "4.0", "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "4.7", "4.8", "4.9", "5.0", "5.1"],
       "type": "string"
     }
   },
   "properties": {
+    "dtsDirPath": {
+      "description": "relative path to your project folder where `.d.ts` files are being generated. Usually \"./dist\"\nTODO: should be processed from package.json#types",
+      "type": "string"
+    },
+    "tsConfig": {
+      "description": "TypeScript config for d.ts checks. We use standard one by default, but you can tweak it to your particular needs within config",
+      "properties": {
+        "compilerOptions": {
+          "$ref": "#/definitions/Record<string,any>"
+        }
+      },
+      "type": "object"
+    },
     "tsMaxVersion": {
       "$ref": "#/definitions/TypeScriptVersion",
       "description": "highest TypeScript version to test against"

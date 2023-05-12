@@ -12,6 +12,16 @@ export interface Config {
    */
   tsMaxVersion: TypeScriptVersion;
   /**
+   * TypeScript config for d.ts checks. We use standard one by default, but you can tweak it to your particular needs within config
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  tsConfig?: { compilerOptions: Record<string, any> };
+  /**
+   * relative path to your project folder where `.d.ts` files are being generated. Usually "./dist"
+   * TODO: should be processed from package.json#types
+   */
+  dtsDirPath: string;
+  /**
    * don't fail the program if there is at least 1 issue with particular TypeScript
    */
   warnOnly?: boolean;
@@ -21,19 +31,49 @@ export interface Config {
   verbose?: boolean;
 }
 
-const configDefaults: Config = { tsMinVersion: '4.3', tsMaxVersion: '5.0' };
+export interface ProcessedConfig extends Required<Config> {
+  projectRoot: string;
+}
 
-export async function processConfig(): Promise<Config> {
+const tsConfigDefault = {
+  compilerOptions: {
+    noEmit: true,
+    module: 'CommonJS',
+    lib: ['ES2019', 'DOM'],
+    strict: true,
+    types: [],
+    forceConsistentCasingInFileNames: true,
+
+    // If the library is an external module (uses `export`), this allows your test file to import "mylib" instead of "./index".
+    // If the library is global (cannot be imported via `import` or `require`), leave this out.
+    baseUrl: '.',
+    paths: {},
+  },
+};
+const configDefaults = {
+  tsMinVersion: '4.3',
+  tsMaxVersion: '5.0',
+  tsConfig: tsConfigDefault,
+  dtsDirPath: './dist',
+  warnOnly: false,
+  verbose: false,
+} as const;
+
+export async function processConfig(options: { configPath?: string }): Promise<ProcessedConfig> {
   const cwd = process.cwd();
-  const configPath = path.join(cwd, 'dts.config.json');
+  const configPath = options.configPath ?? path.join(cwd, 'dts.config.json');
   const configExists = await pathExists(configPath);
 
   if (!configExists) {
     console.warn('no config provided. using defaults');
-    return configDefaults;
+    return { ...configDefaults, projectRoot: cwd };
   }
 
-  const config = readJsonFile<Config>(configPath);
+  const userConfig = readJsonFile<Config>(configPath);
+
+  // TODO - use merge here
+  const config = { ...configDefaults, projectRoot: cwd, ...userConfig };
+  config.tsConfig = { compilerOptions: { ...tsConfigDefault.compilerOptions, ...config.tsConfig?.compilerOptions } };
 
   return config;
 }

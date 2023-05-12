@@ -1,6 +1,7 @@
 import type * as TS from 'typescript';
 import * as path from 'path';
 import * as fs from 'fs';
+import { ProcessedConfig } from './config';
 
 const programCache = new WeakMap<TS.Program, Map<string, TS.Program>>();
 /** Maps a tslint Program to one created with the version specified in `options`. */
@@ -26,17 +27,45 @@ export function getProgram(
 
 function createProgram(configFile: string, ts: typeof TS): TS.Program {
   const projectDirectory = path.dirname(configFile);
+
   const { config } = ts.readConfigFile(configFile, ts.sys.readFile);
+  // const parseConfigHost: TS.ParseConfigHost = {
+  //   fileExists: fs.existsSync,
+  //   readDirectory: ts.sys.readDirectory,
+  //   readFile: file => fs.readFileSync(file, 'utf8'),
+  //   useCaseSensitiveFileNames: true,
+  // };
+
+  // const parsed = ts.parseJsonConfigFileContent(config, parseConfigHost, path.resolve(projectDirectory), {
+  //   noEmit: true,
+  // });
+
+  const parsed = getCompilerOptions(ts, projectDirectory, config);
+
+  const host = ts.createCompilerHost(parsed.options, true);
+  return ts.createProgram(parsed.fileNames, parsed.options, host);
+}
+
+export function createProgramFromConfig(
+  tsConfig: ProcessedConfig['tsConfig'],
+  projectDirectory: string,
+  ts: typeof TS,
+): TS.Program {
+  const parsed = getCompilerOptions(ts, projectDirectory, tsConfig);
+  const host = ts.createCompilerHost(parsed.options, true);
+  return ts.createProgram(parsed.fileNames, parsed.options, host);
+}
+
+function getCompilerOptions(ts: typeof TS, projectDirectory: string, config: ProcessedConfig['tsConfig']) {
   const parseConfigHost: TS.ParseConfigHost = {
-    fileExists: fs.existsSync,
+    fileExists: ts.sys.fileExists,
     readDirectory: ts.sys.readDirectory,
-    readFile: file => fs.readFileSync(file, 'utf8'),
+    readFile: ts.sys.readFile,
     useCaseSensitiveFileNames: true,
   };
   const parsed = ts.parseJsonConfigFileContent(config, parseConfigHost, path.resolve(projectDirectory), {
     noEmit: true,
   });
 
-  const host = ts.createCompilerHost(parsed.options, true);
-  return ts.createProgram(parsed.fileNames, parsed.options, host);
+  return parsed;
 }
