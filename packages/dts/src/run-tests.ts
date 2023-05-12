@@ -98,7 +98,7 @@ async function testTypesVersion(options: {
   const diagnostics = ts.getPreEmitDiagnostics(program);
 
   if (!diagnostics.length) {
-    logger.success('All good');
+    logger.success('All good\n');
     return false;
   }
 
