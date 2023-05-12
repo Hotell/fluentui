@@ -3,9 +3,21 @@ import { TypeScriptVersion } from './typescript-versions';
 import { pathExists, readJsonFile } from './utils';
 
 export interface Config {
+  /**
+   * lowest TypeScript version to test against
+   */
   tsMinVersion: TypeScriptVersion;
+  /**
+   * highest TypeScript version to test against
+   */
   tsMaxVersion: TypeScriptVersion;
+  /**
+   * don't fail the program if there is at least 1 issue with particular TypeScript
+   */
   warnOnly?: boolean;
+  /**
+   * print all program logs
+   */
   verbose?: boolean;
 }
 
