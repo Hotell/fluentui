@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "TypeScriptVersion": {
+      "enum": ["3.9", "4.0", "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "4.7", "4.8", "4.9", "5.0", "5.1"],
+      "type": "string"
+    }
+  },
+  "properties": {
+    "tsMaxVersion": {
+      "$ref": "#/definitions/TypeScriptVersion"
+    },
+    "tsMinVersion": {
+      "$ref": "#/definitions/TypeScriptVersion"
+    },
+    "verbose": {
+      "type": "boolean"
+    },
+    "warnOnly": {
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}
