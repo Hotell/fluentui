@@ -1,5 +1,4 @@
 export type { PackageJson, AllPackageInfo } from './types';
-export { default as getDependencies } from './getDependencies';
 export { default as findGitRoot } from './findGitRoot';
 export { default as findRepoDeps } from './findRepoDeps';
 export { default as getAllPackageInfo } from './getAllPackageInfo';

@@ -1,9 +1,8 @@
 import path from 'path';
 
 import { sh } from '@fluentui/scripts-utils';
-import { PackageGraph } from '@lerna/package-graph';
-import { Project } from '@lerna/project';
 import fs from 'fs-extra';
+import { type ProjectGraphWithPackages, detectProjects } from 'lerna/utils';
 
 import { createTempDir, shEcho } from './utils';
 
@@ -12,12 +11,18 @@ type PackedPackages = Record<string, string>;
 /** Shared packed packages between tests since they're not modified by any test */
 let packedPackages: PackedPackages;
 
-function flattenPackageGraph(rootPackages: string[], projectGraph: PackageGraph, packageList: string[] = []): string[] {
+function flattenPackageGraph(
+  rootPackages: string[],
+  projectGraph: ProjectGraphWithPackages,
+  packageList: string[] = [],
+): string[] {
+  // function flattenPackageGraph(rootPackages: string[], projectGraph: PackageGraph, packageList: string[] = []): string[] {
   rootPackages.forEach(packageName => {
     packageList.push(packageName);
 
     // NOTE: we need to use Array.from instead of spread to new array because v0 packages have target `es5` thus this would trigger TS error
-    flattenPackageGraph(Array.from(projectGraph.get(packageName).localDependencies.keys()), projectGraph, packageList);
+    // flattenPackageGraph(Array.from(projectGraph.get(packageName).localDependencies.keys()), projectGraph, packageList);
+    flattenPackageGraph(Object.keys(projectGraph.localPackageDependencies[packageName]), projectGraph, packageList);
   });
 
   return packageList.sort().filter((v, i, a) => a.indexOf(v) === i);
@@ -48,14 +53,9 @@ export async function packProjectPackages(
 
   packedPackages = {};
 
-  const lernaProject = new Project(lernaRoot);
-  // this is the list of package.json contents with some extra properties
-  const projectPackages = await lernaProject.getPackages();
+  const { projectGraph } = await detectProjects();
 
-  logger(`✔️ Used lerna config: ${lernaProject.rootConfigLocation}`);
-
-  const projectPackagesGraph = new PackageGraph(projectPackages, 'dependencies');
-  const requiredPackages = flattenPackageGraph(rootPackages, projectPackagesGraph);
+  const requiredPackages = flattenPackageGraph(rootPackages, projectGraph);
 
   logger(`✔️ Following packages will be packed:${requiredPackages.map(p => `\n${' '.repeat(30)}- ${p}`)}`);
 
@@ -67,7 +67,7 @@ export async function packProjectPackages(
 
   await Promise.all(
     requiredPackages.map(async packageName => {
-      const packageInfo = projectPackages.find(pkg => pkg.name === packageName);
+      const packageInfo = projectGraph.nodes[packageName].package;
       if (!packageInfo) {
         throw new Error(`Package ${packageName} doesn't exist`);
       }
