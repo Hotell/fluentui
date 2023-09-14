@@ -4,7 +4,14 @@ const path = require('path');
 const { ESLint } = require('eslint');
 const fs = require('fs-extra');
 const micromatch = require('micromatch');
-const { eslintConstants } = require('@fluentui/scripts-monorepo');
+// const { eslintConstants } = require('@fluentui/scripts-monorepo');
+const eslintConstants = {
+  /** List of file extensions to lint, in format used by eslint (comma-separated, with leading .) */
+  extensions: '.ts,.tsx,.js,.jsx',
+
+  /** Subdirectory to lint within package (relative path) */
+  directory: 'src',
+};
 
 /**
  * Run ESLint for certain files from a particular package.

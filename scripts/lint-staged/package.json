@@ -10,7 +10,5 @@
     "test": "jest --passWithNoTests",
     "type-check": "tsc -b tsconfig.json"
   },
-  "dependencies": {
-    "@fluentui/scripts-monorepo": "*"
-  }
+  "dependencies": {}
 }

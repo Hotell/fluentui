@@ -39,7 +39,7 @@
     "perf": "yarn workspace @fluentui/perf perf:test",
     "perf:debug": "yarn workspace @fluentui/perf perf:test:debug",
     "postinstall": "node ./scripts/package-manager/postinstall.js",
-    "preinstall": "node ./scripts/package-manager/use-yarn-please.js",
+    "preinstall": "npx only-allow pnpm",
     "publish:beachball": "beachball publish -b origin/master --access public -y",
     "rebuild": "node ./scripts/executors/invalidate-just-cache.js && yarn build --reset-cache",
     "release:fluentui:canary": "node -r ./scripts/ts-node/register ./scripts/fluentui-publish publish-canary",
@@ -62,6 +62,9 @@
     "update-snapshots": "lage update-snapshots --verbose"
   },
   "devDependencies": {
+    "@fluentui/scripts-prettier": "workspace:*",
+    "@fluentui/scripts-storybook": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
     "@actions/core": "1.9.1",
     "@actions/github": "5.0.3",
     "@babel/core": "7.21.8",
@@ -280,6 +283,7 @@
     "lodash": "4.17.21",
     "markdown-table": "2.0.0",
     "memfs": "3.2.2",
+    "micromatch": "4.0.5",
     "mini-css-extract-plugin": "2.6.1",
     "monosize": "0.1.0",
     "monosize-storage-azure": "0.0.3",
@@ -300,6 +304,7 @@
     "prompts": "2.4.2",
     "puppeteer": "19.6.0",
     "raw-loader": "4.0.2",
+    "rimraf": "3.0.2",
     "react": "17.0.2",
     "react-app-polyfill": "2.0.0",
     "react-dom": "17.0.2",
@@ -365,28 +370,14 @@
     "copy-to-clipboard": "3.3.1"
   },
   "license": "MIT",
-  "workspaces": {
-    "packages": [
-      "apps/*",
-      "packages/*",
-      "packages/fluentui/*",
-      "packages/react-components/*",
-      "scripts/*",
-      "tools/*",
-      "typings"
-    ],
-    "nohoist": [
-      "@fluentui/web-components/@storybook/html"
-    ]
-  },
   "resolutions": {
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/experimental-utils": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
-    "@types/jest-axe/axe-core": "4.4.3",
-    "jest-axe/axe-core": "4.4.3",
+    "@types/jest-axe>axe-core": "4.4.3",
+    "jest-axe>axe-core": "4.4.3",
     "eslint": "7.25.0",
-    "@mdx-js/loader/loader-utils": "~2.0.4",
+    "@mdx-js/loader>loader-utils": "~2.0.4",
     "swc-loader": "^0.2.3",
     "prettier": "2.8.8",
     "puppeteer": "19.6.0"

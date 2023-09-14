@@ -1,10 +1,12 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { workspaceRoot } = require('@nx/devkit');
 
-const { findGitRoot } = require('@fluentui/scripts-monorepo');
+// const { findGitRoot } = require('@fluentui/scripts-monorepo');
 
-const repoRoot = findGitRoot();
+// const repoRoot = findGitRoot();
+const repoRoot = workspaceRoot;
 const prettierBin = getPrettierBinary();
 const prettierRulesConfig = path.join(repoRoot, 'prettier.config.js');
 const prettierIgnorePath = path.join(repoRoot, '.prettierignore');
