@@ -13,14 +13,14 @@
     "test:perf": "just-scripts perf-test"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-storybook": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-storybook": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/scripts-perf-test-flamegrill": "*",
-    "@fluentui/example-data": "*",
-    "@fluentui/react": "*",
+    "@fluentui/scripts-perf-test-flamegrill": "workspace:*",
+    "@fluentui/example-data": "workspace:*",
+    "@fluentui/react": "workspace:*",
     "@microsoft/load-themed-styles": "^1.10.26",
     "react": "17.0.2",
     "react-dom": "17.0.2",

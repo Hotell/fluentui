@@ -27,18 +27,18 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-alert": "9.0.0-beta.75",
-    "@fluentui/react-components": "^9.31.0",
-    "@fluentui/react-context-selector": "^9.1.34",
+    "@fluentui/react-alert": "workspace:*",
+    "@fluentui/react-components": "workspace:*",
+    "@fluentui/react-context-selector": "workspace:*",
     "@fluentui/react-icons": "^2.0.207",
-    "@fluentui/react-storybook-addon-codesandbox": "^0.1.0",
-    "@fluentui/react-theme": "^9.1.12",
-    "@fluentui/react-utilities": "^9.13.3",
+    "@fluentui/react-storybook-addon-codesandbox": "workspace:*",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1",
     "@types/dedent": "0.7.0",

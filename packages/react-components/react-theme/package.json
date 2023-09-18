@@ -25,12 +25,12 @@
     "generate-api": "just-scripts generate-api"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/tokens": "1.0.0-alpha.9",
+    "@fluentui/tokens": "workspace:*",
     "@swc/helpers": "^0.5.1"
   },
   "beachball": {

@@ -10,10 +10,10 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
-    "@fluentui/scripts-jest": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
     "lerna-alias": "^3.0.3-0"
   },
   "files": [

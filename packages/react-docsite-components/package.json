@@ -20,13 +20,13 @@
     "test": "just-scripts test"
   },
   "devDependencies": {
-    "@fluentui/common-styles": "*",
-    "@fluentui/eslint-plugin": "*",
+    "@fluentui/common-styles": "workspace:*",
+    "@fluentui/eslint-plugin": "workspace:*",
     "@types/color-check": "0.0.0",
     "@types/react-custom-scrollbars": "^4.0.5",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <19.0.0",
@@ -35,14 +35,14 @@
     "react-dom": ">=16.8.0 <19.0.0"
   },
   "dependencies": {
-    "@fluentui/react": "^8.111.2",
-    "@fluentui/theme": "^2.6.35",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/theme": "workspace:*",
     "@microsoft/load-themed-styles": "^1.10.26",
-    "@fluentui/example-data": "^8.4.12",
+    "@fluentui/example-data": "workspace:*",
     "@fluentui/public-docsite-setup": "^0.3.22",
-    "@fluentui/react-hooks": "^8.6.29",
-    "@fluentui/set-version": "^8.2.11",
-    "@fluentui/react-monaco-editor": "^1.7.125",
+    "@fluentui/react-hooks": "workspace:*",
+    "@fluentui/set-version": "workspace:*",
+    "@fluentui/react-monaco-editor": "workspace:*",
     "color-check": "0.0.2",
     "markdown-to-jsx": "^7.0.0",
     "office-ui-fabric-core": "^11.0.0",

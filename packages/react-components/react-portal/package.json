@@ -26,15 +26,15 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-conformance": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-shared-contexts": "^9.7.3",
-    "@fluentui/react-tabster": "^9.12.9",
-    "@fluentui/react-utilities": "^9.13.3",
+    "@fluentui/react-shared-contexts": "workspace:*",
+    "@fluentui/react-tabster": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1",
     "use-disposable": "^1.0.1"

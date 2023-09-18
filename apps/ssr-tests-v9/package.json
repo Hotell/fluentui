@@ -18,12 +18,12 @@
     "test-ssr": "test-ssr \"./src/stories/**/*.stories.tsx\""
   },
   "dependencies": {
-    "@fluentui/react-components": "*",
-    "@fluentui/react-utilities": "*"
+    "@fluentui/react-components": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-storybook": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-storybook": "workspace:*"
   }
 }

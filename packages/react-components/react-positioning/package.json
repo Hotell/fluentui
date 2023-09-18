@@ -24,15 +24,15 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.2.0",
-    "@fluentui/react-shared-contexts": "^9.7.3",
-    "@fluentui/react-theme": "^9.1.12",
-    "@fluentui/react-utilities": "^9.13.3",
+    "@fluentui/react-shared-contexts": "workspace:*",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1"
   },

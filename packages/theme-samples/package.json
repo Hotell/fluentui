@@ -22,14 +22,14 @@
     "clean": "just-scripts clean"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react": "^8.111.2",
-    "@fluentui/set-version": "^8.2.11",
-    "@fluentui/scheme-utilities": "^8.3.36",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/set-version": "workspace:*",
+    "@fluentui/scheme-utilities": "workspace:*",
     "tslib": "^2.1.0"
   },
   "exports": {

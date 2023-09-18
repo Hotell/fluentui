@@ -27,20 +27,20 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "*",
-    "@fluentui/react-conformance-griffel": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-cypress": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-conformance": "workspace:*",
+    "@fluentui/react-conformance-griffel": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-cypress": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-dialog": "^9.6.4",
-    "@fluentui/react-jsx-runtime": "^9.0.7",
-    "@fluentui/react-motion-preview": "^0.2.3",
-    "@fluentui/react-shared-contexts": "^9.7.3",
-    "@fluentui/react-theme": "^9.1.12",
-    "@fluentui/react-utilities": "^9.13.3",
+    "@fluentui/react-dialog": "workspace:*",
+    "@fluentui/react-jsx-runtime": "workspace:*",
+    "@fluentui/react-motion-preview": "workspace:*",
+    "@fluentui/react-shared-contexts": "workspace:*",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1"
   },

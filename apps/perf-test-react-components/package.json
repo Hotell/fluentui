@@ -1,7 +1,7 @@
 {
   "name": "@fluentui/perf-test-react-components",
   "description": "Perf tests for @fluentui/react-components.",
-  "version": "9.0.0-rc.0",
+  "version": "workspace:*",
   "private": true,
   "scripts": {
     "bundle": "just-scripts bundle",
@@ -13,20 +13,20 @@
     "test:perf": "just-scripts perf-test"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-storybook": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-storybook": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/scripts-perf-test-flamegrill": "*",
-    "@fluentui/react-avatar": "*",
-    "@fluentui/react-button": "*",
-    "@fluentui/react-field": "*",
-    "@fluentui/react-infobutton": ">=9.0.0-alpha",
-    "@fluentui/react-persona": "*",
-    "@fluentui/react-provider": "*",
-    "@fluentui/react-spinbutton": "*",
-    "@fluentui/react-theme": "*",
+    "@fluentui/scripts-perf-test-flamegrill": "workspace:*",
+    "@fluentui/react-avatar": "workspace:*",
+    "@fluentui/react-button": "workspace:*",
+    "@fluentui/react-field": "workspace:*",
+    "@fluentui/react-infobutton": "workspace:*",
+    "@fluentui/react-persona": "workspace:*",
+    "@fluentui/react-provider": "workspace:*",
+    "@fluentui/react-spinbutton": "workspace:*",
+    "@fluentui/react-theme": "workspace:*",
     "@griffel/core": "^1.14.1",
     "@microsoft/load-themed-styles": "^1.10.26",
     "react": "17.0.2",

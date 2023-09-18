@@ -12,16 +12,16 @@
     "type-check": "tsc"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-components": "*",
+    "@fluentui/react-components": "workspace:*",
     "@fluentui/react-icons": "^2.0.207",
-    "@fluentui/react-theme": "*",
-    "@fluentui/react-provider": "*",
-    "@fluentui/react-storybook-addon": "*",
-    "@fluentui/react-storybook-addon-codesandbox": "*",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-provider": "workspace:*",
+    "@fluentui/react-storybook-addon": "workspace:*",
+    "@fluentui/react-storybook-addon-codesandbox": "workspace:*",
     "@griffel/react": "^1.5.14",
     "react": "17.0.2",
     "react-dom": "17.0.2",

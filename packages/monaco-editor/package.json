@@ -16,16 +16,16 @@
     "just": "just-scripts"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
     "monaco-editor": "0.33.0",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@microsoft/load-themed-styles": "^1.10.26",
     "tslib": "^2.1.0"
   },
   "optionalPeerDependencies": {
-    "typescript": "*",
-    "webpack": "*"
+    "typescript": "workspace:*",
+    "webpack": "workspace:*"
   }
 }

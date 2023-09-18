@@ -11,13 +11,13 @@
     "perf:test": "just-scripts perf-test"
   },
   "dependencies": {
-    "@fluentui/react-northstar": "*",
-    "@fluentui/react-northstar-prototypes": "*",
-    "@fluentui/digest": "*",
+    "@fluentui/react-northstar": "workspace:*",
+    "@fluentui/react-northstar-prototypes": "workspace:*",
+    "@fluentui/digest": "workspace:*",
     "flamegrill": "0.2.0"
   },
   "devDependencies": {
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

@@ -27,23 +27,23 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "*",
-    "@fluentui/react-conformance-griffel": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-cypress": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-conformance": "workspace:*",
+    "@fluentui/react-conformance-griffel": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-cypress": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-button": "^9.3.38",
-    "@fluentui/react-divider": "^9.2.34",
-    "@fluentui/react-theme": "^9.1.12",
-    "@fluentui/react-utilities": "^9.13.3",
-    "@fluentui/react-jsx-runtime": "^9.0.7",
-    "@fluentui/react-context-selector": "^9.1.34",
-    "@fluentui/react-radio": "^9.1.39",
-    "@fluentui/react-shared-contexts": "^9.7.3",
-    "@fluentui/react-tabster": "^9.12.9",
+    "@fluentui/react-button": "workspace:*",
+    "@fluentui/react-divider": "workspace:*",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*",
+    "@fluentui/react-jsx-runtime": "workspace:*",
+    "@fluentui/react-context-selector": "workspace:*",
+    "@fluentui/react-radio": "workspace:*",
+    "@fluentui/react-shared-contexts": "workspace:*",
+    "@fluentui/react-tabster": "workspace:*",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1"
   },

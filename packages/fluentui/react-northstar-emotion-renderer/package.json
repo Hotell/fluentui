@@ -9,16 +9,16 @@
     "@emotion/serialize": "^1.0.2",
     "@emotion/sheet": "^1.0.1",
     "@emotion/utils": "^1.0.0",
-    "@fluentui/react-northstar-styles-renderer": "^0.66.4",
+    "@fluentui/react-northstar-styles-renderer": "workspace:*",
     "@fluentui/styles": "^0.66.4",
     "stylis": "^4.0.6",
     "stylis-plugin-rtl": "^2.1.0"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
-    "@fluentui/scripts-jest": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
     "@types/stylis": "4.0.0",
     "lerna-alias": "^3.0.3-0"
   },

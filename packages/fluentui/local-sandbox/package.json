@@ -10,12 +10,12 @@
     "serve": "node ./server.js"
   },
   "dependencies": {
-    "@fluentui/react-northstar": "*"
+    "@fluentui/react-northstar": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "@fluentui/scripts-babel": "*"
+    "@fluentui/scripts-babel": "workspace:*"
   }
 }

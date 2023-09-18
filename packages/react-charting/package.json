@@ -27,18 +27,18 @@
     "update-snapshots": "just-scripts jest -u"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react": "workspace:*",
     "@types/react-addons-test-utils": "0.14.18",
-    "@fluentui/jest-serializer-merge-styles": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*",
+    "@fluentui/jest-serializer-merge-styles": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*",
     "jest-canvas-mock": "2.4.0"
   },
   "dependencies": {
-    "@fluentui/react-focus": "^8.8.31",
-    "@fluentui/theme-samples": "^8.7.111",
+    "@fluentui/react-focus": "workspace:*",
+    "@fluentui/theme-samples": "workspace:*",
     "@microsoft/load-themed-styles": "^1.10.26",
     "@types/d3-array": "1.2.1",
     "@types/d3-axis": "1.0.10",
@@ -50,7 +50,7 @@
     "@types/d3-shape": "3.1.1",
     "@types/d3-time-format": "^2.1.0",
     "@types/d3-time": "^1.1.0",
-    "@fluentui/set-version": "^8.2.11",
+    "@fluentui/set-version": "workspace:*",
     "d3-array": "1.2.1",
     "d3-axis": "1.0.8",
     "d3-format": "^1.4.4",
@@ -64,7 +64,7 @@
     "tslib": "^2.1.0"
   },
   "peerDependencies": {
-    "@fluentui/react": "^8.111.2",
+    "@fluentui/react": "workspace:*",
     "@types/react": ">=16.8.0 <19.0.0",
     "@types/react-dom": ">=16.8.0 <19.0.0",
     "react": ">=16.8.0 <19.0.0",

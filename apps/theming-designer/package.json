@@ -14,18 +14,18 @@
     "start": "just-scripts dev"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react": "*",
-    "@fluentui/merge-styles": "*",
-    "@fluentui/react-docsite-components": "*",
-    "@fluentui/foundation-legacy": "*",
-    "@fluentui/scheme-utilities": "*",
-    "@fluentui/set-version": "*",
-    "@fluentui/font-icons-mdl2": "*",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/merge-styles": "workspace:*",
+    "@fluentui/react-docsite-components": "workspace:*",
+    "@fluentui/foundation-legacy": "workspace:*",
+    "@fluentui/scheme-utilities": "workspace:*",
+    "@fluentui/set-version": "workspace:*",
+    "@fluentui/font-icons-mdl2": "workspace:*",
     "@microsoft/load-themed-styles": "^1.10.26",
     "react": "17.0.2",
     "react-dom": "17.0.2",

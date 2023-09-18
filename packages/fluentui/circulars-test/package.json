@@ -4,10 +4,10 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@fluentui/react-northstar": "*"
+    "@fluentui/react-northstar": "workspace:*"
   },
   "devDependencies": {
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/scripts-gulp": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

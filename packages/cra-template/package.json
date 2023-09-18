@@ -18,8 +18,8 @@
     "template.json"
   ],
   "devDependencies": {
-    "@fluentui/react": "*",
-    "@fluentui/scripts-projects-test": "*",
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/react": "workspace:*",
+    "@fluentui/scripts-projects-test": "workspace:*",
+    "@fluentui/scripts-monorepo": "workspace:*"
   }
 }

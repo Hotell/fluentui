@@ -23,19 +23,19 @@
     "just": "just-scripts"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
     "@types/react-syntax-highlighter": "^10.2.1",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react": "^8.111.2",
+    "@fluentui/react": "workspace:*",
     "@microsoft/load-themed-styles": "^1.10.26",
-    "@fluentui/example-data": "^8.4.12",
-    "@fluentui/monaco-editor": "^1.3.11",
-    "@fluentui/react-hooks": "^8.6.29",
-    "@fluentui/react-charting": "^5.17.7",
+    "@fluentui/example-data": "workspace:*",
+    "@fluentui/monaco-editor": "workspace:*",
+    "@fluentui/react-hooks": "workspace:*",
+    "@fluentui/react-charting": "workspace:*",
     "raw-loader": "4.0.2",
     "react-syntax-highlighter": "^10.1.3",
     "tslib": "^2.1.0"

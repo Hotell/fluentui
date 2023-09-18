@@ -8,8 +8,8 @@
     "ability-attributes": "^0.0.8"
   },
   "devDependencies": {
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
     "ability-attributes-generator": "^0.0.8"
   },
   "files": [

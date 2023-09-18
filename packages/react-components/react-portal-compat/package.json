@@ -26,20 +26,20 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-components": "*",
-    "@fluentui/react-shared-contexts": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-cypress": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-components": "workspace:*",
+    "@fluentui/react-shared-contexts": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-cypress": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-portal-compat-context": "^9.0.7",
-    "@fluentui/react-tabster": "^9.12.9",
+    "@fluentui/react-portal-compat-context": "workspace:*",
+    "@fluentui/react-tabster": "workspace:*",
     "@swc/helpers": "^0.5.1"
   },
   "peerDependencies": {
-    "@fluentui/react-components": "^9.31.0",
+    "@fluentui/react-components": "workspace:*",
     "@types/react": ">=16.14.0 <19.0.0",
     "react": ">=16.14.0 <19.0.0"
   },

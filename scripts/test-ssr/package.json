@@ -13,7 +13,7 @@
     "type-check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@fluentui/scripts-puppeteer": "*",
-    "@fluentui/scripts-ts-node": "*"
+    "@fluentui/scripts-puppeteer": "workspace:*",
+    "@fluentui/scripts-ts-node": "workspace:*"
   }
 }

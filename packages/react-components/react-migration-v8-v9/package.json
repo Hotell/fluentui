@@ -24,20 +24,20 @@
     "start": "yarn storybook"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "*",
-    "@fluentui/react-conformance-griffel": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-conformance": "workspace:*",
+    "@fluentui/react-conformance-griffel": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@ctrl/tinycolor": "3.3.4",
-    "@fluentui/fluent2-theme": "^8.107.38",
-    "@fluentui/react": "^8.111.2",
-    "@fluentui/react-components": "^9.31.0",
+    "@fluentui/fluent2-theme": "workspace:*",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/react-components": "workspace:*",
     "@fluentui/react-icons": "^2.0.207",
-    "@fluentui/react-theme": "^9.1.12",
-    "@fluentui/react-utilities": "^9.13.3",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-utilities": "workspace:*",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1"
   },

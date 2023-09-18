@@ -13,13 +13,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@fluentui/react": "*",
+    "@fluentui/react": "workspace:*",
     "@microsoft/load-themed-styles": "^1.10.26",
     "@types/mocha": "7.0.2",
-    "@fluentui/public-docsite-resources": "*",
+    "@fluentui/public-docsite-resources": "workspace:*",
     "mocha": "7.2.0",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*"
   },
   "dependencies": {
     "tslib": "^2.1.0"

@@ -25,13 +25,13 @@
     "generate-api": "just-scripts generate-api"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-theme": "^9.1.12",
-    "@fluentui/react-provider": "^9.8.4",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/react-provider": "workspace:*",
     "@swc/helpers": "^0.5.1"
   },
   "peerDependencies": {

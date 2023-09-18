@@ -9,10 +9,10 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-northstar": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-northstar": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*"
   },
   "files": [
     "dist"
@@ -23,7 +23,7 @@
   "main": "dist/commonjs/index.js",
   "module": "dist/es/index.js",
   "peerDependencies": {
-    "@fluentui/react-northstar": "0.54.0",
+    "@fluentui/react-northstar": "workspace:*",
     "react": "^16.8.0 || ^17",
     "react-dom": "^16.8.0 || ^17"
   },

@@ -11,7 +11,7 @@
     "type-check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@fluentui/scripts-monorepo": "*",
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*",
+    "@fluentui/scripts-utils": "workspace:*"
   }
 }
