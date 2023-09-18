@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/microsoft/fluentui"
   },
+  "packageManager": "yarn@3.6.3",
   "engines": {
     "node": "^16.18.1 || ^18.0.0"
   },
@@ -86,6 +87,7 @@
     "@cypress/react": "5.12.4",
     "@cypress/webpack-dev-server": "1.8.3",
     "@fluentui/react-icons": "^2.0.207",
+    "@fluentui/scripts-bundle-size-auditor": "workspace:*",
     "@griffel/babel-preset": "1.4.20",
     "@griffel/eslint-plugin": "^1.2.0",
     "@griffel/jest-serializer": "1.1.16",

@@ -1,5 +1,8 @@
 # Ignore yarn binary from Languages bar - see https://github.com/github/linguist
 .yarn/releases/*.js linguist-vendored
 
+/.yarn/releases/** binary
+/.yarn/plugins/** binary
+
 # API files should be checked in with Unix-style newlines
 *.api.md text=auto
