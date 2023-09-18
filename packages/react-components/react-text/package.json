@@ -12,18 +12,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "just-scripts build",
-    "bundle-size": "monosize measure",
-    "clean": "just-scripts clean",
-    "code-style": "just-scripts code-style",
-    "just": "just-scripts",
-    "lint": "just-scripts lint",
+    "build": "yarn run -T just-scripts build",
+    "bundle-size": "yarn run -T monosize measure",
+    "clean": "yarn run -T just-scripts clean",
+    "code-style": "yarn run -T just-scripts code-style",
+    "lint": "yarn run -T just-scripts lint",
     "start": "yarn storybook",
-    "test": "jest --passWithNoTests",
-    "storybook": "start-storybook",
-    "type-check": "tsc -b tsconfig.json",
-    "generate-api": "just-scripts generate-api",
-    "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
+    "test": "yarn run -T jest --passWithNoTests",
+    "storybook": "yarn run -T start-storybook",
+    "type-check": "yarn run -T tsc -b tsconfig.json",
+    "generate-api": "yarn run -T just-scripts generate-api",
+    "test-ssr": "yarn run -T test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",
@@ -33,10 +32,10 @@
     "@fluentui/scripts-tasks": "*"
   },
   "dependencies": {
+    "@fluentui/react-jsx-runtime": "^9.0.7",
     "@fluentui/react-shared-contexts": "^9.7.3",
     "@fluentui/react-theme": "^9.1.12",
     "@fluentui/react-utilities": "^9.13.3",
-    "@fluentui/react-jsx-runtime": "^9.0.7",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1"
   },

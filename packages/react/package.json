@@ -39,18 +39,18 @@
     "@fluentui/example-data": "*",
     "@fluentui/jest-serializer-merge-styles": "*",
     "@fluentui/react-conformance": "*",
-    "@fluentui/test-utilities": "*",
-    "@fluentui/webpack-utilities": "*",
-    "office-ui-fabric-core": "^11.0.0",
     "@fluentui/scripts-api-extractor": "*",
     "@fluentui/scripts-jest": "*",
     "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-webpack": "*",
+    "@fluentui/test-utilities": "*",
+    "@fluentui/webpack-utilities": "*",
+    "office-ui-fabric-core": "^11.0.0"
   },
   "dependencies": {
     "@fluentui/date-time-utilities": "^8.5.13",
-    "@fluentui/foundation-legacy": "^8.2.44",
     "@fluentui/font-icons-mdl2": "^8.5.24",
+    "@fluentui/foundation-legacy": "^8.2.44",
     "@fluentui/merge-styles": "^8.5.12",
     "@fluentui/react-focus": "^8.8.31",
     "@fluentui/react-hooks": "^8.6.29",

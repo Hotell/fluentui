@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",
-    "@fluentui/test-utilities": "*",
     "@fluentui/scripts-api-extractor": "*",
     "@fluentui/scripts-jest": "*",
     "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-webpack": "*",
+    "@fluentui/test-utilities": "*"
   },
   "dependencies": {
     "@fluentui/react-window-provider": "^2.2.15",

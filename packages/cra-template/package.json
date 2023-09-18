@@ -19,7 +19,7 @@
   ],
   "devDependencies": {
     "@fluentui/react": "*",
-    "@fluentui/scripts-projects-test": "*",
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/scripts-monorepo": "*",
+    "@fluentui/scripts-projects-test": "*"
   }
 }

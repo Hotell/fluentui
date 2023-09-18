@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",
-    "react-hook-form": "^5.7.2",
     "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-tasks": "*",
+    "react-hook-form": "^5.7.2"
   },
   "dependencies": {
     "@fluentui/react-accordion": "^9.3.11",
@@ -51,8 +51,8 @@
     "@fluentui/react-menu": "^9.12.15",
     "@fluentui/react-overflow": "^9.0.33",
     "@fluentui/react-persona": "^9.2.39",
-    "@fluentui/react-portal": "^9.3.14",
     "@fluentui/react-popover": "^9.8.4",
+    "@fluentui/react-portal": "^9.3.14",
     "@fluentui/react-positioning": "^9.9.11",
     "@fluentui/react-progress": "^9.1.36",
     "@fluentui/react-provider": "^9.8.4",
@@ -67,15 +67,15 @@
     "@fluentui/react-table": "^9.8.5",
     "@fluentui/react-tabs": "^9.3.40",
     "@fluentui/react-tabster": "^9.12.9",
+    "@fluentui/react-text": "^9.3.31",
     "@fluentui/react-textarea": "^9.3.36",
     "@fluentui/react-theme": "^9.1.12",
     "@fluentui/react-toast": "^9.3.0",
     "@fluentui/react-toolbar": "^9.1.39",
     "@fluentui/react-tooltip": "^9.3.5",
-    "@fluentui/react-utilities": "^9.13.3",
-    "@fluentui/react-text": "^9.3.31",
-    "@fluentui/react-virtualizer": "9.0.0-alpha.41",
     "@fluentui/react-tree": "^9.1.0",
+    "@fluentui/react-utilities": "^9.13.3",
+    "@fluentui/react-virtualizer": "9.0.0-alpha.41",
     "@griffel/react": "^1.5.14",
     "@swc/helpers": "^0.5.1"
   },

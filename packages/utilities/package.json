@@ -26,10 +26,10 @@
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",
     "@fluentui/jest-serializer-merge-styles": "*",
-    "@fluentui/test-utilities": "*",
     "@fluentui/scripts-api-extractor": "*",
     "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-tasks": "*",
+    "@fluentui/test-utilities": "*"
   },
   "dependencies": {
     "@fluentui/dom-utilities": "^2.2.11",

@@ -11,9 +11,9 @@
     "perf:test": "just-scripts perf-test"
   },
   "dependencies": {
+    "@fluentui/digest": "*",
     "@fluentui/react-northstar": "*",
     "@fluentui/react-northstar-prototypes": "*",
-    "@fluentui/digest": "*",
     "flamegrill": "0.2.0"
   },
   "devDependencies": {

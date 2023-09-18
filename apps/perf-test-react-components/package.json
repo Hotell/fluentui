@@ -14,11 +14,10 @@
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-storybook": "*"
+    "@fluentui/scripts-storybook": "*",
+    "@fluentui/scripts-tasks": "*"
   },
   "dependencies": {
-    "@fluentui/scripts-perf-test-flamegrill": "*",
     "@fluentui/react-avatar": "*",
     "@fluentui/react-button": "*",
     "@fluentui/react-field": "*",
@@ -27,6 +26,7 @@
     "@fluentui/react-provider": "*",
     "@fluentui/react-spinbutton": "*",
     "@fluentui/react-theme": "*",
+    "@fluentui/scripts-perf-test-flamegrill": "*",
     "@griffel/core": "^1.14.1",
     "@microsoft/load-themed-styles": "^1.10.26",
     "react": "17.0.2",
