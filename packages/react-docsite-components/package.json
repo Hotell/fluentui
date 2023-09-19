@@ -20,11 +20,11 @@
     "test": "just-scripts test"
   },
   "devDependencies": {
-    "@fluentui/common-styles": "*",
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*",
+    "@fluentui/common-styles": "workspace:*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*",
     "@types/color-check": "0.0.0",
     "@types/react-custom-scrollbars": "^4.0.5"
   },

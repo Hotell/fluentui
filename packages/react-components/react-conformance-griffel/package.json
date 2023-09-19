@@ -20,10 +20,10 @@
     "generate-api": "just-scripts generate-api"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-conformance": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "peerDependencies": {
     "@fluentui/react-conformance": "^0.18.0",

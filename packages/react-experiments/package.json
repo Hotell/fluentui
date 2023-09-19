@@ -27,12 +27,12 @@
     "update-snapshots": "just-scripts jest -u"
   },
   "devDependencies": {
-    "@fluentui/common-styles": "*",
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/jest-serializer-merge-styles": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*",
+    "@fluentui/common-styles": "workspace:*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/jest-serializer-merge-styles": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*",
     "@types/deep-assign": "^0.1.1",
     "@types/prop-types": "15.7.1",
     "@types/react-addons-test-utils": "0.14.18",

@@ -24,10 +24,10 @@
     "update-snapshots": "just-scripts jest -u"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@fluentui/merge-styles": "^8.5.12",

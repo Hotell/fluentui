@@ -23,10 +23,10 @@
     "just": "just-scripts"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*",
     "@types/react-syntax-highlighter": "^10.2.1"
   },
   "dependencies": {

@@ -27,12 +27,12 @@
     "update-snapshots": "just-scripts jest -u"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/jest-serializer-merge-styles": "*",
-    "@fluentui/react": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/jest-serializer-merge-styles": "workspace:*",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*",
     "@types/react-addons-test-utils": "0.14.18",
     "jest-canvas-mock": "2.4.0"
   },

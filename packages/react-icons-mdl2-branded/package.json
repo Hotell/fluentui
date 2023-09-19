@@ -21,8 +21,8 @@
     "lint": "just-scripts lint"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@fluentui/react-icons-mdl2": "^1.3.49",

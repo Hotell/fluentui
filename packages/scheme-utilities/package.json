@@ -23,9 +23,9 @@
     "start-test": "just-scripts jest-watch"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*"
   },
   "dependencies": {
     "@fluentui/set-version": "^8.2.11",

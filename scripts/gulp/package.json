@@ -11,11 +11,11 @@
     "type-check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-monorepo": "*",
-    "@fluentui/scripts-prettier": "*",
-    "@fluentui/scripts-projects-test": "*",
-    "@fluentui/scripts-puppeteer": "*",
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-monorepo": "workspace:*",
+    "@fluentui/scripts-prettier": "workspace:*",
+    "@fluentui/scripts-projects-test": "workspace:*",
+    "@fluentui/scripts-puppeteer": "workspace:*",
+    "@fluentui/scripts-utils": "workspace:*"
   }
 }

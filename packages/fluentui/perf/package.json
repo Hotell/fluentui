@@ -5,16 +5,16 @@
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
-    "@fluentui/docs": "*",
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-northstar": "*",
+    "@fluentui/docs": "workspace:*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-northstar": "workspace:*",
     "lodash": "^4.17.15",
     "minimatch": "^3.0.4"
   },
   "devDependencies": {
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
+    "@fluentui/scripts-monorepo": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

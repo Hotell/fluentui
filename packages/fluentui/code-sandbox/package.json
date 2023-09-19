@@ -9,10 +9,10 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-northstar": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-northstar": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*"
   },
   "files": [
     "dist"

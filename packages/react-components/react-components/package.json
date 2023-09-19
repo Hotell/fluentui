@@ -25,9 +25,9 @@
     "generate-api": "just-scripts generate-api"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
     "react-hook-form": "^5.7.2"
   },
   "dependencies": {

@@ -11,7 +11,7 @@
     "type-check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@fluentui/babel-preset-storybook-full-source": "*",
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/babel-preset-storybook-full-source": "workspace:*",
+    "@fluentui/scripts-monorepo": "workspace:*"
   }
 }

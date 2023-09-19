@@ -18,8 +18,8 @@
     "lint": "just-scripts lint"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@fluentui/azure-themes": "^8.6.34",

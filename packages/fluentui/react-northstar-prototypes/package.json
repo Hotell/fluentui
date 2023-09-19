@@ -30,9 +30,9 @@
     "react-window": "^1.8.6"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
     "@types/classnames": "^2.2.9",
     "@types/faker": "^4.1.3",
     "@types/react-custom-scrollbars": "^4.0.5",

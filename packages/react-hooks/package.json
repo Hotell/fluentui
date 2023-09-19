@@ -24,12 +24,12 @@
     "just": "just-scripts"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-jest": "*",
-    "@fluentui/scripts-tasks": "*",
-    "@fluentui/scripts-webpack": "*",
-    "@fluentui/test-utilities": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*",
+    "@fluentui/scripts-webpack": "workspace:*",
+    "@fluentui/test-utilities": "workspace:*"
   },
   "dependencies": {
     "@fluentui/react-window-provider": "^2.2.15",

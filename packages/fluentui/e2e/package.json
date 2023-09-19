@@ -4,20 +4,20 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@fluentui/accessibility": "*",
-    "@fluentui/react": "*",
-    "@fluentui/react-icons-northstar": "*",
-    "@fluentui/react-northstar": "*",
-    "@fluentui/react-northstar-prototypes": "*",
+    "@fluentui/accessibility": "workspace:*",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/react-icons-northstar": "workspace:*",
+    "@fluentui/react-northstar": "workspace:*",
+    "@fluentui/react-northstar-prototypes": "workspace:*",
     "@types/react-router-dom": "^5.1.5",
     "lerna-alias": "^3.0.3-0",
     "lodash": "^4.17.15",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

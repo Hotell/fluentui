@@ -11,6 +11,6 @@
     "type-check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-utils": "workspace:*"
   }
 }

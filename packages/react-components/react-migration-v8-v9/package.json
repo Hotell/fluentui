@@ -24,11 +24,11 @@
     "start": "yarn storybook"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "*",
-    "@fluentui/react-conformance-griffel": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-conformance": "workspace:*",
+    "@fluentui/react-conformance-griffel": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@ctrl/tinycolor": "3.3.4",

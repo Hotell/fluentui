@@ -16,9 +16,9 @@
     "react-element-to-jsx-string": "^14.0.2"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*"
   },
   "files": [
     "dist"

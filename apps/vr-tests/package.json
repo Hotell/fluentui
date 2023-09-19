@@ -15,19 +15,19 @@
     "vr:test": "storywright  --browsers chromium --url dist/storybook --destpath dist/screenshots --waitTimeScreenshot 500 --concurrency 4 --headless true"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-storybook": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-storybook": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/example-data": "*",
-    "@fluentui/font-icons-mdl2": "*",
-    "@fluentui/react": "*",
-    "@fluentui/react-charting": "*",
-    "@fluentui/react-experiments": "*",
-    "@fluentui/react-hooks": "*",
-    "@fluentui/react-icons-mdl2": "*",
-    "@fluentui/storybook": "*",
+    "@fluentui/example-data": "workspace:*",
+    "@fluentui/font-icons-mdl2": "workspace:*",
+    "@fluentui/react": "workspace:*",
+    "@fluentui/react-charting": "workspace:*",
+    "@fluentui/react-experiments": "workspace:*",
+    "@fluentui/react-hooks": "workspace:*",
+    "@fluentui/react-icons-mdl2": "workspace:*",
+    "@fluentui/storybook": "workspace:*",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "tslib": "^2.1.0"

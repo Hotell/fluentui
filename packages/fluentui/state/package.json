@@ -8,9 +8,9 @@
     "@babel/runtime": "^7.10.4"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
     "lerna-alias": "^3.0.3-0"
   },
   "files": [

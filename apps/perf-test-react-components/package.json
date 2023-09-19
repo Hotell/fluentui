@@ -13,20 +13,20 @@
     "test:perf": "just-scripts perf-test"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-storybook": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-storybook": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
-    "@fluentui/react-avatar": "*",
-    "@fluentui/react-button": "*",
-    "@fluentui/react-field": "*",
+    "@fluentui/react-avatar": "workspace:*",
+    "@fluentui/react-button": "workspace:*",
+    "@fluentui/react-field": "workspace:*",
     "@fluentui/react-infobutton": ">=9.0.0-alpha",
-    "@fluentui/react-persona": "*",
-    "@fluentui/react-provider": "*",
-    "@fluentui/react-spinbutton": "*",
-    "@fluentui/react-theme": "*",
-    "@fluentui/scripts-perf-test-flamegrill": "*",
+    "@fluentui/react-persona": "workspace:*",
+    "@fluentui/react-provider": "workspace:*",
+    "@fluentui/react-spinbutton": "workspace:*",
+    "@fluentui/react-theme": "workspace:*",
+    "@fluentui/scripts-perf-test-flamegrill": "workspace:*",
     "@griffel/core": "^1.14.1",
     "@microsoft/load-themed-styles": "^1.10.26",
     "react": "17.0.2",

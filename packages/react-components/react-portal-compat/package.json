@@ -26,12 +26,12 @@
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/react-components": "*",
-    "@fluentui/react-shared-contexts": "*",
-    "@fluentui/scripts-api-extractor": "*",
-    "@fluentui/scripts-cypress": "*",
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/react-components": "workspace:*",
+    "@fluentui/react-shared-contexts": "workspace:*",
+    "@fluentui/scripts-api-extractor": "workspace:*",
+    "@fluentui/scripts-cypress": "workspace:*",
+    "@fluentui/scripts-tasks": "workspace:*"
   },
   "dependencies": {
     "@fluentui/react-portal-compat-context": "^9.0.7",

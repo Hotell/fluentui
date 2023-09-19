@@ -1478,7 +1478,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-pure-annotations@npm:^7.18.6":
+"@babel/plugin-transform-react-pure-annotations@npm:7.18.6, @babel/plugin-transform-react-pure-annotations@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/plugin-transform-react-pure-annotations@npm:7.18.6"
   dependencies:
@@ -2528,12 +2528,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fluentui/a11y-testing@*, @fluentui/a11y-testing@workspace:packages/a11y-testing":
+"@fluentui/a11y-testing@workspace:*, @fluentui/a11y-testing@workspace:packages/a11y-testing":
   version: 0.0.0-use.local
   resolution: "@fluentui/a11y-testing@workspace:packages/a11y-testing"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     tslib: ^2.1.0
   peerDependencies:
     "@testing-library/react": ^12.0.0
@@ -2543,51 +2543,51 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/ability-attributes@*, @fluentui/ability-attributes@workspace:packages/fluentui/ability-attributes":
+"@fluentui/ability-attributes@workspace:*, @fluentui/ability-attributes@workspace:packages/fluentui/ability-attributes":
   version: 0.0.0-use.local
   resolution: "@fluentui/ability-attributes@workspace:packages/fluentui/ability-attributes"
   dependencies:
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     ability-attributes: ^0.0.8
     ability-attributes-generator: ^0.0.8
   languageName: unknown
   linkType: soft
 
-"@fluentui/accessibility@*, @fluentui/accessibility@^0.66.4, @fluentui/accessibility@workspace:packages/fluentui/accessibility":
+"@fluentui/accessibility@^0.66.4, @fluentui/accessibility@workspace:*, @fluentui/accessibility@workspace:packages/fluentui/accessibility":
   version: 0.0.0-use.local
   resolution: "@fluentui/accessibility@workspace:packages/fluentui/accessibility"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     lerna-alias: ^3.0.3-0
     lodash: ^4.17.15
   languageName: unknown
   linkType: soft
 
-"@fluentui/api-docs@*, @fluentui/api-docs@workspace:packages/api-docs":
+"@fluentui/api-docs@workspace:*, @fluentui/api-docs@workspace:packages/api-docs":
   version: 0.0.0-use.local
   resolution: "@fluentui/api-docs@workspace:packages/api-docs"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@microsoft/api-extractor-model": 7.24.2
     "@microsoft/tsdoc": 0.14.1
     fs-extra: ^8.1.0
   languageName: unknown
   linkType: soft
 
-"@fluentui/azure-themes@*, @fluentui/azure-themes@^8.6.34, @fluentui/azure-themes@workspace:packages/azure-themes":
+"@fluentui/azure-themes@^8.6.34, @fluentui/azure-themes@workspace:*, @fluentui/azure-themes@workspace:packages/azure-themes":
   version: 0.0.0-use.local
   resolution: "@fluentui/azure-themes@workspace:packages/azure-themes"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react": ^8.111.2
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   languageName: unknown
@@ -2603,10 +2603,10 @@ __metadata:
     "@babel/template": ^7.12.13
     "@babel/traverse": ^7.12.13
     "@emotion/hash": ^0.8.0
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
     find-up: ^5.0.0
   peerDependencies:
@@ -2614,14 +2614,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/babel-preset-storybook-full-source@*, @fluentui/babel-preset-storybook-full-source@workspace:packages/react-components/babel-preset-storybook-full-source":
+"@fluentui/babel-preset-storybook-full-source@workspace:*, @fluentui/babel-preset-storybook-full-source@workspace:packages/react-components/babel-preset-storybook-full-source":
   version: 0.0.0-use.local
   resolution: "@fluentui/babel-preset-storybook-full-source@workspace:packages/react-components/babel-preset-storybook-full-source"
   dependencies:
     "@babel/core": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
     pkg-up: ^3.1.0
     prettier: 2.8.8
@@ -2632,20 +2632,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/circulars-test@workspace:packages/fluentui/circulars-test"
   dependencies:
-    "@fluentui/react-northstar": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/code-sandbox@*, @fluentui/code-sandbox@^0.66.4, @fluentui/code-sandbox@workspace:packages/fluentui/code-sandbox":
+"@fluentui/code-sandbox@^0.66.4, @fluentui/code-sandbox@workspace:*, @fluentui/code-sandbox@workspace:packages/fluentui/code-sandbox":
   version: 0.0.0-use.local
   resolution: "@fluentui/code-sandbox@workspace:packages/fluentui/code-sandbox"
   dependencies:
     "@fluentui/docs-components": ^0.66.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-northstar": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     lodash: ^4.17.15
   peerDependencies:
     "@fluentui/react-northstar": 0.54.0
@@ -2658,9 +2658,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/codemods@workspace:packages/codemods"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     glob: ^7.1.2
     react: 17.0.2
     ts-morph: ^10.0.1
@@ -2671,12 +2671,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/common-styles@*, @fluentui/common-styles@workspace:packages/common-styles":
+"@fluentui/common-styles@workspace:*, @fluentui/common-styles@workspace:packages/common-styles":
   version: 0.0.0-use.local
   resolution: "@fluentui/common-styles@workspace:packages/common-styles"
   dependencies:
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/style-utilities": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/style-utilities": "workspace:*"
     office-ui-fabric-core: ^11.0.0
   languageName: unknown
   linkType: soft
@@ -2685,9 +2685,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/cra-template@workspace:packages/cra-template"
   dependencies:
-    "@fluentui/react": "*"
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-projects-test": "*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-projects-test": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2695,16 +2695,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/date-time-utilities@workspace:packages/date-time-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
 
-"@fluentui/digest@*, @fluentui/digest@workspace:packages/fluentui/digest":
+"@fluentui/digest@workspace:*, @fluentui/digest@workspace:packages/fluentui/digest":
   version: 0.0.0-use.local
   resolution: "@fluentui/digest@workspace:packages/fluentui/digest"
   dependencies:
@@ -2712,14 +2712,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/docs-components@*, @fluentui/docs-components@^0.66.4, @fluentui/docs-components@workspace:packages/fluentui/docs-components":
+"@fluentui/docs-components@^0.66.4, @fluentui/docs-components@workspace:*, @fluentui/docs-components@workspace:packages/fluentui/docs-components":
   version: 0.0.0-use.local
   resolution: "@fluentui/docs-components@workspace:packages/fluentui/docs-components"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     copy-to-clipboard: ^3.2.0
     lodash: ^4.17.15
     object.values: ^1.1.0
@@ -2735,31 +2735,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/docs@*, @fluentui/docs@workspace:packages/fluentui/docs":
+"@fluentui/docs@workspace:*, @fluentui/docs@workspace:packages/fluentui/docs":
   version: 0.0.0-use.local
   resolution: "@fluentui/docs@workspace:packages/fluentui/docs"
   dependencies:
     "@charlietango/use-script": ^2.1.1
-    "@fluentui/ability-attributes": "*"
-    "@fluentui/accessibility": "*"
-    "@fluentui/code-sandbox": "*"
-    "@fluentui/docs-components": "*"
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-bindings": "*"
-    "@fluentui/react-builder": "*"
-    "@fluentui/react-component-event-listener": "*"
-    "@fluentui/react-component-ref": "*"
-    "@fluentui/react-icons-northstar": "*"
-    "@fluentui/react-northstar": "*"
-    "@fluentui/react-northstar-emotion-renderer": "*"
-    "@fluentui/react-northstar-fela-renderer": "*"
-    "@fluentui/react-northstar-prototypes": "*"
-    "@fluentui/react-northstar-styles-renderer": "*"
-    "@fluentui/react-telemetry": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/styles": "*"
+    "@fluentui/ability-attributes": "workspace:*"
+    "@fluentui/accessibility": "workspace:*"
+    "@fluentui/code-sandbox": "workspace:*"
+    "@fluentui/docs-components": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-bindings": "workspace:*"
+    "@fluentui/react-builder": "workspace:*"
+    "@fluentui/react-component-event-listener": "workspace:*"
+    "@fluentui/react-component-ref": "workspace:*"
+    "@fluentui/react-icons-northstar": "workspace:*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/react-northstar-emotion-renderer": "workspace:*"
+    "@fluentui/react-northstar-fela-renderer": "workspace:*"
+    "@fluentui/react-northstar-prototypes": "workspace:*"
+    "@fluentui/react-northstar-styles-renderer": "workspace:*"
+    "@fluentui/react-telemetry": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/styles": "workspace:*"
     "@hot-loader/react-dom": 17.0.2
     "@mdx-js/react": ^1.5.5
     "@types/classnames": ^2.2.9
@@ -2801,10 +2801,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/dom-utilities@workspace:packages/dom-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   languageName: unknown
@@ -2824,14 +2824,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/e2e@workspace:packages/fluentui/e2e"
   dependencies:
-    "@fluentui/accessibility": "*"
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-icons-northstar": "*"
-    "@fluentui/react-northstar": "*"
-    "@fluentui/react-northstar-prototypes": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/accessibility": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-icons-northstar": "workspace:*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/react-northstar-prototypes": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     "@types/react-router-dom": ^5.1.5
     lerna-alias: ^3.0.3-0
     lodash: ^4.17.15
@@ -2839,7 +2839,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/eslint-plugin@*, @fluentui/eslint-plugin@workspace:packages/eslint-plugin":
+"@fluentui/eslint-plugin@workspace:*, @fluentui/eslint-plugin@workspace:packages/eslint-plugin":
   version: 0.0.0-use.local
   resolution: "@fluentui/eslint-plugin@workspace:packages/eslint-plugin"
   dependencies:
@@ -2867,26 +2867,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/example-data@*, @fluentui/example-data@^8.4.12, @fluentui/example-data@workspace:packages/example-data":
+"@fluentui/example-data@^8.4.12, @fluentui/example-data@workspace:*, @fluentui/example-data@workspace:packages/example-data":
   version: 0.0.0-use.local
   resolution: "@fluentui/example-data@workspace:packages/example-data"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
 
-"@fluentui/fluent2-theme@*, @fluentui/fluent2-theme@^8.107.38, @fluentui/fluent2-theme@workspace:packages/fluent2-theme":
+"@fluentui/fluent2-theme@^8.107.38, @fluentui/fluent2-theme@workspace:*, @fluentui/fluent2-theme@workspace:packages/fluent2-theme":
   version: 0.0.0-use.local
   resolution: "@fluentui/fluent2-theme@workspace:packages/fluent2-theme"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react": ^8.111.2
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   languageName: unknown
@@ -2907,6 +2907,7 @@ __metadata:
     "@babel/plugin-proposal-optional-chaining": 7.21.0
     "@babel/plugin-syntax-dynamic-import": 7.8.3
     "@babel/plugin-syntax-object-rest-spread": 7.8.3
+    "@babel/plugin-transform-react-pure-annotations": 7.18.6
     "@babel/plugin-transform-runtime": 7.21.4
     "@babel/preset-env": 7.21.5
     "@babel/preset-react": 7.18.6
@@ -2919,8 +2920,13 @@ __metadata:
     "@ctrl/tinycolor": 3.3.4
     "@cypress/react": 5.12.4
     "@cypress/webpack-dev-server": 1.8.3
+    "@fluentui/babel-preset-storybook-full-source": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
+    "@fluentui/scripts-babel": "workspace:*"
     "@fluentui/scripts-bundle-size-auditor": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-prettier": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
     "@griffel/babel-preset": 1.4.20
     "@griffel/eslint-plugin": ^1.2.0
     "@griffel/jest-serializer": 1.1.16
@@ -2929,6 +2935,8 @@ __metadata:
     "@griffel/webpack-extraction-plugin": 0.3.18
     "@griffel/webpack-loader": 2.1.20
     "@jest/reporters": 29.5.0
+    "@lerna/package-graph": "*"
+    "@lerna/project": "*"
     "@mdx-js/loader": 1.6.22
     "@microsoft/api-extractor": 7.31.2
     "@microsoft/api-extractor-model": 7.24.2
@@ -3199,13 +3207,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/font-icons-mdl2@*, @fluentui/font-icons-mdl2@^8.5.24, @fluentui/font-icons-mdl2@workspace:packages/font-icons-mdl2":
+"@fluentui/font-icons-mdl2@^8.5.24, @fluentui/font-icons-mdl2@workspace:*, @fluentui/font-icons-mdl2@workspace:packages/font-icons-mdl2":
   version: 0.0.0-use.local
   resolution: "@fluentui/font-icons-mdl2@workspace:packages/font-icons-mdl2"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
     "@fluentui/utilities": ^8.13.18
@@ -3213,17 +3221,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/foundation-legacy@*, @fluentui/foundation-legacy@^8.2.44, @fluentui/foundation-legacy@workspace:packages/foundation-legacy":
+"@fluentui/foundation-legacy@^8.2.44, @fluentui/foundation-legacy@workspace:*, @fluentui/foundation-legacy@workspace:packages/foundation-legacy":
   version: 0.0.0-use.local
   resolution: "@fluentui/foundation-legacy@workspace:packages/foundation-legacy"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/jest-serializer-merge-styles": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
     "@fluentui/utilities": ^8.13.18
@@ -3239,12 +3247,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/global-context@workspace:packages/react-components/global-context"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -3255,14 +3263,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/jest-serializer-merge-styles@*, @fluentui/jest-serializer-merge-styles@workspace:packages/jest-serializer-merge-styles":
+"@fluentui/jest-serializer-merge-styles@workspace:*, @fluentui/jest-serializer-merge-styles@workspace:packages/jest-serializer-merge-styles":
   version: 0.0.0-use.local
   resolution: "@fluentui/jest-serializer-merge-styles@workspace:packages/jest-serializer-merge-styles"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -3270,10 +3278,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/keyboard-key@workspace:packages/keyboard-key"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -3282,9 +3290,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/keyboard-keys@workspace:packages/react-components/keyboard-keys"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   languageName: unknown
   linkType: soft
@@ -3293,20 +3301,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/local-sandbox@workspace:packages/fluentui/local-sandbox"
   dependencies:
-    "@fluentui/react-northstar": "*"
-    "@fluentui/scripts-babel": "*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/merge-styles@*, @fluentui/merge-styles@^8.5.12, @fluentui/merge-styles@workspace:packages/merge-styles":
+"@fluentui/merge-styles@^8.5.12, @fluentui/merge-styles@workspace:*, @fluentui/merge-styles@workspace:packages/merge-styles":
   version: 0.0.0-use.local
   resolution: "@fluentui/merge-styles@workspace:packages/merge-styles"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   languageName: unknown
@@ -3316,8 +3324,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/monaco-editor@workspace:packages/monaco-editor"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     monaco-editor: 0.33.0
     tslib: ^2.1.0
@@ -3334,10 +3342,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/perf-test-northstar@workspace:packages/fluentui/perf-test-northstar"
   dependencies:
-    "@fluentui/digest": "*"
-    "@fluentui/react-northstar": "*"
-    "@fluentui/react-northstar-prototypes": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/digest": "workspace:*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/react-northstar-prototypes": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     flamegrill: 0.2.0
   languageName: unknown
   linkType: soft
@@ -3346,18 +3354,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/perf-test-react-components@workspace:apps/perf-test-react-components"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-avatar": "*"
-    "@fluentui/react-button": "*"
-    "@fluentui/react-field": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-avatar": "workspace:*"
+    "@fluentui/react-button": "workspace:*"
+    "@fluentui/react-field": "workspace:*"
     "@fluentui/react-infobutton": ">=9.0.0-alpha"
-    "@fluentui/react-persona": "*"
-    "@fluentui/react-provider": "*"
-    "@fluentui/react-spinbutton": "*"
-    "@fluentui/react-theme": "*"
-    "@fluentui/scripts-perf-test-flamegrill": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/react-persona": "workspace:*"
+    "@fluentui/react-provider": "workspace:*"
+    "@fluentui/react-spinbutton": "workspace:*"
+    "@fluentui/react-theme": "workspace:*"
+    "@fluentui/scripts-perf-test-flamegrill": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/core": ^1.14.1
     "@microsoft/load-themed-styles": ^1.10.26
     react: 17.0.2
@@ -3370,12 +3378,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/perf-test@workspace:apps/perf-test"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/example-data": "*"
-    "@fluentui/react": "*"
-    "@fluentui/scripts-perf-test-flamegrill": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/example-data": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/scripts-perf-test-flamegrill": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     react: 17.0.2
     react-dom: 17.0.2
@@ -3388,12 +3396,12 @@ __metadata:
   resolution: "@fluentui/perf@workspace:packages/fluentui/perf"
   dependencies:
     "@babel/polyfill": ^7.10.4
-    "@fluentui/docs": "*"
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-northstar": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/docs": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
     lodash: ^4.17.15
     minimatch: ^3.0.4
   languageName: unknown
@@ -3403,9 +3411,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/pr-deploy-site@workspace:apps/pr-deploy-site"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -3413,9 +3421,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/priority-overflow@workspace:packages/react-components/priority-overflow"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   languageName: unknown
   linkType: soft
@@ -3424,30 +3432,30 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/projects-test@workspace:packages/fluentui/projects-test"
   dependencies:
-    "@fluentui/react-northstar": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-projects-test": "*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-projects-test": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/public-docsite-resources@*, @fluentui/public-docsite-resources@workspace:apps/public-docsite-resources":
+"@fluentui/public-docsite-resources@workspace:*, @fluentui/public-docsite-resources@workspace:apps/public-docsite-resources":
   version: 0.0.0-use.local
   resolution: "@fluentui/public-docsite-resources@workspace:apps/public-docsite-resources"
   dependencies:
-    "@fluentui/api-docs": "*"
-    "@fluentui/azure-themes": "*"
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/font-icons-mdl2": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-docsite-components": "*"
-    "@fluentui/react-examples": "*"
-    "@fluentui/react-monaco-editor": "*"
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
-    "@fluentui/set-version": "*"
-    "@fluentui/theme-samples": "*"
+    "@fluentui/api-docs": "workspace:*"
+    "@fluentui/azure-themes": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/font-icons-mdl2": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-docsite-components": "workspace:*"
+    "@fluentui/react-examples": "workspace:*"
+    "@fluentui/react-monaco-editor": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
+    "@fluentui/set-version": "workspace:*"
+    "@fluentui/theme-samples": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     office-ui-fabric-core: ^11.0.0
     react: 17.0.2
@@ -3456,12 +3464,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/public-docsite-setup@*, @fluentui/public-docsite-setup@^0.3.22, @fluentui/public-docsite-setup@workspace:packages/public-docsite-setup":
+"@fluentui/public-docsite-setup@^0.3.22, @fluentui/public-docsite-setup@workspace:*, @fluentui/public-docsite-setup@workspace:packages/public-docsite-setup":
   version: 0.0.0-use.local
   resolution: "@fluentui/public-docsite-setup@workspace:packages/public-docsite-setup"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   bin:
     create-site-manifests: ./bin/create-site-manifests.js
   languageName: unknown
@@ -3471,23 +3479,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/public-docsite-v9@workspace:apps/public-docsite-v9"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-breadcrumb-preview": "*"
-    "@fluentui/react-components": "*"
-    "@fluentui/react-datepicker-compat": "*"
-    "@fluentui/react-icons-northstar": "*"
-    "@fluentui/react-migration-v0-v9": "*"
-    "@fluentui/react-migration-v8-v9": "*"
-    "@fluentui/react-motion-preview": "*"
-    "@fluentui/react-northstar": "*"
-    "@fluentui/react-search-preview": "*"
-    "@fluentui/react-storybook-addon": "*"
-    "@fluentui/react-storybook-addon-codesandbox": "*"
-    "@fluentui/react-tags-preview": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/theme-designer": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-breadcrumb-preview": "workspace:*"
+    "@fluentui/react-components": "workspace:*"
+    "@fluentui/react-datepicker-compat": "workspace:*"
+    "@fluentui/react-icons-northstar": "workspace:*"
+    "@fluentui/react-migration-v0-v9": "workspace:*"
+    "@fluentui/react-migration-v8-v9": "workspace:*"
+    "@fluentui/react-motion-preview": "workspace:*"
+    "@fluentui/react-northstar": "workspace:*"
+    "@fluentui/react-search-preview": "workspace:*"
+    "@fluentui/react-storybook-addon": "workspace:*"
+    "@fluentui/react-storybook-addon-codesandbox": "workspace:*"
+    "@fluentui/react-tags-preview": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/theme-designer": "workspace:*"
     "@griffel/react": ^1.5.14
     "@microsoft/applicationinsights-web": ^3
     react: 17.0.2
@@ -3501,26 +3509,26 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/public-docsite@workspace:apps/public-docsite"
   dependencies:
-    "@fluentui/common-styles": "*"
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/fluent2-theme": "*"
-    "@fluentui/font-icons-mdl2": "*"
-    "@fluentui/public-docsite-resources": "*"
-    "@fluentui/public-docsite-setup": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-docsite-components": "*"
-    "@fluentui/react-examples": "*"
-    "@fluentui/react-experiments": "*"
-    "@fluentui/react-file-type-icons": "*"
-    "@fluentui/react-icons-mdl2": "*"
-    "@fluentui/react-icons-mdl2-branded": "*"
-    "@fluentui/react-monaco-editor": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
-    "@fluentui/set-version": "*"
-    "@fluentui/theme": "*"
-    "@fluentui/theme-samples": "*"
-    "@fluentui/utilities": "*"
+    "@fluentui/common-styles": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/fluent2-theme": "workspace:*"
+    "@fluentui/font-icons-mdl2": "workspace:*"
+    "@fluentui/public-docsite-resources": "workspace:*"
+    "@fluentui/public-docsite-setup": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-docsite-components": "workspace:*"
+    "@fluentui/react-examples": "workspace:*"
+    "@fluentui/react-experiments": "workspace:*"
+    "@fluentui/react-file-type-icons": "workspace:*"
+    "@fluentui/react-icons-mdl2": "workspace:*"
+    "@fluentui/react-icons-mdl2-branded": "workspace:*"
+    "@fluentui/react-monaco-editor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
+    "@fluentui/set-version": "workspace:*"
+    "@fluentui/theme": "workspace:*"
+    "@fluentui/theme-samples": "workspace:*"
+    "@fluentui/utilities": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     office-ui-fabric-core: ^11.0.0
     react: 17.0.2
@@ -3535,13 +3543,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-18-tests-v8@workspace:apps/react-18-tests-v8"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-hooks": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-hooks": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@types/react": 18.0.14
     "@types/react-dom": 18.0.6
     react: 18.2.0
@@ -3554,10 +3562,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-18-tests-v9@workspace:apps/react-18-tests-v9"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-components": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-components": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@types/react": 18.0.14
     "@types/react-dom": 18.0.6
     react: 18.2.0
@@ -3566,14 +3574,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-accordion@*, @fluentui/react-accordion@^9.3.11, @fluentui/react-accordion@workspace:packages/react-components/react-accordion":
+"@fluentui/react-accordion@^9.3.11, @fluentui/react-accordion@workspace:*, @fluentui/react-accordion@workspace:packages/react-components/react-accordion":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-accordion@workspace:packages/react-components/react-accordion"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-aria": ^9.3.36
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -3581,8 +3589,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3598,18 +3606,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-alert@workspace:packages/react-components/react-alert"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-avatar": ^9.5.29
     "@fluentui/react-button": ^9.3.38
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3624,12 +3632,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-aria@workspace:packages/react-components/react-aria"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-conformance": "*"
+    "@fluentui/react-conformance": "workspace:*"
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -3639,14 +3647,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-avatar@*, @fluentui/react-avatar@^9.5.29, @fluentui/react-avatar@workspace:packages/react-components/react-avatar":
+"@fluentui/react-avatar@^9.5.29, @fluentui/react-avatar@workspace:*, @fluentui/react-avatar@workspace:packages/react-components/react-avatar":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-avatar@workspace:packages/react-components/react-avatar"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-badge": ^9.1.35
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -3656,9 +3664,9 @@ __metadata:
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-tooltip": ^9.3.5
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
     es6-weak-map: ^2.0.2
@@ -3671,20 +3679,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-badge@*, @fluentui/react-badge@^9.1.35, @fluentui/react-badge@workspace:packages/react-components/react-badge":
+"@fluentui/react-badge@^9.1.35, @fluentui/react-badge@workspace:*, @fluentui/react-badge@workspace:packages/react-components/react-badge":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-badge@workspace:packages/react-components/react-badge"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3695,21 +3703,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-bindings@*, @fluentui/react-bindings@^0.66.4, @fluentui/react-bindings@workspace:packages/fluentui/react-bindings":
+"@fluentui/react-bindings@^0.66.4, @fluentui/react-bindings@workspace:*, @fluentui/react-bindings@workspace:packages/fluentui/react-bindings":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-bindings@workspace:packages/fluentui/react-bindings"
   dependencies:
     "@babel/runtime": ^7.10.4
     "@fluentui/accessibility": ^0.66.4
     "@fluentui/dom-utilities": ^1.1.1
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-component-event-listener": ^0.66.4
     "@fluentui/react-component-ref": ^0.66.4
     "@fluentui/react-northstar-fela-renderer": ^0.66.4
     "@fluentui/react-northstar-styles-renderer": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@fluentui/state": ^0.66.4
     "@fluentui/styles": ^0.66.4
     "@types/classnames": ^2.2.9
@@ -3725,14 +3733,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-breadcrumb-preview@*, @fluentui/react-breadcrumb-preview@workspace:packages/react-components/react-breadcrumb-preview":
+"@fluentui/react-breadcrumb-preview@workspace:*, @fluentui/react-breadcrumb-preview@workspace:packages/react-components/react-breadcrumb-preview":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-breadcrumb-preview@workspace:packages/react-components/react-breadcrumb-preview"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-button": ^9.3.38
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-link": ^9.1.17
@@ -3740,9 +3748,9 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3753,21 +3761,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-builder@*, @fluentui/react-builder@workspace:packages/fluentui/react-builder":
+"@fluentui/react-builder@workspace:*, @fluentui/react-builder@workspace:packages/fluentui/react-builder":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-builder@workspace:packages/fluentui/react-builder"
   dependencies:
     "@fluentui/accessibility": ^0.66.4
     "@fluentui/code-sandbox": ^0.66.4
     "@fluentui/docs-components": ^0.66.4
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-component-event-listener": ^0.66.4
     "@fluentui/react-component-ref": ^0.66.4
     "@fluentui/react-icons-northstar": ^0.66.4
     "@fluentui/react-northstar": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@types/react-frame-component": ^4.1.1
     axe-core: 4.4.3
     immer: ^9.0.12
@@ -3785,24 +3793,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-button@*, @fluentui/react-button@^9.3.38, @fluentui/react-button@workspace:packages/react-components/react-button":
+"@fluentui/react-button@^9.3.38, @fluentui/react-button@workspace:*, @fluentui/react-button@workspace:packages/react-components/react-button":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-button@workspace:packages/react-components/react-button"
   dependencies:
-    "@fluentui/a11y-testing": "*"
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/a11y-testing": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3813,22 +3821,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-card@*, @fluentui/react-card@^9.0.37, @fluentui/react-card@workspace:packages/react-components/react-card":
+"@fluentui/react-card@^9.0.37, @fluentui/react-card@workspace:*, @fluentui/react-card@workspace:packages/react-components/react-card":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-card@workspace:packages/react-components/react-card"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-button": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-button": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3843,14 +3851,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-cards@workspace:packages/react-cards"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/foundation-legacy": ^8.2.44
-    "@fluentui/jest-serializer-merge-styles": "*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
     "@fluentui/react": ^8.111.2
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@microsoft/load-themed-styles": ^1.10.26
     tslib: ^2.1.0
@@ -3862,17 +3870,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-charting@*, @fluentui/react-charting@^5.17.7, @fluentui/react-charting@workspace:packages/react-charting":
+"@fluentui/react-charting@^5.17.7, @fluentui/react-charting@workspace:*, @fluentui/react-charting@workspace:packages/react-charting":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-charting@workspace:packages/react-charting"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/jest-serializer-merge-styles": "*"
-    "@fluentui/react": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
+    "@fluentui/react": "workspace:*"
     "@fluentui/react-focus": ^8.8.31
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/theme-samples": ^8.7.111
     "@microsoft/load-themed-styles": ^1.10.26
@@ -3908,13 +3916,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-checkbox@*, @fluentui/react-checkbox@^9.1.39, @fluentui/react-checkbox@workspace:packages/react-components/react-checkbox":
+"@fluentui/react-checkbox@^9.1.39, @fluentui/react-checkbox@workspace:*, @fluentui/react-checkbox@workspace:packages/react-components/react-checkbox":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-checkbox@workspace:packages/react-components/react-checkbox"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -3923,8 +3931,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3939,14 +3947,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-colorpicker-compat@workspace:packages/react-components/react-colorpicker-compat"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3957,14 +3965,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-combobox@*, @fluentui/react-combobox@^9.5.13, @fluentui/react-combobox@workspace:packages/react-components/react-combobox":
+"@fluentui/react-combobox@^9.5.13, @fluentui/react-combobox@workspace:*, @fluentui/react-combobox@workspace:packages/react-components/react-combobox":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-combobox@workspace:packages/react-components/react-combobox"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
@@ -3974,8 +3982,8 @@ __metadata:
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -3987,15 +3995,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-component-event-listener@*, @fluentui/react-component-event-listener@^0.66.4, @fluentui/react-component-event-listener@workspace:packages/fluentui/react-component-event-listener":
+"@fluentui/react-component-event-listener@^0.66.4, @fluentui/react-component-event-listener@workspace:*, @fluentui/react-component-event-listener@workspace:packages/fluentui/react-component-event-listener":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-component-event-listener@workspace:packages/fluentui/react-component-event-listener"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@types/simulant": ^0.2.0
     lerna-alias: ^3.0.3-0
     simulant: ^0.2.2
@@ -4010,10 +4018,10 @@ __metadata:
   resolution: "@fluentui/react-component-nesting-registry@workspace:packages/fluentui/react-component-nesting-registry"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     lerna-alias: ^3.0.3-0
     prop-types: ^15.7.2
   peerDependencies:
@@ -4022,15 +4030,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-component-ref@*, @fluentui/react-component-ref@^0.66.4, @fluentui/react-component-ref@workspace:packages/fluentui/react-component-ref":
+"@fluentui/react-component-ref@^0.66.4, @fluentui/react-component-ref@workspace:*, @fluentui/react-component-ref@workspace:packages/fluentui/react-component-ref":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-component-ref@workspace:packages/fluentui/react-component-ref"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     lerna-alias: ^3.0.3-0
     react-is: ^17.0.2
   peerDependencies:
@@ -4039,11 +4047,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-components@*, @fluentui/react-components@^9.31.0, @fluentui/react-components@workspace:packages/react-components/react-components":
+"@fluentui/react-components@^9.31.0, @fluentui/react-components@workspace:*, @fluentui/react-components@workspace:packages/react-components/react-components":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-components@workspace:packages/react-components/react-components"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-accordion": ^9.3.11
     "@fluentui/react-alert": 9.0.0-beta.75
     "@fluentui/react-avatar": ^9.5.29
@@ -4089,8 +4097,8 @@ __metadata:
     "@fluentui/react-tree": ^9.1.0
     "@fluentui/react-utilities": ^9.13.3
     "@fluentui/react-virtualizer": 9.0.0-alpha.41
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
     react-hook-form: ^5.7.2
@@ -4103,14 +4111,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-conformance-griffel@*, @fluentui/react-conformance-griffel@workspace:packages/react-components/react-conformance-griffel":
+"@fluentui/react-conformance-griffel@workspace:*, @fluentui/react-conformance-griffel@workspace:packages/react-components/react-conformance-griffel":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-conformance-griffel@workspace:packages/react-components/react-conformance-griffel"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4121,13 +4129,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-conformance@*, @fluentui/react-conformance@workspace:packages/react-conformance":
+"@fluentui/react-conformance@workspace:*, @fluentui/react-conformance@workspace:packages/react-conformance":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-conformance@workspace:packages/react-conformance"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
     chalk: ^2.4.2
     lodash: ^4.17.15
@@ -4144,14 +4152,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-context-selector@*, @fluentui/react-context-selector@^9.1.34, @fluentui/react-context-selector@workspace:packages/react-components/react-context-selector":
+"@fluentui/react-context-selector@^9.1.34, @fluentui/react-context-selector@workspace:*, @fluentui/react-context-selector@workspace:packages/react-components/react-context-selector":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-context-selector@workspace:packages/react-components/react-context-selector"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -4166,11 +4174,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-date-time@workspace:packages/react-date-time"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react": ^8.111.2
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   peerDependencies:
@@ -4181,14 +4189,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-datepicker-compat@*, @fluentui/react-datepicker-compat@workspace:packages/react-components/react-datepicker-compat":
+"@fluentui/react-datepicker-compat@workspace:*, @fluentui/react-datepicker-compat@workspace:packages/react-components/react-datepicker-compat":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-datepicker-compat@workspace:packages/react-components/react-datepicker-compat"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-input": ^9.4.36
@@ -4200,8 +4208,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4212,15 +4220,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-dialog@*, @fluentui/react-dialog@^9.6.4, @fluentui/react-dialog@workspace:packages/react-components/react-dialog":
+"@fluentui/react-dialog@^9.6.4, @fluentui/react-dialog@workspace:*, @fluentui/react-dialog@workspace:packages/react-components/react-dialog":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-dialog@workspace:packages/react-components/react-dialog"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -4229,9 +4237,9 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4242,19 +4250,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-divider@*, @fluentui/react-divider@^9.2.34, @fluentui/react-divider@workspace:packages/react-components/react-divider":
+"@fluentui/react-divider@^9.2.34, @fluentui/react-divider@workspace:*, @fluentui/react-divider@workspace:packages/react-components/react-divider":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-divider@workspace:packages/react-components/react-divider"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4265,20 +4273,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-docsite-components@*, @fluentui/react-docsite-components@^8.13.7, @fluentui/react-docsite-components@workspace:packages/react-docsite-components":
+"@fluentui/react-docsite-components@^8.13.7, @fluentui/react-docsite-components@workspace:*, @fluentui/react-docsite-components@workspace:packages/react-docsite-components":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-docsite-components@workspace:packages/react-docsite-components"
   dependencies:
-    "@fluentui/common-styles": "*"
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/common-styles": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/example-data": ^8.4.12
     "@fluentui/public-docsite-setup": ^0.3.22
     "@fluentui/react": ^8.111.2
     "@fluentui/react-hooks": ^8.6.29
     "@fluentui/react-monaco-editor": ^1.7.125
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/theme": ^2.6.35
     "@microsoft/load-themed-styles": ^1.10.26
@@ -4302,18 +4310,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-drawer@workspace:packages/react-components/react-drawer"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-dialog": ^9.6.4
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-motion-preview": ^0.2.3
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4324,14 +4332,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-examples@*, @fluentui/react-examples@workspace:packages/react-examples":
+"@fluentui/react-examples@workspace:*, @fluentui/react-examples@workspace:packages/react-examples":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-examples@workspace:packages/react-examples"
   dependencies:
     "@fluentui/azure-themes": ^8.6.34
     "@fluentui/date-time-utilities": ^8.5.13
     "@fluentui/dom-utilities": ^2.2.11
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/example-data": ^8.4.12
     "@fluentui/font-icons-mdl2": ^8.5.24
     "@fluentui/foundation-legacy": ^8.2.44
@@ -4346,10 +4354,10 @@ __metadata:
     "@fluentui/react-hooks": ^8.6.29
     "@fluentui/react-icons-mdl2": ^1.3.49
     "@fluentui/scheme-utilities": ^8.3.36
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
-    "@fluentui/storybook": "*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
+    "@fluentui/storybook": "workspace:*"
     "@fluentui/style-utilities": ^8.9.17
     "@fluentui/theme": ^2.6.35
     "@fluentui/theme-samples": ^8.7.111
@@ -4365,22 +4373,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-experiments@*, @fluentui/react-experiments@^8.14.106, @fluentui/react-experiments@workspace:packages/react-experiments":
+"@fluentui/react-experiments@^8.14.106, @fluentui/react-experiments@workspace:*, @fluentui/react-experiments@workspace:packages/react-experiments":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-experiments@workspace:packages/react-experiments"
   dependencies:
-    "@fluentui/common-styles": "*"
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/common-styles": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/example-data": ^8.4.12
     "@fluentui/font-icons-mdl2": ^8.5.24
     "@fluentui/foundation-legacy": ^8.2.44
-    "@fluentui/jest-serializer-merge-styles": "*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
     "@fluentui/react": ^8.111.2
     "@fluentui/react-hooks": ^8.6.29
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
     "@fluentui/theme": ^2.6.35
@@ -4401,21 +4409,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-field@*, @fluentui/react-field@^9.1.26, @fluentui/react-field@workspace:packages/react-components/react-field":
+"@fluentui/react-field@^9.1.26, @fluentui/react-field@workspace:*, @fluentui/react-field@workspace:packages/react-components/react-field":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-field@workspace:packages/react-components/react-field"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-label": ^9.1.34
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4426,13 +4434,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-file-type-icons@*, @fluentui/react-file-type-icons@^8.10.1, @fluentui/react-file-type-icons@workspace:packages/react-file-type-icons":
+"@fluentui/react-file-type-icons@^8.10.1, @fluentui/react-file-type-icons@workspace:*, @fluentui/react-file-type-icons@workspace:packages/react-file-type-icons":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-file-type-icons@workspace:packages/react-file-type-icons"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
     tslib: ^2.1.0
@@ -4446,18 +4454,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-focus@workspace:packages/react-focus"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/jest-serializer-merge-styles": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
     "@fluentui/keyboard-key": ^0.4.11
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/react-conformance": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
-    "@fluentui/test-utilities": "*"
+    "@fluentui/test-utilities": "workspace:*"
     "@fluentui/utilities": ^8.13.18
     tslib: ^2.1.0
   peerDependencies:
@@ -4466,18 +4474,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-hooks@*, @fluentui/react-hooks@^8.6.29, @fluentui/react-hooks@workspace:packages/react-hooks":
+"@fluentui/react-hooks@^8.6.29, @fluentui/react-hooks@workspace:*, @fluentui/react-hooks@workspace:packages/react-hooks":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-hooks@workspace:packages/react-hooks"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-window-provider": ^2.2.15
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
-    "@fluentui/test-utilities": "*"
+    "@fluentui/test-utilities": "workspace:*"
     "@fluentui/utilities": ^8.13.18
     tslib: ^2.1.0
   peerDependencies:
@@ -4490,11 +4498,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-icon-provider@workspace:packages/react-icon-provider"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
     tslib: ^2.1.0
@@ -4506,13 +4514,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-icons-mdl2-branded@*, @fluentui/react-icons-mdl2-branded@workspace:packages/react-icons-mdl2-branded":
+"@fluentui/react-icons-mdl2-branded@workspace:*, @fluentui/react-icons-mdl2-branded@workspace:packages/react-icons-mdl2-branded":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-icons-mdl2-branded@workspace:packages/react-icons-mdl2-branded"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-icons-mdl2": ^1.3.49
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   peerDependencies:
@@ -4523,15 +4531,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-icons-mdl2@*, @fluentui/react-icons-mdl2@^1.3.49, @fluentui/react-icons-mdl2@workspace:packages/react-icons-mdl2":
+"@fluentui/react-icons-mdl2@^1.3.49, @fluentui/react-icons-mdl2@workspace:*, @fluentui/react-icons-mdl2@workspace:packages/react-icons-mdl2":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-icons-mdl2@workspace:packages/react-icons-mdl2"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-icon-provider": ^1.3.45
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/utilities": ^8.13.18
     "@microsoft/load-themed-styles": ^1.10.26
@@ -4541,17 +4549,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-icons-northstar@*, @fluentui/react-icons-northstar@^0.66.4, @fluentui/react-icons-northstar@workspace:packages/fluentui/react-icons-northstar":
+"@fluentui/react-icons-northstar@^0.66.4, @fluentui/react-icons-northstar@workspace:*, @fluentui/react-icons-northstar@workspace:packages/fluentui/react-icons-northstar":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-icons-northstar@workspace:packages/fluentui/react-icons-northstar"
   dependencies:
     "@babel/runtime": ^7.10.4
     "@fluentui/accessibility": ^0.66.4
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-bindings": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@fluentui/styles": ^0.66.4
     "@types/classnames": ^2.2.9
     classnames: ^2.2.6
@@ -4574,19 +4582,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fluentui/react-image@*, @fluentui/react-image@^9.1.31, @fluentui/react-image@workspace:packages/react-components/react-image":
+"@fluentui/react-image@^9.1.31, @fluentui/react-image@workspace:*, @fluentui/react-image@workspace:packages/react-components/react-image":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-image@workspace:packages/react-components/react-image"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4601,9 +4609,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-infobutton@workspace:packages/react-components/react-infobutton"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-label": ^9.1.34
@@ -4612,8 +4620,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4624,21 +4632,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-input@*, @fluentui/react-input@^9.4.36, @fluentui/react-input@workspace:packages/react-components/react-input":
+"@fluentui/react-input@^9.4.36, @fluentui/react-input@workspace:*, @fluentui/react-input@workspace:packages/react-components/react-input":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-input@workspace:packages/react-components/react-input"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
-    "@fluentui/react-text": "*"
+    "@fluentui/react-text": "workspace:*"
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4653,12 +4661,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-jsx-runtime@workspace:packages/react-components/react-jsx-runtime"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -4666,19 +4674,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-label@*, @fluentui/react-label@^9.1.34, @fluentui/react-label@workspace:packages/react-components/react-label":
+"@fluentui/react-label@^9.1.34, @fluentui/react-label@workspace:*, @fluentui/react-label@workspace:packages/react-components/react-label":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-label@workspace:packages/react-components/react-label"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4689,22 +4697,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-link@*, @fluentui/react-link@^9.1.17, @fluentui/react-link@workspace:packages/react-components/react-link":
+"@fluentui/react-link@^9.1.17, @fluentui/react-link@workspace:*, @fluentui/react-link@workspace:packages/react-components/react-link":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-link@workspace:packages/react-components/react-link"
   dependencies:
-    "@fluentui/a11y-testing": "*"
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/a11y-testing": "workspace:*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4715,15 +4723,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-menu@*, @fluentui/react-menu@^9.12.15, @fluentui/react-menu@workspace:packages/react-components/react-menu":
+"@fluentui/react-menu@^9.12.15, @fluentui/react-menu@workspace:*, @fluentui/react-menu@workspace:packages/react-components/react-menu":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-menu@workspace:packages/react-components/react-menu"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -4733,9 +4741,9 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4751,14 +4759,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-message-bar-preview@workspace:packages/react-components/react-message-bar-preview"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4769,22 +4777,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-migration-v0-v9@*, @fluentui/react-migration-v0-v9@workspace:packages/react-components/react-migration-v0-v9":
+"@fluentui/react-migration-v0-v9@workspace:*, @fluentui/react-migration-v0-v9@workspace:packages/react-components/react-migration-v0-v9":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-migration-v0-v9@workspace:packages/react-components/react-migration-v0-v9"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-components": ^9.31.0
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-northstar": ^0.66.4
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4795,22 +4803,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-migration-v8-v9@*, @fluentui/react-migration-v8-v9@workspace:packages/react-components/react-migration-v8-v9":
+"@fluentui/react-migration-v8-v9@workspace:*, @fluentui/react-migration-v8-v9@workspace:packages/react-components/react-migration-v8-v9":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-migration-v8-v9@workspace:packages/react-components/react-migration-v8-v9"
   dependencies:
     "@ctrl/tinycolor": 3.3.4
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/fluent2-theme": ^8.107.38
     "@fluentui/react": ^8.111.2
     "@fluentui/react-components": ^9.31.0
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4821,19 +4829,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-monaco-editor@*, @fluentui/react-monaco-editor@^1.7.125, @fluentui/react-monaco-editor@workspace:packages/react-monaco-editor":
+"@fluentui/react-monaco-editor@^1.7.125, @fluentui/react-monaco-editor@workspace:*, @fluentui/react-monaco-editor@workspace:packages/react-monaco-editor":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-monaco-editor@workspace:packages/react-monaco-editor"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/example-data": ^8.4.12
     "@fluentui/monaco-editor": ^1.3.11
     "@fluentui/react": ^8.111.2
     "@fluentui/react-charting": ^5.17.7
     "@fluentui/react-hooks": ^8.6.29
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     "@types/react-syntax-highlighter": ^10.2.1
     raw-loader: 4.0.2
@@ -4847,19 +4855,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-motion-preview@*, @fluentui/react-motion-preview@^0.2.3, @fluentui/react-motion-preview@workspace:packages/react-components/react-motion-preview":
+"@fluentui/react-motion-preview@^0.2.3, @fluentui/react-motion-preview@workspace:*, @fluentui/react-motion-preview@workspace:packages/react-components/react-motion-preview":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-motion-preview@workspace:packages/react-components/react-motion-preview"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4874,14 +4882,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-nav-preview@workspace:packages/react-components/react-nav-preview"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -4892,7 +4900,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-northstar-emotion-renderer@*, @fluentui/react-northstar-emotion-renderer@workspace:packages/fluentui/react-northstar-emotion-renderer":
+"@fluentui/react-northstar-emotion-renderer@workspace:*, @fluentui/react-northstar-emotion-renderer@workspace:packages/fluentui/react-northstar-emotion-renderer":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-northstar-emotion-renderer@workspace:packages/fluentui/react-northstar-emotion-renderer"
   dependencies:
@@ -4901,11 +4909,11 @@ __metadata:
     "@emotion/serialize": ^1.0.2
     "@emotion/sheet": ^1.0.1
     "@emotion/utils": ^1.0.0
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-northstar-styles-renderer": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@fluentui/styles": ^0.66.4
     "@types/stylis": 4.0.0
     lerna-alias: ^3.0.3-0
@@ -4917,16 +4925,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-northstar-fela-renderer@*, @fluentui/react-northstar-fela-renderer@^0.66.4, @fluentui/react-northstar-fela-renderer@workspace:packages/fluentui/react-northstar-fela-renderer":
+"@fluentui/react-northstar-fela-renderer@^0.66.4, @fluentui/react-northstar-fela-renderer@workspace:*, @fluentui/react-northstar-fela-renderer@workspace:packages/fluentui/react-northstar-fela-renderer":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-northstar-fela-renderer@workspace:packages/fluentui/react-northstar-fela-renderer"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-northstar-styles-renderer": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@fluentui/styles": ^0.66.4
     css-in-js-utils: ^3.0.0
     fela: ^10.6.1
@@ -4948,7 +4956,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-northstar-prototypes@*, @fluentui/react-northstar-prototypes@workspace:packages/fluentui/react-northstar-prototypes":
+"@fluentui/react-northstar-prototypes@workspace:*, @fluentui/react-northstar-prototypes@workspace:packages/fluentui/react-northstar-prototypes":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-northstar-prototypes@workspace:packages/fluentui/react-northstar-prototypes"
   dependencies:
@@ -4956,14 +4964,14 @@ __metadata:
     "@fluentui/accessibility": ^0.66.4
     "@fluentui/code-sandbox": ^0.66.4
     "@fluentui/docs-components": ^0.66.4
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-bindings": ^0.66.4
     "@fluentui/react-component-event-listener": ^0.66.4
     "@fluentui/react-component-ref": ^0.66.4
     "@fluentui/react-icons-northstar": ^0.66.4
     "@fluentui/react-northstar": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     "@types/classnames": ^2.2.9
     "@types/faker": ^4.1.3
     "@types/react-custom-scrollbars": ^4.0.5
@@ -4989,14 +4997,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-northstar-styles-renderer@*, @fluentui/react-northstar-styles-renderer@^0.66.4, @fluentui/react-northstar-styles-renderer@workspace:packages/fluentui/react-northstar-styles-renderer":
+"@fluentui/react-northstar-styles-renderer@^0.66.4, @fluentui/react-northstar-styles-renderer@workspace:*, @fluentui/react-northstar-styles-renderer@workspace:packages/fluentui/react-northstar-styles-renderer":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-northstar-styles-renderer@workspace:packages/fluentui/react-northstar-styles-renderer"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     "@fluentui/styles": ^0.66.4
     lerna-alias: ^3.0.3-0
   peerDependencies:
@@ -5004,27 +5012,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-northstar@*, @fluentui/react-northstar@^0.66.4, @fluentui/react-northstar@workspace:packages/fluentui/react-northstar":
+"@fluentui/react-northstar@^0.66.4, @fluentui/react-northstar@workspace:*, @fluentui/react-northstar@workspace:packages/fluentui/react-northstar":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-northstar@workspace:packages/fluentui/react-northstar"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/a11y-testing": "*"
+    "@fluentui/a11y-testing": "workspace:*"
     "@fluentui/accessibility": ^0.66.4
     "@fluentui/dom-utilities": ^1.1.1
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-bindings": ^0.66.4
     "@fluentui/react-component-event-listener": ^0.66.4
     "@fluentui/react-component-nesting-registry": ^0.66.4
     "@fluentui/react-component-ref": ^0.66.4
-    "@fluentui/react-conformance": "*"
+    "@fluentui/react-conformance": "workspace:*"
     "@fluentui/react-icons-northstar": ^0.66.4
     "@fluentui/react-northstar-styles-renderer": ^0.66.4
     "@fluentui/react-portal-compat-context": ^9.0.7
     "@fluentui/react-proptypes": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     "@fluentui/state": ^0.66.4
     "@fluentui/styles": ^0.66.4
     "@popperjs/core": ~2.4.3
@@ -5055,14 +5063,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-overflow@workspace:packages/react-components/react-overflow"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/priority-overflow": ^9.1.5
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5074,21 +5082,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-persona@*, @fluentui/react-persona@^9.2.39, @fluentui/react-persona@workspace:packages/react-components/react-persona":
+"@fluentui/react-persona@^9.2.39, @fluentui/react-persona@workspace:*, @fluentui/react-persona@workspace:packages/react-components/react-persona":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-persona@workspace:packages/react-components/react-persona"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-avatar": ^9.5.29
     "@fluentui/react-badge": ^9.1.35
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5099,15 +5107,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-popover@*, @fluentui/react-popover@^9.8.4, @fluentui/react-popover@workspace:packages/react-components/react-popover":
+"@fluentui/react-popover@^9.8.4, @fluentui/react-popover@workspace:*, @fluentui/react-popover@workspace:packages/react-components/react-popover":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-popover@workspace:packages/react-components/react-popover"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-portal": ^9.3.14
@@ -5116,9 +5124,9 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5134,9 +5142,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-portal-compat-context@workspace:packages/react-components/react-portal-compat-context"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -5148,14 +5156,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-portal-compat@workspace:packages/react-components/react-portal-compat"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-components": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-components": "workspace:*"
     "@fluentui/react-portal-compat-context": ^9.0.7
-    "@fluentui/react-shared-contexts": "*"
+    "@fluentui/react-shared-contexts": "workspace:*"
     "@fluentui/react-tabster": ^9.12.9
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@fluentui/react-components": ^9.31.0
@@ -5164,17 +5172,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-portal@*, @fluentui/react-portal@^9.3.14, @fluentui/react-portal@workspace:packages/react-components/react-portal":
+"@fluentui/react-portal@^9.3.14, @fluentui/react-portal@workspace:*, @fluentui/react-portal@workspace:packages/react-components/react-portal":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-portal@workspace:packages/react-components/react-portal"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
     use-disposable: ^1.0.1
@@ -5186,17 +5194,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-positioning@*, @fluentui/react-positioning@^9.9.11, @fluentui/react-positioning@workspace:packages/react-components/react-positioning":
+"@fluentui/react-positioning@^9.9.11, @fluentui/react-positioning@workspace:*, @fluentui/react-positioning@workspace:packages/react-components/react-positioning":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-positioning@workspace:packages/react-components/react-positioning"
   dependencies:
     "@floating-ui/dom": ^1.2.0
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5207,20 +5215,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-progress@*, @fluentui/react-progress@^9.1.36, @fluentui/react-progress@workspace:packages/react-components/react-progress":
+"@fluentui/react-progress@^9.1.36, @fluentui/react-progress@workspace:*, @fluentui/react-progress@workspace:packages/react-components/react-progress":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-progress@workspace:packages/react-components/react-progress"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5236,31 +5244,31 @@ __metadata:
   resolution: "@fluentui/react-proptypes@workspace:packages/fluentui/react-proptypes"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     lerna-alias: ^3.0.3-0
     lodash: ^4.17.15
     prop-types: ^15.7.2
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-provider@*, @fluentui/react-provider@^9.8.4, @fluentui/react-provider@workspace:packages/react-components/react-provider":
+"@fluentui/react-provider@^9.8.4, @fluentui/react-provider@workspace:*, @fluentui/react-provider@workspace:packages/react-components/react-provider":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-provider@workspace:packages/react-components/react-provider"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/core": ^1.14.1
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
@@ -5272,13 +5280,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-radio@*, @fluentui/react-radio@^9.1.39, @fluentui/react-radio@workspace:packages/react-components/react-radio":
+"@fluentui/react-radio@^9.1.39, @fluentui/react-radio@workspace:*, @fluentui/react-radio@workspace:packages/react-components/react-radio":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-radio@workspace:packages/react-components/react-radio"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -5287,8 +5295,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5300,20 +5308,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-search-preview@*, @fluentui/react-search-preview@workspace:packages/react-components/react-search-preview":
+"@fluentui/react-search-preview@workspace:*, @fluentui/react-search-preview@workspace:packages/react-components/react-search-preview":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-search-preview@workspace:packages/react-components/react-search-preview"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-input": ^9.4.36
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5324,21 +5332,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-select@*, @fluentui/react-select@^9.1.36, @fluentui/react-select@workspace:packages/react-components/react-select":
+"@fluentui/react-select@^9.1.36, @fluentui/react-select@workspace:*, @fluentui/react-select@workspace:packages/react-components/react-select":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-select@workspace:packages/react-components/react-select"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5349,14 +5357,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-shared-contexts@*, @fluentui/react-shared-contexts@^9.7.3, @fluentui/react-shared-contexts@workspace:packages/react-components/react-shared-contexts":
+"@fluentui/react-shared-contexts@^9.7.3, @fluentui/react-shared-contexts@workspace:*, @fluentui/react-shared-contexts@workspace:packages/react-components/react-shared-contexts":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-shared-contexts@workspace:packages/react-components/react-shared-contexts"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-theme": ^9.1.12
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -5364,20 +5372,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-skeleton@*, @fluentui/react-skeleton@^9.0.24, @fluentui/react-skeleton@workspace:packages/react-components/react-skeleton":
+"@fluentui/react-skeleton@^9.0.24, @fluentui/react-skeleton@workspace:*, @fluentui/react-skeleton@workspace:packages/react-components/react-skeleton":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-skeleton@workspace:packages/react-components/react-skeleton"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5388,22 +5396,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-slider@*, @fluentui/react-slider@^9.1.39, @fluentui/react-slider@workspace:packages/react-components/react-slider":
+"@fluentui/react-slider@^9.1.39, @fluentui/react-slider@workspace:*, @fluentui/react-slider@workspace:packages/react-components/react-slider":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-slider@workspace:packages/react-components/react-slider"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-jsx-runtime": ^9.0.7
-    "@fluentui/react-label": "*"
+    "@fluentui/react-label": "workspace:*"
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5414,23 +5422,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-spinbutton@*, @fluentui/react-spinbutton@^9.2.36, @fluentui/react-spinbutton@workspace:packages/react-components/react-spinbutton":
+"@fluentui/react-spinbutton@^9.2.36, @fluentui/react-spinbutton@workspace:*, @fluentui/react-spinbutton@workspace:packages/react-components/react-spinbutton":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-spinbutton@workspace:packages/react-components/react-spinbutton"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
-    "@fluentui/react-label": "*"
+    "@fluentui/react-label": "workspace:*"
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5441,20 +5449,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-spinner@*, @fluentui/react-spinner@^9.3.14, @fluentui/react-spinner@workspace:packages/react-components/react-spinner":
+"@fluentui/react-spinner@^9.3.14, @fluentui/react-spinner@workspace:*, @fluentui/react-spinner@workspace:packages/react-components/react-spinner":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-spinner@workspace:packages/react-components/react-spinner"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-label": ^9.1.34
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5465,13 +5473,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-storybook-addon-codesandbox@*, @fluentui/react-storybook-addon-codesandbox@^0.1.0, @fluentui/react-storybook-addon-codesandbox@workspace:packages/react-components/react-storybook-addon-codesandbox":
+"@fluentui/react-storybook-addon-codesandbox@^0.1.0, @fluentui/react-storybook-addon-codesandbox@workspace:*, @fluentui/react-storybook-addon-codesandbox@workspace:packages/react-components/react-storybook-addon-codesandbox":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-storybook-addon-codesandbox@workspace:packages/react-components/react-storybook-addon-codesandbox"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
     "@types/dedent": 0.7.0
     codesandbox-import-utils: 2.2.3
@@ -5481,15 +5489,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-storybook-addon@*, @fluentui/react-storybook-addon@workspace:packages/react-components/react-storybook-addon":
+"@fluentui/react-storybook-addon@workspace:*, @fluentui/react-storybook-addon@workspace:packages/react-components/react-storybook-addon":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-storybook-addon@workspace:packages/react-components/react-storybook-addon"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-provider": ^9.8.4
     "@fluentui/react-theme": ^9.1.12
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@storybook/addons": ^6.5.15
@@ -5504,13 +5512,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-switch@*, @fluentui/react-switch@^9.1.39, @fluentui/react-switch@workspace:packages/react-components/react-switch":
+"@fluentui/react-switch@^9.1.39, @fluentui/react-switch@workspace:*, @fluentui/react-switch@workspace:packages/react-components/react-switch":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-switch@workspace:packages/react-components/react-switch"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -5519,8 +5527,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5531,17 +5539,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-table@*, @fluentui/react-table@^9.8.5, @fluentui/react-table@workspace:packages/react-components/react-table":
+"@fluentui/react-table@^9.8.5, @fluentui/react-table@workspace:*, @fluentui/react-table@workspace:packages/react-components/react-table":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-table@workspace:packages/react-components/react-table"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
     "@fluentui/react-avatar": ^9.5.29
     "@fluentui/react-checkbox": ^9.1.39
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -5550,8 +5558,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5562,21 +5570,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-tabs@*, @fluentui/react-tabs@^9.3.40, @fluentui/react-tabs@workspace:packages/react-components/react-tabs":
+"@fluentui/react-tabs@^9.3.40, @fluentui/react-tabs@workspace:*, @fluentui/react-tabs@workspace:packages/react-components/react-tabs":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-tabs@workspace:packages/react-components/react-tabs"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5592,13 +5600,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-tabster@workspace:packages/react-components/react-tabster"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
     keyborg: ^2.0.0
@@ -5611,24 +5619,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-tags-preview@*, @fluentui/react-tags-preview@workspace:packages/react-components/react-tags-preview":
+"@fluentui/react-tags-preview@workspace:*, @fluentui/react-tags-preview@workspace:packages/react-components/react-tags-preview":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-tags-preview@workspace:packages/react-components/react-tags-preview"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
     "@fluentui/react-avatar": ^9.5.29
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5639,16 +5647,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-telemetry@*, @fluentui/react-telemetry@workspace:packages/fluentui/react-telemetry":
+"@fluentui/react-telemetry@workspace:*, @fluentui/react-telemetry@workspace:packages/fluentui/react-telemetry":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-telemetry@workspace:packages/fluentui/react-telemetry"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-bindings": ^0.66.4
     "@fluentui/react-component-event-listener": ^0.66.4
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     "@types/react-table": ^7.0.19
     lerna-alias: ^3.0.3-0
     lodash: ^4.17.15
@@ -5659,19 +5667,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-text@*, @fluentui/react-text@^9.3.31, @fluentui/react-text@workspace:packages/react-components/react-text":
+"@fluentui/react-text@^9.3.31, @fluentui/react-text@workspace:*, @fluentui/react-text@workspace:packages/react-components/react-text":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-text@workspace:packages/react-components/react-text"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5682,20 +5690,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-textarea@*, @fluentui/react-textarea@^9.3.36, @fluentui/react-textarea@workspace:packages/react-components/react-textarea":
+"@fluentui/react-textarea@^9.3.36, @fluentui/react-textarea@workspace:*, @fluentui/react-textarea@workspace:packages/react-components/react-textarea":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-textarea@workspace:packages/react-components/react-textarea"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-field": ^9.1.26
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5710,35 +5718,35 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-theme-sass@workspace:packages/react-components/react-theme-sass"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-theme": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-theme": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-theme@*, @fluentui/react-theme@^9.1.12, @fluentui/react-theme@workspace:packages/react-components/react-theme":
+"@fluentui/react-theme@^9.1.12, @fluentui/react-theme@workspace:*, @fluentui/react-theme@workspace:packages/react-components/react-theme":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-theme@workspace:packages/react-components/react-theme"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/tokens": 1.0.0-alpha.9
     "@swc/helpers": ^0.5.1
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-toast@*, @fluentui/react-toast@^9.3.0, @fluentui/react-toast@workspace:packages/react-components/react-toast":
+"@fluentui/react-toast@^9.3.0, @fluentui/react-toast@workspace:*, @fluentui/react-toast@workspace:packages/react-components/react-toast":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-toast@workspace:packages/react-components/react-toast"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-portal": ^9.3.14
@@ -5746,8 +5754,8 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
     react-transition-group: ^4.4.1
@@ -5759,14 +5767,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-toolbar@*, @fluentui/react-toolbar@^9.1.39, @fluentui/react-toolbar@workspace:packages/react-components/react-toolbar":
+"@fluentui/react-toolbar@^9.1.39, @fluentui/react-toolbar@workspace:*, @fluentui/react-toolbar@workspace:packages/react-components/react-toolbar":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-toolbar@workspace:packages/react-components/react-toolbar"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-button": ^9.3.38
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-divider": ^9.2.34
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -5775,9 +5783,9 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5788,22 +5796,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-tooltip@*, @fluentui/react-tooltip@^9.3.5, @fluentui/react-tooltip@workspace:packages/react-components/react-tooltip":
+"@fluentui/react-tooltip@^9.3.5, @fluentui/react-tooltip@workspace:*, @fluentui/react-tooltip@workspace:packages/react-components/react-tooltip":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-tooltip@workspace:packages/react-components/react-tooltip"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-portal": ^9.3.14
     "@fluentui/react-positioning": ^9.9.11
     "@fluentui/react-shared-contexts": ^9.7.3
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5814,21 +5822,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-tree@*, @fluentui/react-tree@^9.1.0, @fluentui/react-tree@workspace:packages/react-components/react-tree":
+"@fluentui/react-tree@^9.1.0, @fluentui/react-tree@workspace:*, @fluentui/react-tree@workspace:packages/react-components/react-tree":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-tree@workspace:packages/react-components/react-tree"
   dependencies:
     "@dnd-kit/core": ^6.0.8
     "@dnd-kit/sortable": ^7.0.2
     "@dnd-kit/utilities": ^3.2.1
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
     "@fluentui/react-aria": ^9.3.36
     "@fluentui/react-avatar": ^9.5.29
     "@fluentui/react-button": ^9.3.38
     "@fluentui/react-checkbox": ^9.1.39
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-context-selector": ^9.1.34
     "@fluentui/react-icons": ^2.0.207
     "@fluentui/react-jsx-runtime": ^9.0.7
@@ -5838,9 +5846,9 @@ __metadata:
     "@fluentui/react-tabster": ^9.12.9
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-cypress": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-cypress": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5851,14 +5859,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react-utilities@*, @fluentui/react-utilities@^9.13.3, @fluentui/react-utilities@workspace:packages/react-components/react-utilities":
+"@fluentui/react-utilities@^9.13.3, @fluentui/react-utilities@workspace:*, @fluentui/react-utilities@workspace:packages/react-components/react-utilities":
   version: 0.0.0-use.local
   resolution: "@fluentui/react-utilities@workspace:packages/react-components/react-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/keyboard-keys": ^9.0.4
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   peerDependencies:
     "@types/react": ">=16.14.0 <19.0.0"
@@ -5870,13 +5878,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-virtualizer@workspace:packages/react-components/react-virtualizer"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-conformance": "*"
-    "@fluentui/react-conformance-griffel": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-conformance": "workspace:*"
+    "@fluentui/react-conformance-griffel": "workspace:*"
     "@fluentui/react-jsx-runtime": ^9.0.7
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
   peerDependencies:
@@ -5891,12 +5899,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/react-window-provider@workspace:packages/react-window-provider"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
-    "@fluentui/test-utilities": "*"
+    "@fluentui/test-utilities": "workspace:*"
     tslib: ^2.1.0
   peerDependencies:
     "@types/react": ">=16.8.0 <19.0.0"
@@ -5904,33 +5912,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/react@*, @fluentui/react@^8.111.2, @fluentui/react@workspace:packages/react":
+"@fluentui/react@^8.111.2, @fluentui/react@workspace:*, @fluentui/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@fluentui/react@workspace:packages/react"
   dependencies:
-    "@fluentui/common-styles": "*"
+    "@fluentui/common-styles": "workspace:*"
     "@fluentui/date-time-utilities": ^8.5.13
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/example-data": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/example-data": "workspace:*"
     "@fluentui/font-icons-mdl2": ^8.5.24
     "@fluentui/foundation-legacy": ^8.2.44
-    "@fluentui/jest-serializer-merge-styles": "*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/react-conformance": "*"
+    "@fluentui/react-conformance": "workspace:*"
     "@fluentui/react-focus": ^8.8.31
     "@fluentui/react-hooks": ^8.6.29
     "@fluentui/react-portal-compat-context": ^9.0.7
     "@fluentui/react-window-provider": ^2.2.15
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/style-utilities": ^8.9.17
-    "@fluentui/test-utilities": "*"
+    "@fluentui/test-utilities": "workspace:*"
     "@fluentui/theme": ^2.6.35
     "@fluentui/utilities": ^8.13.18
-    "@fluentui/webpack-utilities": "*"
+    "@fluentui/webpack-utilities": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     office-ui-fabric-core: ^11.0.0
     tslib: ^2.1.0
@@ -5946,14 +5954,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/recipes-react-components@workspace:apps/recipes-react-components"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-components": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-components": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
-    "@fluentui/react-provider": "*"
-    "@fluentui/react-storybook-addon": "*"
-    "@fluentui/react-storybook-addon-codesandbox": "*"
-    "@fluentui/react-theme": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/react-provider": "workspace:*"
+    "@fluentui/react-storybook-addon": "workspace:*"
+    "@fluentui/react-storybook-addon-codesandbox": "workspace:*"
+    "@fluentui/react-theme": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     react: 17.0.2
     react-dom: 17.0.2
@@ -5961,26 +5969,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/scheme-utilities@*, @fluentui/scheme-utilities@^8.3.36, @fluentui/scheme-utilities@workspace:packages/scheme-utilities":
+"@fluentui/scheme-utilities@^8.3.36, @fluentui/scheme-utilities@workspace:*, @fluentui/scheme-utilities@workspace:packages/scheme-utilities":
   version: 0.0.0-use.local
   resolution: "@fluentui/scheme-utilities@workspace:packages/scheme-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/theme": ^2.6.35
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-api-extractor@*, @fluentui/scripts-api-extractor@workspace:scripts/api-extractor":
+"@fluentui/scripts-api-extractor@workspace:*, @fluentui/scripts-api-extractor@workspace:scripts/api-extractor":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-api-extractor@workspace:scripts/api-extractor"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-babel@*, @fluentui/scripts-babel@workspace:scripts/babel":
+"@fluentui/scripts-babel@workspace:*, @fluentui/scripts-babel@workspace:scripts/babel":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-babel@workspace:scripts/babel"
   languageName: unknown
@@ -5990,8 +5998,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-beachball@workspace:scripts/beachball"
   dependencies:
-    "@fluentui/scripts-github": "*"
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/scripts-github": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6003,7 +6011,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-cypress@*, @fluentui/scripts-cypress@workspace:scripts/cypress":
+"@fluentui/scripts-cypress@workspace:*, @fluentui/scripts-cypress@workspace:scripts/cypress":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-cypress@workspace:scripts/cypress"
   languageName: unknown
@@ -6013,8 +6021,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-dangerjs@workspace:scripts/dangerjs"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6022,9 +6030,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-executors@workspace:scripts/executors"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-prettier": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-prettier": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6032,7 +6040,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-fluentui-publish@workspace:scripts/fluentui-publish"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6040,36 +6048,36 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-generators@workspace:scripts/generators"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-projects-test": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-projects-test": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-github@*, @fluentui/scripts-github@workspace:scripts/github":
+"@fluentui/scripts-github@workspace:*, @fluentui/scripts-github@workspace:scripts/github":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-github@workspace:scripts/github"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-gulp@*, @fluentui/scripts-gulp@workspace:scripts/gulp":
+"@fluentui/scripts-gulp@workspace:*, @fluentui/scripts-gulp@workspace:scripts/gulp":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-gulp@workspace:scripts/gulp"
   dependencies:
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-prettier": "*"
-    "@fluentui/scripts-projects-test": "*"
-    "@fluentui/scripts-puppeteer": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-prettier": "workspace:*"
+    "@fluentui/scripts-projects-test": "workspace:*"
+    "@fluentui/scripts-puppeteer": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-jest@*, @fluentui/scripts-jest@workspace:scripts/jest":
+"@fluentui/scripts-jest@workspace:*, @fluentui/scripts-jest@workspace:scripts/jest":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-jest@workspace:scripts/jest"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6077,15 +6085,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-lint-staged@workspace:scripts/lint-staged"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-monorepo@*, @fluentui/scripts-monorepo@workspace:scripts/monorepo":
+"@fluentui/scripts-monorepo@workspace:*, @fluentui/scripts-monorepo@workspace:scripts/monorepo":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-monorepo@workspace:scripts/monorepo"
   dependencies:
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6095,7 +6103,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-perf-test-flamegrill@*, @fluentui/scripts-perf-test-flamegrill@workspace:scripts/perf-test-flamegrill":
+"@fluentui/scripts-perf-test-flamegrill@workspace:*, @fluentui/scripts-perf-test-flamegrill@workspace:scripts/perf-test-flamegrill":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-perf-test-flamegrill@workspace:scripts/perf-test-flamegrill"
   peerDependencies:
@@ -6107,46 +6115,46 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-prettier@*, @fluentui/scripts-prettier@workspace:scripts/prettier":
+"@fluentui/scripts-prettier@workspace:*, @fluentui/scripts-prettier@workspace:scripts/prettier":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-prettier@workspace:scripts/prettier"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-projects-test@*, @fluentui/scripts-projects-test@workspace:scripts/projects-test":
+"@fluentui/scripts-projects-test@workspace:*, @fluentui/scripts-projects-test@workspace:scripts/projects-test":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-projects-test@workspace:scripts/projects-test"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-puppeteer": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-puppeteer": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-puppeteer@*, @fluentui/scripts-puppeteer@workspace:scripts/puppeteer":
+"@fluentui/scripts-puppeteer@workspace:*, @fluentui/scripts-puppeteer@workspace:scripts/puppeteer":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-puppeteer@workspace:scripts/puppeteer"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-storybook@*, @fluentui/scripts-storybook@workspace:scripts/storybook":
+"@fluentui/scripts-storybook@workspace:*, @fluentui/scripts-storybook@workspace:scripts/storybook":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-storybook@workspace:scripts/storybook"
   dependencies:
-    "@fluentui/babel-preset-storybook-full-source": "*"
-    "@fluentui/scripts-monorepo": "*"
+    "@fluentui/babel-preset-storybook-full-source": "workspace:*"
+    "@fluentui/scripts-monorepo": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-tasks@*, @fluentui/scripts-tasks@workspace:scripts/tasks":
+"@fluentui/scripts-tasks@workspace:*, @fluentui/scripts-tasks@workspace:scripts/tasks":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-tasks@workspace:scripts/tasks"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-prettier": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-prettier": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
     flamegrill: 0.2.0
   languageName: unknown
   linkType: soft
@@ -6155,8 +6163,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-test-ssr@workspace:scripts/test-ssr"
   dependencies:
-    "@fluentui/scripts-puppeteer": "*"
-    "@fluentui/scripts-ts-node": "*"
+    "@fluentui/scripts-puppeteer": "workspace:*"
+    "@fluentui/scripts-ts-node": "workspace:*"
   bin:
     test-ssr: ./bin/test-ssr.js
   languageName: unknown
@@ -6168,7 +6176,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-ts-node@*, @fluentui/scripts-ts-node@workspace:scripts/ts-node":
+"@fluentui/scripts-ts-node@workspace:*, @fluentui/scripts-ts-node@workspace:scripts/ts-node":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-ts-node@workspace:scripts/ts-node"
   languageName: unknown
@@ -6178,31 +6186,31 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-update-release-notes@workspace:scripts/update-release-notes"
   dependencies:
-    "@fluentui/scripts-github": "*"
+    "@fluentui/scripts-github": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-utils@*, @fluentui/scripts-utils@workspace:scripts/utils":
+"@fluentui/scripts-utils@workspace:*, @fluentui/scripts-utils@workspace:scripts/utils":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-utils@workspace:scripts/utils"
   languageName: unknown
   linkType: soft
 
-"@fluentui/scripts-webpack@*, @fluentui/scripts-webpack@workspace:scripts/webpack":
+"@fluentui/scripts-webpack@workspace:*, @fluentui/scripts-webpack@workspace:scripts/webpack":
   version: 0.0.0-use.local
   resolution: "@fluentui/scripts-webpack@workspace:scripts/webpack"
   dependencies:
-    "@fluentui/scripts-monorepo": "*"
-    "@fluentui/scripts-utils": "*"
+    "@fluentui/scripts-monorepo": "workspace:*"
+    "@fluentui/scripts-utils": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@fluentui/set-version@*, @fluentui/set-version@^8.2.11, @fluentui/set-version@workspace:packages/set-version":
+"@fluentui/set-version@^8.2.11, @fluentui/set-version@workspace:*, @fluentui/set-version@workspace:packages/set-version":
   version: 0.0.0-use.local
   resolution: "@fluentui/set-version@workspace:packages/set-version"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -6211,11 +6219,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/ssr-tests-v9@workspace:apps/ssr-tests-v9"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-components": "*"
-    "@fluentui/react-utilities": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-components": "workspace:*"
+    "@fluentui/react-utilities": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6223,10 +6231,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/ssr-tests@workspace:apps/ssr-tests"
   dependencies:
-    "@fluentui/public-docsite-resources": "*"
-    "@fluentui/react": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/public-docsite-resources": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     "@types/mocha": 7.0.2
     mocha: 7.2.0
@@ -6239,21 +6247,21 @@ __metadata:
   resolution: "@fluentui/state@workspace:packages/fluentui/state"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
     lerna-alias: ^3.0.3-0
   languageName: unknown
   linkType: soft
 
-"@fluentui/storybook@*, @fluentui/storybook@workspace:packages/storybook":
+"@fluentui/storybook@workspace:*, @fluentui/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@fluentui/storybook@workspace:packages/storybook"
   dependencies:
     "@fluentui/azure-themes": ^8.6.34
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react": ^8.111.2
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/theme": ^2.6.35
     "@fluentui/theme-samples": ^8.7.111
     "@storybook/addon-essentials": 6.5.15
@@ -6270,12 +6278,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/stress-test@workspace:apps/stress-test"
   dependencies:
-    "@fluentui/react": "*"
-    "@fluentui/react-components": "*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-components": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/web-components": "*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/web-components": "workspace:*"
     "@microsoft/fast-element": ^1.11.1
     afterframe: 1.0.2
     random-seedable: 1.0.8
@@ -6284,15 +6292,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/style-utilities@*, @fluentui/style-utilities@^8.9.17, @fluentui/style-utilities@workspace:packages/style-utilities":
+"@fluentui/style-utilities@^8.9.17, @fluentui/style-utilities@workspace:*, @fluentui/style-utilities@workspace:packages/style-utilities":
   version: 0.0.0-use.local
   resolution: "@fluentui/style-utilities@workspace:packages/style-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/theme": ^2.6.35
     "@fluentui/utilities": ^8.13.18
@@ -6301,28 +6309,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/styles@*, @fluentui/styles@^0.66.4, @fluentui/styles@workspace:packages/fluentui/styles":
+"@fluentui/styles@^0.66.4, @fluentui/styles@workspace:*, @fluentui/styles@workspace:packages/fluentui/styles":
   version: 0.0.0-use.local
   resolution: "@fluentui/styles@workspace:packages/fluentui/styles"
   dependencies:
     "@babel/runtime": ^7.10.4
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-babel": "*"
-    "@fluentui/scripts-gulp": "*"
-    "@fluentui/scripts-jest": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-babel": "workspace:*"
+    "@fluentui/scripts-gulp": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
     csstype: ^3.0.2
     lerna-alias: ^3.0.3-0
     lodash: ^4.17.15
   languageName: unknown
   linkType: soft
 
-"@fluentui/test-utilities@*, @fluentui/test-utilities@workspace:packages/test-utilities":
+"@fluentui/test-utilities@workspace:*, @fluentui/test-utilities@workspace:packages/test-utilities":
   version: 0.0.0-use.local
   resolution: "@fluentui/test-utilities@workspace:packages/test-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   peerDependencies:
     "@types/react": ">=16.8.0 <19.0.0"
     enzyme: ^3.0.0
@@ -6331,11 +6339,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/theme-designer@*, @fluentui/theme-designer@workspace:packages/react-components/theme-designer":
+"@fluentui/theme-designer@workspace:*, @fluentui/theme-designer@workspace:packages/react-components/theme-designer":
   version: 0.0.0-use.local
   resolution: "@fluentui/theme-designer@workspace:packages/react-components/theme-designer"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react-alert": 9.0.0-beta.75
     "@fluentui/react-components": ^9.31.0
     "@fluentui/react-context-selector": ^9.1.34
@@ -6343,8 +6351,8 @@ __metadata:
     "@fluentui/react-storybook-addon-codesandbox": ^0.1.0
     "@fluentui/react-theme": ^9.1.12
     "@fluentui/react-utilities": ^9.13.3
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     "@swc/helpers": ^0.5.1
     "@types/dedent": 0.7.0
@@ -6357,29 +6365,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/theme-samples@*, @fluentui/theme-samples@^8.7.111, @fluentui/theme-samples@workspace:packages/theme-samples":
+"@fluentui/theme-samples@^8.7.111, @fluentui/theme-samples@workspace:*, @fluentui/theme-samples@workspace:packages/theme-samples":
   version: 0.0.0-use.local
   resolution: "@fluentui/theme-samples@workspace:packages/theme-samples"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/react": ^8.111.2
     "@fluentui/scheme-utilities": ^8.3.36
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
 
-"@fluentui/theme@*, @fluentui/theme@^2.6.35, @fluentui/theme@workspace:packages/theme":
+"@fluentui/theme@^2.6.35, @fluentui/theme@workspace:*, @fluentui/theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@fluentui/theme@workspace:packages/theme"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
     "@fluentui/utilities": ^8.13.18
     tslib: ^2.1.0
@@ -6393,16 +6401,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/theming-designer@workspace:apps/theming-designer"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/font-icons-mdl2": "*"
-    "@fluentui/foundation-legacy": "*"
-    "@fluentui/merge-styles": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-docsite-components": "*"
-    "@fluentui/scheme-utilities": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/scripts-webpack": "*"
-    "@fluentui/set-version": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/font-icons-mdl2": "workspace:*"
+    "@fluentui/foundation-legacy": "workspace:*"
+    "@fluentui/merge-styles": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-docsite-components": "workspace:*"
+    "@fluentui/scheme-utilities": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/scripts-webpack": "workspace:*"
+    "@fluentui/set-version": "workspace:*"
     "@microsoft/load-themed-styles": ^1.10.26
     react: 17.0.2
     react-dom: 17.0.2
@@ -6414,9 +6422,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/tokens@workspace:packages/tokens"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@swc/helpers": ^0.5.1
   languageName: unknown
   linkType: soft
@@ -6425,9 +6433,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/ts-minbar-test-react-components@workspace:apps/ts-minbar-test-react-components"
   dependencies:
-    "@fluentui/react-components": "*"
-    "@fluentui/scripts-projects-test": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/react-components": "workspace:*"
+    "@fluentui/scripts-projects-test": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6435,9 +6443,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/ts-minbar-test-react@workspace:apps/ts-minbar-test-react"
   dependencies:
-    "@fluentui/react": "*"
-    "@fluentui/scripts-projects-test": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/scripts-projects-test": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -6447,19 +6455,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/utilities@*, @fluentui/utilities@^8.13.18, @fluentui/utilities@workspace:packages/utilities":
+"@fluentui/utilities@^8.13.18, @fluentui/utilities@workspace:*, @fluentui/utilities@workspace:packages/utilities":
   version: 0.0.0-use.local
   resolution: "@fluentui/utilities@workspace:packages/utilities"
   dependencies:
     "@fluentui/dom-utilities": ^2.2.11
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/jest-serializer-merge-styles": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/jest-serializer-merge-styles": "workspace:*"
     "@fluentui/merge-styles": ^8.5.12
-    "@fluentui/scripts-api-extractor": "*"
-    "@fluentui/scripts-jest": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/scripts-api-extractor": "workspace:*"
+    "@fluentui/scripts-jest": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@fluentui/set-version": ^8.2.11
-    "@fluentui/test-utilities": "*"
+    "@fluentui/test-utilities": "workspace:*"
     tslib: ^2.1.0
   peerDependencies:
     "@types/react": ">=16.8.0 <19.0.0"
@@ -6471,57 +6479,57 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/vr-tests-react-components@workspace:apps/vr-tests-react-components"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/react-accordion": "*"
-    "@fluentui/react-avatar": "*"
-    "@fluentui/react-badge": "*"
-    "@fluentui/react-breadcrumb-preview": "*"
-    "@fluentui/react-button": "*"
-    "@fluentui/react-card": "*"
-    "@fluentui/react-checkbox": "*"
-    "@fluentui/react-combobox": "*"
-    "@fluentui/react-context-selector": "*"
-    "@fluentui/react-datepicker-compat": "*"
-    "@fluentui/react-dialog": "*"
-    "@fluentui/react-divider": "*"
-    "@fluentui/react-field": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/react-accordion": "workspace:*"
+    "@fluentui/react-avatar": "workspace:*"
+    "@fluentui/react-badge": "workspace:*"
+    "@fluentui/react-breadcrumb-preview": "workspace:*"
+    "@fluentui/react-button": "workspace:*"
+    "@fluentui/react-card": "workspace:*"
+    "@fluentui/react-checkbox": "workspace:*"
+    "@fluentui/react-combobox": "workspace:*"
+    "@fluentui/react-context-selector": "workspace:*"
+    "@fluentui/react-datepicker-compat": "workspace:*"
+    "@fluentui/react-dialog": "workspace:*"
+    "@fluentui/react-divider": "workspace:*"
+    "@fluentui/react-field": "workspace:*"
     "@fluentui/react-icons": ^2.0.207
-    "@fluentui/react-image": "*"
+    "@fluentui/react-image": "workspace:*"
     "@fluentui/react-infobutton": ">=9.0.0-alpha"
-    "@fluentui/react-input": "*"
-    "@fluentui/react-label": "*"
-    "@fluentui/react-link": "*"
-    "@fluentui/react-menu": "*"
-    "@fluentui/react-persona": "*"
-    "@fluentui/react-popover": "*"
-    "@fluentui/react-portal": "*"
-    "@fluentui/react-positioning": "*"
-    "@fluentui/react-progress": "*"
-    "@fluentui/react-provider": "*"
-    "@fluentui/react-radio": "*"
-    "@fluentui/react-search-preview": "*"
-    "@fluentui/react-select": "*"
-    "@fluentui/react-shared-contexts": "*"
-    "@fluentui/react-skeleton": "*"
-    "@fluentui/react-slider": "*"
-    "@fluentui/react-spinbutton": "*"
-    "@fluentui/react-spinner": "*"
-    "@fluentui/react-storybook-addon": "*"
-    "@fluentui/react-storybook-addon-codesandbox": "*"
-    "@fluentui/react-switch": "*"
-    "@fluentui/react-table": "*"
-    "@fluentui/react-tabs": "*"
-    "@fluentui/react-tags-preview": "*"
-    "@fluentui/react-text": "*"
-    "@fluentui/react-textarea": "*"
-    "@fluentui/react-theme": "*"
-    "@fluentui/react-toast": "*"
-    "@fluentui/react-toolbar": "*"
-    "@fluentui/react-tooltip": "*"
-    "@fluentui/react-tree": "*"
-    "@fluentui/react-utilities": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/react-input": "workspace:*"
+    "@fluentui/react-label": "workspace:*"
+    "@fluentui/react-link": "workspace:*"
+    "@fluentui/react-menu": "workspace:*"
+    "@fluentui/react-persona": "workspace:*"
+    "@fluentui/react-popover": "workspace:*"
+    "@fluentui/react-portal": "workspace:*"
+    "@fluentui/react-positioning": "workspace:*"
+    "@fluentui/react-progress": "workspace:*"
+    "@fluentui/react-provider": "workspace:*"
+    "@fluentui/react-radio": "workspace:*"
+    "@fluentui/react-search-preview": "workspace:*"
+    "@fluentui/react-select": "workspace:*"
+    "@fluentui/react-shared-contexts": "workspace:*"
+    "@fluentui/react-skeleton": "workspace:*"
+    "@fluentui/react-slider": "workspace:*"
+    "@fluentui/react-spinbutton": "workspace:*"
+    "@fluentui/react-spinner": "workspace:*"
+    "@fluentui/react-storybook-addon": "workspace:*"
+    "@fluentui/react-storybook-addon-codesandbox": "workspace:*"
+    "@fluentui/react-switch": "workspace:*"
+    "@fluentui/react-table": "workspace:*"
+    "@fluentui/react-tabs": "workspace:*"
+    "@fluentui/react-tags-preview": "workspace:*"
+    "@fluentui/react-text": "workspace:*"
+    "@fluentui/react-textarea": "workspace:*"
+    "@fluentui/react-theme": "workspace:*"
+    "@fluentui/react-toast": "workspace:*"
+    "@fluentui/react-toolbar": "workspace:*"
+    "@fluentui/react-tooltip": "workspace:*"
+    "@fluentui/react-tree": "workspace:*"
+    "@fluentui/react-utilities": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     "@griffel/react": ^1.5.14
     react: 17.0.2
     react-dom: 17.0.2
@@ -6533,24 +6541,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fluentui/vr-tests@workspace:apps/vr-tests"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/example-data": "*"
-    "@fluentui/font-icons-mdl2": "*"
-    "@fluentui/react": "*"
-    "@fluentui/react-charting": "*"
-    "@fluentui/react-experiments": "*"
-    "@fluentui/react-hooks": "*"
-    "@fluentui/react-icons-mdl2": "*"
-    "@fluentui/scripts-storybook": "*"
-    "@fluentui/scripts-tasks": "*"
-    "@fluentui/storybook": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/example-data": "workspace:*"
+    "@fluentui/font-icons-mdl2": "workspace:*"
+    "@fluentui/react": "workspace:*"
+    "@fluentui/react-charting": "workspace:*"
+    "@fluentui/react-experiments": "workspace:*"
+    "@fluentui/react-hooks": "workspace:*"
+    "@fluentui/react-icons-mdl2": "workspace:*"
+    "@fluentui/scripts-storybook": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
+    "@fluentui/storybook": "workspace:*"
     react: 17.0.2
     react-dom: 17.0.2
     tslib: ^2.1.0
   languageName: unknown
   linkType: soft
 
-"@fluentui/web-components@*, @fluentui/web-components@workspace:packages/web-components":
+"@fluentui/web-components@workspace:*, @fluentui/web-components@workspace:packages/web-components":
   version: 0.0.0-use.local
   resolution: "@fluentui/web-components@workspace:packages/web-components"
   dependencies:
@@ -6585,12 +6593,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@fluentui/webpack-utilities@*, @fluentui/webpack-utilities@workspace:packages/webpack-utilities":
+"@fluentui/webpack-utilities@workspace:*, @fluentui/webpack-utilities@workspace:packages/webpack-utilities":
   version: 0.0.0-use.local
   resolution: "@fluentui/webpack-utilities@workspace:packages/webpack-utilities"
   dependencies:
-    "@fluentui/eslint-plugin": "*"
-    "@fluentui/scripts-tasks": "*"
+    "@fluentui/eslint-plugin": "workspace:*"
+    "@fluentui/scripts-tasks": "workspace:*"
     loader-utils: ^2.0.0
     tslib: ^2.1.0
   peerDependencies:
@@ -7683,6 +7691,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna/package-graph@npm:*":
+  version: 6.4.1
+  resolution: "@lerna/package-graph@npm:6.4.1"
+  dependencies:
+    "@lerna/prerelease-id-from-version": 6.4.1
+    "@lerna/validation-error": 6.4.1
+    npm-package-arg: 8.1.1
+    npmlog: ^6.0.2
+    semver: ^7.3.4
+  checksum: 8352fee329ea771c06316c5445799b604a29eb29d594ca1fcce62756b866bc2143f0aea1f159482474f1df7e3b6c7f06ee450df30bf9b340bab2b06166c3a00d
+  languageName: node
+  linkType: hard
+
 "@lerna/package-graph@npm:5.5.2":
   version: 5.5.2
   resolution: "@lerna/package-graph@npm:5.5.2"
@@ -7707,12 +7728,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna/package@npm:6.4.1":
+  version: 6.4.1
+  resolution: "@lerna/package@npm:6.4.1"
+  dependencies:
+    load-json-file: ^6.2.0
+    npm-package-arg: 8.1.1
+    write-pkg: ^4.0.0
+  checksum: 43eb93868633ffb232d093e55747138a3d5453af97d718e3e3e388d06b4efb1b8eedcaaeb0db8c5cbaa6dd5e1297f2adc82f4c5affc9bfa8b1e8c3e776251d18
+  languageName: node
+  linkType: hard
+
 "@lerna/prerelease-id-from-version@npm:5.5.2":
   version: 5.5.2
   resolution: "@lerna/prerelease-id-from-version@npm:5.5.2"
   dependencies:
     semver: ^7.3.4
   checksum: 995d6e62422d589eec0d53bec4b367ae4c18d51a803e908e5953d64cc2168a1146540b70a3394739186bf700ffec1c4f166af25e450e2a7322b6f9d8dabb9844
+  languageName: node
+  linkType: hard
+
+"@lerna/prerelease-id-from-version@npm:6.4.1":
+  version: 6.4.1
+  resolution: "@lerna/prerelease-id-from-version@npm:6.4.1"
+  dependencies:
+    semver: ^7.3.4
+  checksum: 30a631680a70be1b429d22e66cc104931c05c70211f6273476ec75cb55b0591f9c01d967c81efddb0b285a14a22cce79c3b93fef5b2e31200a560720eb58463d
   languageName: node
   linkType: hard
 
@@ -7724,6 +7765,27 @@ __metadata:
     npmlog: ^6.0.2
     upath: ^2.0.1
   checksum: ccc01c6e37c27bb8e67522c638535baf2e42c3bc4e8a989a0929519105e3ef046f69ef4be29eec45f9b0588528bbf99f509f53a3bdffeb8e19343daa46527684
+  languageName: node
+  linkType: hard
+
+"@lerna/project@npm:*":
+  version: 6.4.1
+  resolution: "@lerna/project@npm:6.4.1"
+  dependencies:
+    "@lerna/package": 6.4.1
+    "@lerna/validation-error": 6.4.1
+    cosmiconfig: ^7.0.0
+    dedent: ^0.7.0
+    dot-prop: ^6.0.1
+    glob-parent: ^5.1.1
+    globby: ^11.0.2
+    js-yaml: ^4.1.0
+    load-json-file: ^6.2.0
+    npmlog: ^6.0.2
+    p-map: ^4.0.0
+    resolve-from: ^5.0.0
+    write-json-file: ^4.3.0
+  checksum: 4fdeffdcc68dfcc464a73264ead18f4177762d062ce2a166d54dcfb3622516e0c4e1987c859629fc42928ead2d8d2b86e0cf7d876a92fb16b2c528fdcac1624d
   languageName: node
   linkType: hard
 
@@ -7927,6 +7989,15 @@ __metadata:
   dependencies:
     npmlog: ^6.0.2
   checksum: 0fad4b059084cdcfe405b92f07a2b2e2b0b871020a1e3d41c696511ecdfe9b3e9b9db6f621dc6aa2e390704d3023019aa024271f45c61af6b9c77676b685ab46
+  languageName: node
+  linkType: hard
+
+"@lerna/validation-error@npm:6.4.1":
+  version: 6.4.1
+  resolution: "@lerna/validation-error@npm:6.4.1"
+  dependencies:
+    npmlog: ^6.0.2
+  checksum: 1cc0000599ba69ffa32825e7cb28ea719ea5f0de61daf8e9fac7724f7bc0d9b7766ae8ba634f7864b757c26eef3e1b8f2f63633fb9a68ec938440e3ece146e3e
   languageName: node
   linkType: hard
 

@@ -22,10 +22,10 @@
     "use-immer": "^0.6.0"
   },
   "devDependencies": {
-    "@fluentui/eslint-plugin": "*",
-    "@fluentui/scripts-babel": "*",
-    "@fluentui/scripts-gulp": "*",
-    "@fluentui/scripts-jest": "*",
+    "@fluentui/eslint-plugin": "workspace:*",
+    "@fluentui/scripts-babel": "workspace:*",
+    "@fluentui/scripts-gulp": "workspace:*",
+    "@fluentui/scripts-jest": "workspace:*",
     "@types/react-frame-component": "^4.1.1",
     "lerna-alias": "^3.0.3-0"
   },

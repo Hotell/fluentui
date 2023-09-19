@@ -11,9 +11,9 @@
     "type-check": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@fluentui/scripts-monorepo": "*",
-    "@fluentui/scripts-prettier": "*",
-    "@fluentui/scripts-utils": "*",
+    "@fluentui/scripts-monorepo": "workspace:*",
+    "@fluentui/scripts-prettier": "workspace:*",
+    "@fluentui/scripts-utils": "workspace:*",
     "flamegrill": "0.2.0"
   }
 }
