@@ -1,0 +1,7 @@
+{
+  "title": "Fluentui React v9 (CRA + TS)",
+  "description": "React running from the CRA dev server!",
+  "iconUrl": "https://github.com/codesandbox/sandbox-templates/blob/main/react-vite-ts/.codesandbox/icon.png?raw=true",
+  "tags": ["react", "cra", "javascript", "typescript"],
+  "published": true
+}
