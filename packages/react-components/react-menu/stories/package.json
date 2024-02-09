@@ -1,0 +1,16 @@
+{
+  "name": "@fluentui/react-menu-stories",
+  "version": "9.0.0",
+  "private": true,
+  "scripts": {
+    "storybook": "start-storybook",
+    "type-check": "just-scripts type-check"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "*",
+    "@fluentui/react-icons": "^2.0.224"
+  },
+  "devDependencies": {
+    "@fluentui/scripts-tasks": "*"
+  }
+}

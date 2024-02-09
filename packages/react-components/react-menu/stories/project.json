@@ -1,0 +1,7 @@
+{
+  "name": "@fluentui/react-menu-stories",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/react-components/react-menu/stories/src",
+  "projectType": "library",
+  "tags": ["vNext", "platform:web"]
+}

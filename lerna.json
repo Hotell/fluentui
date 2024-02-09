@@ -5,6 +5,7 @@
     "apps/*",
     "packages/*",
     "packages/react-components/*",
+    "packages/react-components/*/*",
     "scripts/*",
     "packages/fluentui/*",
     "tools/*",

@@ -5,7 +5,7 @@
  */
 module.exports = {
   displayName: 'react-menu',
-  preset: '../../../jest.preset.js',
+  preset: '../../../../jest.preset.js',
   transform: {
     '^.+\\.tsx?$': [
       'ts-jest',
