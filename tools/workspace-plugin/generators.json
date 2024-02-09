@@ -89,6 +89,11 @@
       "factory": "./src/generators/bundle-size-configuration/generator",
       "schema": "./src/generators/bundle-size-configuration/schema.json",
       "description": "bundle-size-configuration generator"
+    },
+    "migrate-v9-domains": {
+      "factory": "./src/generators/migrate-v9-domains/generator",
+      "schema": "./src/generators/migrate-v9-domains/schema.json",
+      "description": "migrate-v9-domains generator"
     }
   }
 }
