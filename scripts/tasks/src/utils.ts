@@ -48,10 +48,8 @@ export function getTsPathAliasesConfig() {
   const packageJson: PackageJson = JSON.parse(fs.readFileSync(path.join(cwd, './package.json'), 'utf-8'));
 
   const isUsingTsSolutionConfigs =
-    tsConfigs.root &&
-    tsConfigs.root.references &&
-    tsConfigs.root.references.length > 0 &&
-    Boolean(tsConfigFileContents.lib);
+    tsConfigs.root && tsConfigs.root.references && tsConfigs.root.references.length > 0; /* &&
+    Boolean(tsConfigFileContents.lib) */
 
   return {
     tsConfigFileNames,
