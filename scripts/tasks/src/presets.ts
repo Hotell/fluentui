@@ -23,6 +23,7 @@ import { ts } from './ts';
 import { typeCheck } from './type-check';
 import { verifyPackaging } from './verify-packaging';
 import { webpack, webpackDevServer } from './webpack';
+import { typeCheckV2 } from './type-check-v2';
 
 /** Do only the bare minimum setup of options and resolve paths */
 function basicPreset() {
@@ -75,6 +76,7 @@ export function preset() {
   task('babel:postprocess', babel);
   task('generate-api', generateApi);
   task('type-check', typeCheck);
+  task('type-check-v2', typeCheckV2);
   task('verify-packaging', () => verifyPackaging(args));
 
   task('ts:compile', () => {
