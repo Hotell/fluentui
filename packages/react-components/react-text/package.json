@@ -21,6 +21,8 @@
     "start": "yarn storybook",
     "test": "jest --passWithNoTests",
     "storybook": "start-storybook",
+    "type-check-v2": "just-scripts type-check-v2",
+    "type-check-v1": "just-scripts type-check",
     "type-check": "tsc -b tsconfig.json",
     "generate-api": "just-scripts generate-api",
     "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\"",
