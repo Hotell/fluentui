@@ -52,6 +52,7 @@ export function getTsPathAliasesConfig() {
     Boolean(tsConfigFileContents.lib) */
 
   return {
+    projectRoot: cwd,
     tsConfigFileNames,
     tsConfigFilePaths,
     tsConfigFileContents,
