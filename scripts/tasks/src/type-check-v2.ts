@@ -59,6 +59,7 @@ function cleanupTmpTsConfigFile(tmpTsConfigPath: string) {
 }
 
 export function typeCheckV2() {
+  performance.mark('type-check-v2:start');
   const { isUsingTsSolutionConfigs, tsConfigFilePaths, projectRoot } = getTsPathAliasesConfig();
 
   if (!isUsingTsSolutionConfigs) {
@@ -72,7 +73,18 @@ export function typeCheckV2() {
     path.relative(workspaceRoot, projectRoot),
   );
 
-  tscBuild(tmpTsConfig.tmpTsConfigPath);
+  const buildResult = tscBuild(tmpTsConfig.tmpTsConfigPath);
+
+  performance.mark('type-check-v2:end');
+
+  performance.measure('type-check-v2', 'type-check-v2:start', 'type-check-v2:end');
+
+  performance.getEntriesByName('type-check-v2').forEach(entry => console.log(`duration: ${entry.duration / 1000} s`));
+
+  if (buildResult > 0) {
+    console.error('Build failed');
+    process.exit(1);
+  }
 }
 
 const formatHost: ts.FormatDiagnosticsHost = {
@@ -102,10 +114,12 @@ function tscBuild(tsConfigPath: string) {
 
   const buildResult = solutionBuilder.build();
 
-  if (buildResult > 0) {
-    console.error('Build failed');
-    process.exit(1);
-  }
+  // if (buildResult > 0) {
+  //   console.error('Build failed');
+  //   process.exit(1);
+  // }
 
-  console.log('Build succeeded');
+  // console.log('Build succeeded');
+
+  return buildResult;
 }

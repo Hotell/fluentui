@@ -7,6 +7,8 @@ import { exec } from 'just-scripts-utils';
 import { getTsPathAliasesConfig } from './utils';
 
 export function typeCheck() {
+  performance.mark('type-check-v1:start');
+
   const { isUsingTsSolutionConfigs, tsConfigFileContents, tsConfigs, tsConfigFilePaths } = getTsPathAliasesConfig();
 
   if (!isUsingTsSolutionConfigs) {
@@ -39,5 +41,12 @@ export function typeCheck() {
     .finally(() => {
       // restore original tsconfig.json
       fs.writeFileSync(configPath, content, 'utf-8');
+      performance.mark('type-check-v1:end');
+
+      performance.measure('type-check-v1', 'type-check-v1:start', 'type-check-v1:end');
+
+      performance
+        .getEntriesByName('type-check-v1')
+        .forEach(entry => console.log(`duration: ${entry.duration / 1000} s`));
     });
 }
