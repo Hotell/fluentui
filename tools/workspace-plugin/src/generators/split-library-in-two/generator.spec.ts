@@ -94,7 +94,7 @@ describe('split-library-in-two generator', () => {
     expect(readJson(tree, `${newConfig.root}/config/api-extractor.json`)).toEqual(
       expect.objectContaining({
         mainEntryPointFilePath:
-          '<projectRoot>/../../../../dist/out-tsc/types/packages/react-components/<unscopedPackageName>/library/src/index.d.ts',
+          '<projectRoot>/../../../../../../dist/out-tsc/types/packages/react-components/<unscopedPackageName>/library/src/index.d.ts',
       }),
     );
 
