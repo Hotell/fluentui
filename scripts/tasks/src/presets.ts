@@ -119,7 +119,8 @@ export function preset() {
     const moduleFlag = args.module;
     return series(
       'swc:esm',
-      condition('babel:postprocess', () => hasBabel()),
+      // condition('babel:postprocess', () => hasBabel()),
+      'babel:postprocess',
       resolveModuleCompilation(moduleFlag),
     );
   });

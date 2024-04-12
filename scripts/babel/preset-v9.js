@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { performance } = require('perf_hooks');
 
 const { workspaceRoot } = require('@nx/devkit');
 
@@ -40,6 +41,7 @@ const plugins = [];
  * @param {import('./types').BabelPresetOptions} options
  */
 const preset = (api, options) => {
+  performance.mark('preset-v9:start');
   const moduleResolverAliasMappings = createModuleResolverAliases(options);
   /** @type {Array<import('./types').BabelPluginItem>} */
   const dynamicPresets = [
@@ -61,6 +63,9 @@ const preset = (api, options) => {
   ];
 
   presets.push(...dynamicPresets);
+
+  performance.mark('preset-v9:end');
+  console.log(performance.measure('preset-v9', 'preset-v9:start', 'preset-v9:end'));
 
   return { presets, plugins };
 };
