@@ -6,7 +6,7 @@ This log was last generated on Thu, 04 Apr 2024 12:08:07 GMT and should not be m
 
 ## [9.9.6](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.6)
 
-Thu, 04 Apr 2024 12:08:07 GMT 
+Thu, 04 Apr 2024 12:08:07 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.9.5..@fluentui/react-combobox_v9.9.6)
 
 ### Patches
@@ -15,7 +15,7 @@ Thu, 04 Apr 2024 12:08:07 GMT
 
 ## [9.9.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.5)
 
-Tue, 02 Apr 2024 09:48:01 GMT 
+Tue, 02 Apr 2024 09:48:01 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.9.4..@fluentui/react-combobox_v9.9.5)
 
 ### Patches
@@ -32,7 +32,7 @@ Tue, 02 Apr 2024 09:48:01 GMT
 
 ## [9.9.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.4)
 
-Mon, 25 Mar 2024 11:12:13 GMT 
+Mon, 25 Mar 2024 11:12:13 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.9.3..@fluentui/react-combobox_v9.9.4)
 
 ### Patches
@@ -42,7 +42,7 @@ Mon, 25 Mar 2024 11:12:13 GMT
 
 ## [9.9.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.3)
 
-Mon, 18 Mar 2024 19:50:46 GMT 
+Mon, 18 Mar 2024 19:50:46 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.9.2..@fluentui/react-combobox_v9.9.3)
 
 ### Patches
@@ -60,7 +60,7 @@ Mon, 18 Mar 2024 19:50:46 GMT
 
 ## [9.9.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.2)
 
-Fri, 15 Mar 2024 21:43:49 GMT 
+Fri, 15 Mar 2024 21:43:49 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.9.1..@fluentui/react-combobox_v9.9.2)
 
 ### Patches
@@ -78,7 +78,7 @@ Fri, 15 Mar 2024 21:43:49 GMT
 
 ## [9.9.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.1)
 
-Thu, 07 Mar 2024 19:33:21 GMT 
+Thu, 07 Mar 2024 19:33:21 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.9.0..@fluentui/react-combobox_v9.9.1)
 
 ### Patches
@@ -97,7 +97,7 @@ Thu, 07 Mar 2024 19:33:21 GMT
 
 ## [9.9.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.9.0)
 
-Wed, 28 Feb 2024 02:34:17 GMT 
+Wed, 28 Feb 2024 02:34:17 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.8.0..@fluentui/react-combobox_v9.9.0)
 
 ### Minor changes
@@ -115,7 +115,7 @@ Wed, 28 Feb 2024 02:34:17 GMT
 
 ## [9.8.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.8.0)
 
-Tue, 20 Feb 2024 14:22:18 GMT 
+Tue, 20 Feb 2024 14:22:18 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.7.5..@fluentui/react-combobox_v9.8.0)
 
 ### Minor changes
@@ -136,7 +136,7 @@ Tue, 20 Feb 2024 14:22:18 GMT
 
 ## [9.7.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.7.5)
 
-Tue, 06 Feb 2024 17:55:21 GMT 
+Tue, 06 Feb 2024 17:55:21 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.7.4..@fluentui/react-combobox_v9.7.5)
 
 ### Patches
@@ -147,7 +147,7 @@ Tue, 06 Feb 2024 17:55:21 GMT
 
 ## [9.7.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.7.4)
 
-Tue, 30 Jan 2024 23:16:54 GMT 
+Tue, 30 Jan 2024 23:16:54 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.7.3..@fluentui/react-combobox_v9.7.4)
 
 ### Patches
@@ -162,7 +162,7 @@ Tue, 30 Jan 2024 23:16:54 GMT
 
 ## [9.7.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.7.3)
 
-Mon, 29 Jan 2024 13:56:05 GMT 
+Mon, 29 Jan 2024 13:56:05 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.7.2..@fluentui/react-combobox_v9.7.3)
 
 ### Patches
@@ -173,7 +173,7 @@ Mon, 29 Jan 2024 13:56:05 GMT
 
 ## [9.7.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.7.2)
 
-Fri, 26 Jan 2024 10:40:22 GMT 
+Fri, 26 Jan 2024 10:40:22 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.7.1..@fluentui/react-combobox_v9.7.2)
 
 ### Patches
@@ -182,7 +182,7 @@ Fri, 26 Jan 2024 10:40:22 GMT
 
 ## [9.7.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.7.1)
 
-Tue, 23 Jan 2024 15:10:58 GMT 
+Tue, 23 Jan 2024 15:10:58 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.7.0..@fluentui/react-combobox_v9.7.1)
 
 ### Patches
@@ -199,7 +199,7 @@ Tue, 23 Jan 2024 15:10:58 GMT
 
 ## [9.7.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.7.0)
 
-Thu, 18 Jan 2024 14:25:01 GMT 
+Thu, 18 Jan 2024 14:25:01 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.6.1..@fluentui/react-combobox_v9.7.0)
 
 ### Minor changes
@@ -216,7 +216,7 @@ Thu, 18 Jan 2024 14:25:01 GMT
 
 ## [9.6.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.6.1)
 
-Wed, 17 Jan 2024 16:18:49 GMT 
+Wed, 17 Jan 2024 16:18:49 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.6.0..@fluentui/react-combobox_v9.6.1)
 
 ### Patches
@@ -232,7 +232,7 @@ Wed, 17 Jan 2024 16:18:49 GMT
 
 ## [9.6.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.6.0)
 
-Tue, 16 Jan 2024 13:14:15 GMT 
+Tue, 16 Jan 2024 13:14:15 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.40..@fluentui/react-combobox_v9.6.0)
 
 ### Minor changes
@@ -252,7 +252,7 @@ Tue, 16 Jan 2024 13:14:15 GMT
 
 ## [9.5.40](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.40)
 
-Thu, 11 Jan 2024 09:04:29 GMT 
+Thu, 11 Jan 2024 09:04:29 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.39..@fluentui/react-combobox_v9.5.40)
 
 ### Patches
@@ -261,7 +261,7 @@ Thu, 11 Jan 2024 09:04:29 GMT
 
 ## [9.5.39](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.39)
 
-Tue, 09 Jan 2024 10:21:34 GMT 
+Tue, 09 Jan 2024 10:21:34 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.38..@fluentui/react-combobox_v9.5.39)
 
 ### Patches
@@ -270,7 +270,7 @@ Tue, 09 Jan 2024 10:21:34 GMT
 
 ## [9.5.38](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.38)
 
-Mon, 08 Jan 2024 16:24:21 GMT 
+Mon, 08 Jan 2024 16:24:21 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.37..@fluentui/react-combobox_v9.5.38)
 
 ### Patches
@@ -285,7 +285,7 @@ Mon, 08 Jan 2024 16:24:21 GMT
 
 ## [9.5.37](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.37)
 
-Wed, 03 Jan 2024 09:26:42 GMT 
+Wed, 03 Jan 2024 09:26:42 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.36..@fluentui/react-combobox_v9.5.37)
 
 ### Patches
@@ -300,7 +300,7 @@ Wed, 03 Jan 2024 09:26:42 GMT
 
 ## [9.5.36](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.36)
 
-Thu, 21 Dec 2023 17:00:41 GMT 
+Thu, 21 Dec 2023 17:00:41 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.35..@fluentui/react-combobox_v9.5.36)
 
 ### Patches
@@ -309,7 +309,7 @@ Thu, 21 Dec 2023 17:00:41 GMT
 
 ## [9.5.35](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.35)
 
-Mon, 18 Dec 2023 17:48:16 GMT 
+Mon, 18 Dec 2023 17:48:16 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.34..@fluentui/react-combobox_v9.5.35)
 
 ### Patches
@@ -319,7 +319,7 @@ Mon, 18 Dec 2023 17:48:16 GMT
 
 ## [9.5.34](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.34)
 
-Mon, 18 Dec 2023 14:40:46 GMT 
+Mon, 18 Dec 2023 14:40:46 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.33..@fluentui/react-combobox_v9.5.34)
 
 ### Patches
@@ -334,7 +334,7 @@ Mon, 18 Dec 2023 14:40:46 GMT
 
 ## [9.5.33](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.33)
 
-Thu, 14 Dec 2023 09:58:43 GMT 
+Thu, 14 Dec 2023 09:58:43 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.32..@fluentui/react-combobox_v9.5.33)
 
 ### Patches
@@ -350,7 +350,7 @@ Thu, 14 Dec 2023 09:58:43 GMT
 
 ## [9.5.32](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.32)
 
-Thu, 30 Nov 2023 13:42:05 GMT 
+Thu, 30 Nov 2023 13:42:05 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.31..@fluentui/react-combobox_v9.5.32)
 
 ### Patches
@@ -364,7 +364,7 @@ Thu, 30 Nov 2023 13:42:05 GMT
 
 ## [9.5.31](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.31)
 
-Mon, 20 Nov 2023 09:55:10 GMT 
+Mon, 20 Nov 2023 09:55:10 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.30..@fluentui/react-combobox_v9.5.31)
 
 ### Patches
@@ -376,7 +376,7 @@ Mon, 20 Nov 2023 09:55:10 GMT
 
 ## [9.5.30](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.30)
 
-Tue, 14 Nov 2023 17:51:27 GMT 
+Tue, 14 Nov 2023 17:51:27 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.29..@fluentui/react-combobox_v9.5.30)
 
 ### Patches
@@ -385,7 +385,7 @@ Tue, 14 Nov 2023 17:51:27 GMT
 
 ## [9.5.29](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.29)
 
-Thu, 09 Nov 2023 17:29:31 GMT 
+Thu, 09 Nov 2023 17:29:31 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.28..@fluentui/react-combobox_v9.5.29)
 
 ### Patches
@@ -404,7 +404,7 @@ Thu, 09 Nov 2023 17:29:31 GMT
 
 ## [9.5.28](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.28)
 
-Wed, 01 Nov 2023 12:55:58 GMT 
+Wed, 01 Nov 2023 12:55:58 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.27..@fluentui/react-combobox_v9.5.28)
 
 ### Patches
@@ -418,7 +418,7 @@ Wed, 01 Nov 2023 12:55:58 GMT
 
 ## [9.5.27](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.27)
 
-Sat, 28 Oct 2023 23:35:55 GMT 
+Sat, 28 Oct 2023 23:35:55 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.26..@fluentui/react-combobox_v9.5.27)
 
 ### Patches
@@ -431,7 +431,7 @@ Sat, 28 Oct 2023 23:35:55 GMT
 
 ## [9.5.26](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.26)
 
-Mon, 23 Oct 2023 09:51:57 GMT 
+Mon, 23 Oct 2023 09:51:57 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.25..@fluentui/react-combobox_v9.5.26)
 
 ### Patches
@@ -440,7 +440,7 @@ Mon, 23 Oct 2023 09:51:57 GMT
 
 ## [9.5.25](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.25)
 
-Wed, 18 Oct 2023 17:54:02 GMT 
+Wed, 18 Oct 2023 17:54:02 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.24..@fluentui/react-combobox_v9.5.25)
 
 ### Patches
@@ -455,7 +455,7 @@ Wed, 18 Oct 2023 17:54:02 GMT
 
 ## [9.5.24](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.24)
 
-Thu, 12 Oct 2023 14:55:44 GMT 
+Thu, 12 Oct 2023 14:55:44 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.23..@fluentui/react-combobox_v9.5.24)
 
 ### Patches
@@ -465,7 +465,7 @@ Thu, 12 Oct 2023 14:55:44 GMT
 
 ## [9.5.23](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.23)
 
-Wed, 11 Oct 2023 13:54:26 GMT 
+Wed, 11 Oct 2023 13:54:26 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.22..@fluentui/react-combobox_v9.5.23)
 
 ### Patches
@@ -479,7 +479,7 @@ Wed, 11 Oct 2023 13:54:26 GMT
 
 ## [9.5.22](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.22)
 
-Mon, 09 Oct 2023 20:45:44 GMT 
+Mon, 09 Oct 2023 20:45:44 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.21..@fluentui/react-combobox_v9.5.22)
 
 ### Patches
@@ -494,7 +494,7 @@ Mon, 09 Oct 2023 20:45:44 GMT
 
 ## [9.5.21](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.21)
 
-Thu, 05 Oct 2023 15:25:35 GMT 
+Thu, 05 Oct 2023 15:25:35 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.20..@fluentui/react-combobox_v9.5.21)
 
 ### Patches
@@ -508,7 +508,7 @@ Thu, 05 Oct 2023 15:25:35 GMT
 
 ## [9.5.20](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.20)
 
-Wed, 04 Oct 2023 08:45:47 GMT 
+Wed, 04 Oct 2023 08:45:47 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.19..@fluentui/react-combobox_v9.5.20)
 
 ### Patches
@@ -522,7 +522,7 @@ Wed, 04 Oct 2023 08:45:47 GMT
 
 ## [9.5.19](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.19)
 
-Mon, 02 Oct 2023 08:56:05 GMT 
+Mon, 02 Oct 2023 08:56:05 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.18..@fluentui/react-combobox_v9.5.19)
 
 ### Patches
@@ -534,7 +534,7 @@ Mon, 02 Oct 2023 08:56:05 GMT
 
 ## [9.5.18](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.18)
 
-Tue, 26 Sep 2023 17:49:03 GMT 
+Tue, 26 Sep 2023 17:49:03 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.17..@fluentui/react-combobox_v9.5.18)
 
 ### Patches
@@ -552,7 +552,7 @@ Tue, 26 Sep 2023 17:49:03 GMT
 
 ## [9.5.17](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.17)
 
-Tue, 26 Sep 2023 15:32:04 GMT 
+Tue, 26 Sep 2023 15:32:04 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.16..@fluentui/react-combobox_v9.5.17)
 
 ### Patches
@@ -571,7 +571,7 @@ Tue, 26 Sep 2023 15:32:04 GMT
 
 ## [9.5.16](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.16)
 
-Wed, 20 Sep 2023 17:47:36 GMT 
+Wed, 20 Sep 2023 17:47:36 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.15..@fluentui/react-combobox_v9.5.16)
 
 ### Patches
@@ -585,7 +585,7 @@ Wed, 20 Sep 2023 17:47:36 GMT
 
 ## [9.5.15](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.15)
 
-Wed, 20 Sep 2023 14:59:53 GMT 
+Wed, 20 Sep 2023 14:59:53 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.14..@fluentui/react-combobox_v9.5.15)
 
 ### Patches
@@ -598,7 +598,7 @@ Wed, 20 Sep 2023 14:59:53 GMT
 
 ## [9.5.14](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.14)
 
-Thu, 14 Sep 2023 16:44:47 GMT 
+Thu, 14 Sep 2023 16:44:47 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.13..@fluentui/react-combobox_v9.5.14)
 
 ### Patches
@@ -608,7 +608,7 @@ Thu, 14 Sep 2023 16:44:47 GMT
 
 ## [9.5.13](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.13)
 
-Tue, 12 Sep 2023 08:51:34 GMT 
+Tue, 12 Sep 2023 08:51:34 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.12..@fluentui/react-combobox_v9.5.13)
 
 ### Patches
@@ -619,7 +619,7 @@ Tue, 12 Sep 2023 08:51:34 GMT
 
 ## [9.5.12](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.12)
 
-Wed, 06 Sep 2023 13:31:31 GMT 
+Wed, 06 Sep 2023 13:31:31 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.11..@fluentui/react-combobox_v9.5.12)
 
 ### Patches
@@ -633,7 +633,7 @@ Wed, 06 Sep 2023 13:31:31 GMT
 
 ## [9.5.11](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.11)
 
-Tue, 05 Sep 2023 15:39:04 GMT 
+Tue, 05 Sep 2023 15:39:04 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.10..@fluentui/react-combobox_v9.5.11)
 
 ### Patches
@@ -647,7 +647,7 @@ Tue, 05 Sep 2023 15:39:04 GMT
 
 ## [9.5.10](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.10)
 
-Tue, 05 Sep 2023 13:29:18 GMT 
+Tue, 05 Sep 2023 13:29:18 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.9..@fluentui/react-combobox_v9.5.10)
 
 ### Patches
@@ -666,7 +666,7 @@ Tue, 05 Sep 2023 13:29:18 GMT
 
 ## [9.5.9](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.9)
 
-Tue, 29 Aug 2023 12:57:36 GMT 
+Tue, 29 Aug 2023 12:57:36 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.8..@fluentui/react-combobox_v9.5.9)
 
 ### Patches
@@ -680,7 +680,7 @@ Tue, 29 Aug 2023 12:57:36 GMT
 
 ## [9.5.8](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.8)
 
-Thu, 24 Aug 2023 10:26:35 GMT 
+Thu, 24 Aug 2023 10:26:35 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.7..@fluentui/react-combobox_v9.5.8)
 
 ### Patches
@@ -694,7 +694,7 @@ Thu, 24 Aug 2023 10:26:35 GMT
 
 ## [9.5.7](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.7)
 
-Wed, 23 Aug 2023 12:01:49 GMT 
+Wed, 23 Aug 2023 12:01:49 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.6..@fluentui/react-combobox_v9.5.7)
 
 ### Patches
@@ -708,7 +708,7 @@ Wed, 23 Aug 2023 12:01:49 GMT
 
 ## [9.5.6](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.6)
 
-Mon, 21 Aug 2023 11:38:03 GMT 
+Mon, 21 Aug 2023 11:38:03 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.5..@fluentui/react-combobox_v9.5.6)
 
 ### Patches
@@ -717,7 +717,7 @@ Mon, 21 Aug 2023 11:38:03 GMT
 
 ## [9.5.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.5)
 
-Wed, 16 Aug 2023 17:41:08 GMT 
+Wed, 16 Aug 2023 17:41:08 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.4..@fluentui/react-combobox_v9.5.5)
 
 ### Patches
@@ -727,7 +727,7 @@ Wed, 16 Aug 2023 17:41:08 GMT
 
 ## [9.5.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.4)
 
-Wed, 16 Aug 2023 11:38:33 GMT 
+Wed, 16 Aug 2023 11:38:33 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.3..@fluentui/react-combobox_v9.5.4)
 
 ### Patches
@@ -737,7 +737,7 @@ Wed, 16 Aug 2023 11:38:33 GMT
 
 ## [9.5.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.3)
 
-Fri, 11 Aug 2023 12:14:26 GMT 
+Fri, 11 Aug 2023 12:14:26 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.2..@fluentui/react-combobox_v9.5.3)
 
 ### Patches
@@ -751,7 +751,7 @@ Fri, 11 Aug 2023 12:14:26 GMT
 
 ## [9.5.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.2)
 
-Wed, 09 Aug 2023 13:16:53 GMT 
+Wed, 09 Aug 2023 13:16:53 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.1..@fluentui/react-combobox_v9.5.2)
 
 ### Patches
@@ -767,7 +767,7 @@ Wed, 09 Aug 2023 13:16:53 GMT
 
 ## [9.5.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.1)
 
-Fri, 04 Aug 2023 08:52:58 GMT 
+Fri, 04 Aug 2023 08:52:58 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.5.0..@fluentui/react-combobox_v9.5.1)
 
 ### Patches
@@ -783,7 +783,7 @@ Fri, 04 Aug 2023 08:52:58 GMT
 
 ## [9.5.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.5.0)
 
-Tue, 01 Aug 2023 10:17:19 GMT 
+Tue, 01 Aug 2023 10:17:19 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.10..@fluentui/react-combobox_v9.5.0)
 
 ### Minor changes
@@ -796,7 +796,7 @@ Tue, 01 Aug 2023 10:17:19 GMT
 
 ## [9.4.10](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.10)
 
-Thu, 27 Jul 2023 10:34:14 GMT 
+Thu, 27 Jul 2023 10:34:14 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.9..@fluentui/react-combobox_v9.4.10)
 
 ### Patches
@@ -805,7 +805,7 @@ Thu, 27 Jul 2023 10:34:14 GMT
 
 ## [9.4.9](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.9)
 
-Tue, 25 Jul 2023 13:29:18 GMT 
+Tue, 25 Jul 2023 13:29:18 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.8..@fluentui/react-combobox_v9.4.9)
 
 ### Patches
@@ -816,7 +816,7 @@ Tue, 25 Jul 2023 13:29:18 GMT
 
 ## [9.4.8](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.8)
 
-Thu, 20 Jul 2023 18:27:27 GMT 
+Thu, 20 Jul 2023 18:27:27 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.7..@fluentui/react-combobox_v9.4.8)
 
 ### Patches
@@ -827,7 +827,7 @@ Thu, 20 Jul 2023 18:27:27 GMT
 
 ## [9.4.7](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.7)
 
-Tue, 11 Jul 2023 18:46:36 GMT 
+Tue, 11 Jul 2023 18:46:36 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.6..@fluentui/react-combobox_v9.4.7)
 
 ### Patches
@@ -839,7 +839,7 @@ Tue, 11 Jul 2023 18:46:36 GMT
 
 ## [9.4.6](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.6)
 
-Mon, 03 Jul 2023 13:34:28 GMT 
+Mon, 03 Jul 2023 13:34:28 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.5..@fluentui/react-combobox_v9.4.6)
 
 ### Patches
@@ -848,7 +848,7 @@ Mon, 03 Jul 2023 13:34:28 GMT
 
 ## [9.4.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.5)
 
-Mon, 03 Jul 2023 11:57:14 GMT 
+Mon, 03 Jul 2023 11:57:14 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.4..@fluentui/react-combobox_v9.4.5)
 
 ### Patches
@@ -863,7 +863,7 @@ Mon, 03 Jul 2023 11:57:14 GMT
 
 ## [9.4.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.4)
 
-Wed, 28 Jun 2023 11:12:24 GMT 
+Wed, 28 Jun 2023 11:12:24 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.3..@fluentui/react-combobox_v9.4.4)
 
 ### Patches
@@ -877,7 +877,7 @@ Wed, 28 Jun 2023 11:12:24 GMT
 
 ## [9.4.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.3)
 
-Tue, 27 Jun 2023 11:21:23 GMT 
+Tue, 27 Jun 2023 11:21:23 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.2..@fluentui/react-combobox_v9.4.3)
 
 ### Patches
@@ -886,7 +886,7 @@ Tue, 27 Jun 2023 11:21:23 GMT
 
 ## [9.4.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.2)
 
-Mon, 26 Jun 2023 09:53:55 GMT 
+Mon, 26 Jun 2023 09:53:55 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.1..@fluentui/react-combobox_v9.4.2)
 
 ### Patches
@@ -900,7 +900,7 @@ Mon, 26 Jun 2023 09:53:55 GMT
 
 ## [9.4.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.1)
 
-Tue, 20 Jun 2023 12:38:56 GMT 
+Tue, 20 Jun 2023 12:38:56 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.4.0..@fluentui/react-combobox_v9.4.1)
 
 ### Patches
@@ -919,7 +919,7 @@ Tue, 20 Jun 2023 12:38:56 GMT
 
 ## [9.4.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.4.0)
 
-Wed, 31 May 2023 06:46:10 GMT 
+Wed, 31 May 2023 06:46:10 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.3.4..@fluentui/react-combobox_v9.4.0)
 
 ### Minor changes
@@ -939,7 +939,7 @@ Wed, 31 May 2023 06:46:10 GMT
 
 ## [9.3.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.3.4)
 
-Thu, 25 May 2023 10:00:48 GMT 
+Thu, 25 May 2023 10:00:48 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.3.3..@fluentui/react-combobox_v9.3.4)
 
 ### Patches
@@ -953,7 +953,7 @@ Thu, 25 May 2023 10:00:48 GMT
 
 ## [9.3.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.3.3)
 
-Wed, 24 May 2023 20:45:24 GMT 
+Wed, 24 May 2023 20:45:24 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.3.2..@fluentui/react-combobox_v9.3.3)
 
 ### Patches
@@ -965,7 +965,7 @@ Wed, 24 May 2023 20:45:24 GMT
 
 ## [9.3.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.3.2)
 
-Thu, 18 May 2023 13:11:08 GMT 
+Thu, 18 May 2023 13:11:08 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.3.1..@fluentui/react-combobox_v9.3.2)
 
 ### Patches
@@ -974,7 +974,7 @@ Thu, 18 May 2023 13:11:08 GMT
 
 ## [9.3.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.3.1)
 
-Thu, 18 May 2023 00:39:03 GMT 
+Thu, 18 May 2023 00:39:03 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.3.0..@fluentui/react-combobox_v9.3.1)
 
 ### Patches
@@ -988,7 +988,7 @@ Thu, 18 May 2023 00:39:03 GMT
 
 ## [9.3.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.3.0)
 
-Fri, 12 May 2023 20:28:20 GMT 
+Fri, 12 May 2023 20:28:20 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.11..@fluentui/react-combobox_v9.3.0)
 
 ### Minor changes
@@ -1013,7 +1013,7 @@ Fri, 12 May 2023 20:28:20 GMT
 
 ## [9.2.11](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.11)
 
-Mon, 24 Apr 2023 08:12:33 GMT 
+Mon, 24 Apr 2023 08:12:33 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.10..@fluentui/react-combobox_v9.2.11)
 
 ### Patches
@@ -1024,7 +1024,7 @@ Mon, 24 Apr 2023 08:12:33 GMT
 
 ## [9.2.10](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.10)
 
-Mon, 17 Apr 2023 17:53:46 GMT 
+Mon, 17 Apr 2023 17:53:46 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.9..@fluentui/react-combobox_v9.2.10)
 
 ### Patches
@@ -1039,7 +1039,7 @@ Mon, 17 Apr 2023 17:53:46 GMT
 
 ## [9.2.9](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.9)
 
-Wed, 12 Apr 2023 09:31:43 GMT 
+Wed, 12 Apr 2023 09:31:43 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.8..@fluentui/react-combobox_v9.2.9)
 
 ### Patches
@@ -1053,7 +1053,7 @@ Wed, 12 Apr 2023 09:31:43 GMT
 
 ## [9.2.8](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.8)
 
-Fri, 07 Apr 2023 00:01:37 GMT 
+Fri, 07 Apr 2023 00:01:37 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.7..@fluentui/react-combobox_v9.2.8)
 
 ### Patches
@@ -1064,7 +1064,7 @@ Fri, 07 Apr 2023 00:01:37 GMT
 
 ## [9.2.7](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.7)
 
-Tue, 04 Apr 2023 18:44:48 GMT 
+Tue, 04 Apr 2023 18:44:48 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.6..@fluentui/react-combobox_v9.2.7)
 
 ### Patches
@@ -1078,7 +1078,7 @@ Tue, 04 Apr 2023 18:44:48 GMT
 
 ## [9.2.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.5)
 
-Tue, 21 Mar 2023 21:23:28 GMT 
+Tue, 21 Mar 2023 21:23:28 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.4..@fluentui/react-combobox_v9.2.5)
 
 ### Patches
@@ -1098,7 +1098,7 @@ Tue, 21 Mar 2023 21:23:28 GMT
 
 ## [9.2.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.4)
 
-Thu, 16 Mar 2023 14:36:59 GMT 
+Thu, 16 Mar 2023 14:36:59 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.3..@fluentui/react-combobox_v9.2.4)
 
 ### Patches
@@ -1111,7 +1111,7 @@ Thu, 16 Mar 2023 14:36:59 GMT
 
 ## [9.2.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.3)
 
-Wed, 15 Mar 2023 10:19:53 GMT 
+Wed, 15 Mar 2023 10:19:53 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.2..@fluentui/react-combobox_v9.2.3)
 
 ### Patches
@@ -1124,7 +1124,7 @@ Wed, 15 Mar 2023 10:19:53 GMT
 
 ## [9.2.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.2)
 
-Mon, 13 Mar 2023 08:58:26 GMT 
+Mon, 13 Mar 2023 08:58:26 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.1..@fluentui/react-combobox_v9.2.2)
 
 ### Patches
@@ -1137,7 +1137,7 @@ Mon, 13 Mar 2023 08:58:26 GMT
 
 ## [9.2.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.1)
 
-Fri, 10 Mar 2023 07:14:01 GMT 
+Fri, 10 Mar 2023 07:14:01 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.2.0..@fluentui/react-combobox_v9.2.1)
 
 ### Patches
@@ -1150,7 +1150,7 @@ Fri, 10 Mar 2023 07:14:01 GMT
 
 ## [9.2.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.2.0)
 
-Wed, 08 Mar 2023 17:42:29 GMT 
+Wed, 08 Mar 2023 17:42:29 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.1.5..@fluentui/react-combobox_v9.2.0)
 
 ### Minor changes
@@ -1165,7 +1165,7 @@ Wed, 08 Mar 2023 17:42:29 GMT
 
 ## [9.1.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.1.5)
 
-Wed, 22 Feb 2023 23:06:07 GMT 
+Wed, 22 Feb 2023 23:06:07 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.1.4..@fluentui/react-combobox_v9.1.5)
 
 ### Patches
@@ -1174,7 +1174,7 @@ Wed, 22 Feb 2023 23:06:07 GMT
 
 ## [9.1.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.1.4)
 
-Wed, 15 Feb 2023 11:44:52 GMT 
+Wed, 15 Feb 2023 11:44:52 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.1.3..@fluentui/react-combobox_v9.1.4)
 
 ### Patches
@@ -1187,7 +1187,7 @@ Wed, 15 Feb 2023 11:44:52 GMT
 
 ## [9.1.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.1.3)
 
-Mon, 13 Feb 2023 23:43:14 GMT 
+Mon, 13 Feb 2023 23:43:14 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.1.2..@fluentui/react-combobox_v9.1.3)
 
 ### Patches
@@ -1200,7 +1200,7 @@ Mon, 13 Feb 2023 23:43:14 GMT
 
 ## [9.1.2](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.1.2)
 
-Mon, 13 Feb 2023 09:35:48 GMT 
+Mon, 13 Feb 2023 09:35:48 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.1.1..@fluentui/react-combobox_v9.1.2)
 
 ### Patches
@@ -1209,7 +1209,7 @@ Mon, 13 Feb 2023 09:35:48 GMT
 
 ## [9.1.1](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.1.1)
 
-Fri, 10 Feb 2023 08:50:02 GMT 
+Fri, 10 Feb 2023 08:50:02 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.1.0..@fluentui/react-combobox_v9.1.1)
 
 ### Patches
@@ -1222,7 +1222,7 @@ Fri, 10 Feb 2023 08:50:02 GMT
 
 ## [9.1.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.1.0)
 
-Tue, 07 Feb 2023 14:13:09 GMT 
+Tue, 07 Feb 2023 14:13:09 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0..@fluentui/react-combobox_v9.1.0)
 
 ### Minor changes
@@ -1233,7 +1233,7 @@ Tue, 07 Feb 2023 14:13:09 GMT
 
 ## [9.0.0](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0)
 
-Tue, 31 Jan 2023 19:53:53 GMT 
+Tue, 31 Jan 2023 19:53:53 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.26..@fluentui/react-combobox_v9.0.0)
 
 ### Patches
@@ -1247,7 +1247,7 @@ Tue, 31 Jan 2023 19:53:53 GMT
 
 ## [9.0.0-beta.26](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.26)
 
-Thu, 26 Jan 2023 13:30:53 GMT 
+Thu, 26 Jan 2023 13:30:53 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.25..@fluentui/react-combobox_v9.0.0-beta.26)
 
 ### Changes
@@ -1265,7 +1265,7 @@ Thu, 26 Jan 2023 13:30:53 GMT
 
 ## [9.0.0-beta.25](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.25)
 
-Mon, 23 Jan 2023 16:43:12 GMT 
+Mon, 23 Jan 2023 16:43:12 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.24..@fluentui/react-combobox_v9.0.0-beta.25)
 
 ### Changes
@@ -1275,7 +1275,7 @@ Mon, 23 Jan 2023 16:43:12 GMT
 
 ## [9.0.0-beta.24](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.24)
 
-Wed, 18 Jan 2023 16:32:57 GMT 
+Wed, 18 Jan 2023 16:32:57 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.23..@fluentui/react-combobox_v9.0.0-beta.24)
 
 ### Changes
@@ -1284,7 +1284,7 @@ Wed, 18 Jan 2023 16:32:57 GMT
 
 ## [9.0.0-beta.23](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.23)
 
-Mon, 16 Jan 2023 08:38:57 GMT 
+Mon, 16 Jan 2023 08:38:57 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.22..@fluentui/react-combobox_v9.0.0-beta.23)
 
 ### Changes
@@ -1297,7 +1297,7 @@ Mon, 16 Jan 2023 08:38:57 GMT
 
 ## [9.0.0-beta.22](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.22)
 
-Mon, 09 Jan 2023 21:51:23 GMT 
+Mon, 09 Jan 2023 21:51:23 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.21..@fluentui/react-combobox_v9.0.0-beta.22)
 
 ### Changes
@@ -1306,7 +1306,7 @@ Mon, 09 Jan 2023 21:51:23 GMT
 
 ## [9.0.0-beta.21](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.21)
 
-Mon, 09 Jan 2023 14:34:55 GMT 
+Mon, 09 Jan 2023 14:34:55 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.20..@fluentui/react-combobox_v9.0.0-beta.21)
 
 ### Changes
@@ -1321,7 +1321,7 @@ Mon, 09 Jan 2023 14:34:55 GMT
 
 ## [9.0.0-beta.20](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.20)
 
-Wed, 04 Jan 2023 01:40:56 GMT 
+Wed, 04 Jan 2023 01:40:56 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.19..@fluentui/react-combobox_v9.0.0-beta.20)
 
 ### Changes
@@ -1336,7 +1336,7 @@ Wed, 04 Jan 2023 01:40:56 GMT
 
 ## [9.0.0-beta.19](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.19)
 
-Wed, 21 Dec 2022 10:20:28 GMT 
+Wed, 21 Dec 2022 10:20:28 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.18..@fluentui/react-combobox_v9.0.0-beta.19)
 
 ### Changes
@@ -1349,7 +1349,7 @@ Wed, 21 Dec 2022 10:20:28 GMT
 
 ## [9.0.0-beta.18](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.18)
 
-Tue, 20 Dec 2022 14:59:22 GMT 
+Tue, 20 Dec 2022 14:59:22 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.17..@fluentui/react-combobox_v9.0.0-beta.18)
 
 ### Changes
@@ -1365,12 +1365,12 @@ Tue, 20 Dec 2022 14:59:22 GMT
 
 ## [9.0.0-beta.17](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.17)
 
-Mon, 05 Dec 2022 18:29:21 GMT 
+Mon, 05 Dec 2022 18:29:21 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.16..@fluentui/react-combobox_v9.0.0-beta.17)
 
 ### Changes
 
--  feat: update Option value to be a non-display value, and add an Option text prop that is required if the child is not a string ([PR #25379](https://github.com/microsoft/fluentui/pull/25379) by sarah.higley@microsoft.com)
+- feat: update Option value to be a non-display value, and add an Option text prop that is required if the child is not a string ([PR #25379](https://github.com/microsoft/fluentui/pull/25379) by sarah.higley@microsoft.com)
 - fix: open Combobox popup when typing ([PR #25769](https://github.com/microsoft/fluentui/pull/25769) by sarah.higley@microsoft.com)
 - chore: Replace use of fontSize tokens with typographyStyles ([PR #25727](https://github.com/microsoft/fluentui/pull/25727) by behowell@microsoft.com)
 - fix: Combobox should close on blur after clicking expand icon ([PR #25771](https://github.com/microsoft/fluentui/pull/25771) by sarah.higley@microsoft.com)
@@ -1381,7 +1381,7 @@ Mon, 05 Dec 2022 18:29:21 GMT
 
 ## [9.0.0-beta.16](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.16)
 
-Thu, 17 Nov 2022 23:05:35 GMT 
+Thu, 17 Nov 2022 23:05:35 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.15..@fluentui/react-combobox_v9.0.0-beta.16)
 
 ### Changes
@@ -1394,12 +1394,12 @@ Thu, 17 Nov 2022 23:05:35 GMT
 
 ## [9.0.0-beta.15](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.15)
 
-Fri, 11 Nov 2022 14:57:58 GMT 
+Fri, 11 Nov 2022 14:57:58 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.14..@fluentui/react-combobox_v9.0.0-beta.15)
 
 ### Changes
 
-- chore: Move InputField into the @fluentui/react-input package and export as _unstable ([PR #25593](https://github.com/microsoft/fluentui/pull/25593) by behowell@microsoft.com)
+- chore: Move InputField into the @fluentui/react-input package and export as \_unstable ([PR #25593](https://github.com/microsoft/fluentui/pull/25593) by behowell@microsoft.com)
 - fix: create valid export maps ([PR #25558](https://github.com/microsoft/fluentui/pull/25558) by martinhochel@microsoft.com)
 - fix: update disabled + underline styles, have all text-like form control disabled states match ([PR #25543](https://github.com/microsoft/fluentui/pull/25543) by sarah.higley@microsoft.com)
 - Bump @fluentui/keyboard-keys to v9.0.1 ([PR #25615](https://github.com/microsoft/fluentui/pull/25615) by beachball)
@@ -1413,7 +1413,7 @@ Fri, 11 Nov 2022 14:57:58 GMT
 
 ## [9.0.0-beta.14](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.14)
 
-Wed, 02 Nov 2022 11:57:49 GMT 
+Wed, 02 Nov 2022 11:57:49 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.13..@fluentui/react-combobox_v9.0.0-beta.14)
 
 ### Changes
@@ -1427,7 +1427,7 @@ Wed, 02 Nov 2022 11:57:49 GMT
 
 ## [9.0.0-beta.13](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.13)
 
-Thu, 20 Oct 2022 08:39:30 GMT 
+Thu, 20 Oct 2022 08:39:30 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.12..@fluentui/react-combobox_v9.0.0-beta.13)
 
 ### Changes
@@ -1444,7 +1444,7 @@ Thu, 20 Oct 2022 08:39:30 GMT
 
 ## [9.0.0-beta.12](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.12)
 
-Thu, 13 Oct 2022 11:02:45 GMT 
+Thu, 13 Oct 2022 11:02:45 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.11..@fluentui/react-combobox_v9.0.0-beta.12)
 
 ### Changes
@@ -1461,7 +1461,7 @@ Thu, 13 Oct 2022 11:02:45 GMT
 
 ## [9.0.0-beta.11](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.11)
 
-Mon, 03 Oct 2022 22:24:42 GMT 
+Mon, 03 Oct 2022 22:24:42 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.10..@fluentui/react-combobox_v9.0.0-beta.11)
 
 ### Changes
@@ -1470,7 +1470,7 @@ Mon, 03 Oct 2022 22:24:42 GMT
 
 ## [9.0.0-beta.10](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.10)
 
-Tue, 20 Sep 2022 20:55:45 GMT 
+Tue, 20 Sep 2022 20:55:45 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.9..@fluentui/react-combobox_v9.0.0-beta.10)
 
 ### Changes
@@ -1479,7 +1479,7 @@ Tue, 20 Sep 2022 20:55:45 GMT
 
 ## [9.0.0-beta.9](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.9)
 
-Thu, 15 Sep 2022 09:50:00 GMT 
+Thu, 15 Sep 2022 09:50:00 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.8..@fluentui/react-combobox_v9.0.0-beta.9)
 
 ### Changes
@@ -1502,7 +1502,7 @@ Thu, 15 Sep 2022 09:50:00 GMT
 
 ## [9.0.0-beta.8](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.8)
 
-Wed, 03 Aug 2022 16:03:42 GMT 
+Wed, 03 Aug 2022 16:03:42 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.7..@fluentui/react-combobox_v9.0.0-beta.8)
 
 ### Changes
@@ -1516,7 +1516,7 @@ Wed, 03 Aug 2022 16:03:42 GMT
 
 ## [9.0.0-beta.7](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.7)
 
-Thu, 14 Jul 2022 21:21:10 GMT 
+Thu, 14 Jul 2022 21:21:10 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.6..@fluentui/react-combobox_v9.0.0-beta.7)
 
 ### Changes
@@ -1529,7 +1529,7 @@ Thu, 14 Jul 2022 21:21:10 GMT
 
 ## [9.0.0-beta.6](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.6)
 
-Thu, 14 Jul 2022 17:06:17 GMT 
+Thu, 14 Jul 2022 17:06:17 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.5..@fluentui/react-combobox_v9.0.0-beta.6)
 
 ### Changes
@@ -1543,7 +1543,7 @@ Thu, 14 Jul 2022 17:06:17 GMT
 
 ## [9.0.0-beta.5](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.5)
 
-Tue, 28 Jun 2022 17:39:48 GMT 
+Tue, 28 Jun 2022 17:39:48 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.4..@fluentui/react-combobox_v9.0.0-beta.5)
 
 ### Changes
@@ -1555,7 +1555,7 @@ Tue, 28 Jun 2022 17:39:48 GMT
 
 ## [9.0.0-beta.4](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.4)
 
-Tue, 28 Jun 2022 15:13:31 GMT 
+Tue, 28 Jun 2022 15:13:31 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.3..@fluentui/react-combobox_v9.0.0-beta.4)
 
 ### Changes
@@ -1571,7 +1571,7 @@ Tue, 28 Jun 2022 15:13:31 GMT
 
 ## [9.0.0-beta.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.3)
 
-Thu, 23 Jun 2022 14:25:31 GMT 
+Thu, 23 Jun 2022 14:25:31 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.3..@fluentui/react-combobox_v9.0.0-beta.3)
 
 ### Changes
@@ -1582,7 +1582,7 @@ Thu, 23 Jun 2022 14:25:31 GMT
 
 ## [9.0.0-beta.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.3)
 
-Tue, 31 May 2022 21:28:50 GMT 
+Tue, 31 May 2022 21:28:50 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.3..@fluentui/react-combobox_v9.0.0-beta.3)
 
 ### Changes
@@ -1595,7 +1595,7 @@ Tue, 31 May 2022 21:28:50 GMT
 
 ## [9.0.0-beta.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.3)
 
-Thu, 26 May 2022 21:01:32 GMT 
+Thu, 26 May 2022 21:01:32 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.3..@fluentui/react-combobox_v9.0.0-beta.3)
 
 ### Changes
@@ -1604,7 +1604,7 @@ Thu, 26 May 2022 21:01:32 GMT
 
 ## [9.0.0-beta.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.3)
 
-Mon, 23 May 2022 18:56:51 GMT 
+Mon, 23 May 2022 18:56:51 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.3..@fluentui/react-combobox_v9.0.0-beta.3)
 
 ### Changes
@@ -1616,7 +1616,7 @@ Mon, 23 May 2022 18:56:51 GMT
 
 ## [9.0.0-beta.3](https://github.com/microsoft/fluentui/tree/@fluentui/react-combobox_v9.0.0-beta.3)
 
-Mon, 23 May 2022 12:14:24 GMT 
+Mon, 23 May 2022 12:14:24 GMT
 [Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-combobox_v9.0.0-beta.3..@fluentui/react-combobox_v9.0.0-beta.3)
 
 ### Changes

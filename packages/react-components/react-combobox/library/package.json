@@ -20,10 +20,11 @@
     "lint": "just-scripts lint",
     "start": "yarn storybook",
     "test": "jest --passWithNoTests",
-    "storybook": "start-storybook",
-    "type-check": "tsc -b tsconfig.json",
+    "storybook": "yarn --cwd ../stories storybook",
+    "type-check": "just-scripts type-check",
+    "type-checkV2": "just-scripts type-checkV2",
     "generate-api": "just-scripts generate-api",
-    "test-ssr": "test-ssr \"./stories/**/*.stories.tsx\""
+    "test-ssr": "test-ssr \"../stories/src/**/*.stories.tsx\""
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "*",

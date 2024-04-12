@@ -98,7 +98,7 @@
       "@fluentui/react-card": ["packages/react-components/react-card/src/index.ts"],
       "@fluentui/react-checkbox": ["packages/react-components/react-checkbox/src/index.ts"],
       "@fluentui/react-colorpicker-compat": ["packages/react-components/react-colorpicker-compat/src/index.ts"],
-      "@fluentui/react-combobox": ["packages/react-components/react-combobox/src/index.ts"],
+      "@fluentui/react-combobox": ["packages/react-components/react-combobox/library/src/index.ts"],
       "@fluentui/react-components": ["packages/react-components/react-components/src/index.ts"],
       "@fluentui/react-components/unstable": ["packages/react-components/react-components/src/unstable/index.ts"],
       "@fluentui/react-conformance": ["packages/react-conformance/src/index.ts"],
@@ -174,7 +174,8 @@
       "@fluentui/react-virtualizer": ["packages/react-components/react-virtualizer/src/index.ts"],
       "@fluentui/theme-designer": ["packages/react-components/theme-designer/src/index.ts"],
       "@fluentui/tokens": ["packages/tokens/src/index.ts"],
-      "@fluentui/workspace-plugin": ["tools/workspace-plugin/src/index.ts"]
+      "@fluentui/workspace-plugin": ["tools/workspace-plugin/src/index.ts"],
+      "@fluentui/react-combobox-stories": ["packages/react-components/react-combobox/stories/src/index.ts"]
     }
   }
 }
