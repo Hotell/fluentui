@@ -1,3 +1,4 @@
+import { performance } from 'perf_hooks';
 import * as path from 'path';
 
 import type { ExtractorMessageCategory, ExtractorResult } from '@microsoft/api-extractor';
@@ -50,6 +51,8 @@ interface ApiExtractorCliRunCommandArgs {
 }
 
 export function apiExtractor(): TaskFunction {
+  performance.mark('apiExtractor:start');
+
   const { configs, configsToExecute } = getConfig();
   const messages: Record<keyof typeof compilerMessages, string[]> = {
     TS7016: [] as string[],
@@ -69,28 +72,45 @@ export function apiExtractor(): TaskFunction {
    */
   const isLocalBuild = args.local ?? !(process.env.TF_BUILD || isCI);
 
-  const tasks = configsToExecute.map(([configPath, configName]) => {
-    const taskName = `api-extractor:${configName}`;
+  // const tasks = configsToExecute.map(([configPath, configName]) => {
+  //   const taskName = `api-extractor:${configName}`;
 
-    task(
-      taskName,
+  //   task(
+  //     taskName,
 
-      apiExtractorVerifyTask({
-        showVerboseMessages: args.verbose,
-        showDiagnostics: args.diagnostics,
-        typescriptCompilerFolder: args['typescript-compiler-folder'],
-        configJsonFilePath: args.config ?? configPath,
-        localBuild: isLocalBuild,
-        onConfigLoaded,
-        messageCallback,
-        onResult,
-      }),
-    );
+  //     apiExtractorVerifyTask({
+  //       showVerboseMessages: args.verbose,
+  //       showDiagnostics: args.diagnostics,
+  //       typescriptCompilerFolder: args['typescript-compiler-folder'],
+  //       configJsonFilePath: args.config ?? configPath,
+  //       localBuild: isLocalBuild,
+  //       onConfigLoaded,
+  //       messageCallback,
+  //       onResult,
+  //     }),
+  //   );
 
-    return taskName;
-  });
+  //   return taskName;
+  // });
 
-  return series(...tasks);
+  // const result = series(...tasks);
+  // @ts-ignore - ok to ignore
+  const result = apiExtractorVerifyTask({
+    showVerboseMessages: args.verbose,
+    showDiagnostics: args.diagnostics,
+    typescriptCompilerFolder: args['typescript-compiler-folder'],
+    configJsonFilePath: args.config ?? configsToExecute[0][0],
+    localBuild: isLocalBuild,
+    onConfigLoaded,
+    messageCallback,
+    onResult,
+  })();
+
+  performance.mark('apiExtractor:end');
+
+  console.log(performance.measure('apiExtractor', 'apiExtractor:start', 'apiExtractor:end'));
+
+  return result;
 
   function noop() {
     if (configs.length) {

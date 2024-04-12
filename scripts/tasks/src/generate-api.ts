@@ -1,3 +1,4 @@
+import { performance } from 'perf_hooks';
 import { execSync } from 'child_process';
 
 import { series } from 'just-scripts';
@@ -10,6 +11,7 @@ export function generateApi() {
 }
 
 function generateTypeDeclarations() {
+  performance.mark('generateTypeDeclarations:start');
   const { tsConfigFileForCompilation } = getTsPathAliasesConfigUsedOnlyForDx();
   const cmd = [
     'tsc',
@@ -19,5 +21,12 @@ function generateTypeDeclarations() {
     '--baseUrl .',
   ].join(' ');
 
-  return execSync(cmd, { stdio: 'inherit' });
+  const result = execSync(cmd, { stdio: 'inherit' });
+
+  performance.mark('generateTypeDeclarations:end');
+  console.log(
+    performance.measure('generateTypeDeclarations', 'generateTypeDeclarations:start', 'generateTypeDeclarations:end'),
+  );
+
+  return result;
 }
