@@ -73,6 +73,13 @@ src/contexts/ListboxContext.ts -> src/components/Listbox/Listbox.types.ts -> src
 
 ### Type Check
 
+| Command                                                                                | Time (library / stories) | Delta         |
+| -------------------------------------------------------------------------------------- | ------------------------ | ------------- |
+| `tsc -b`                                                                               | 3596ms / 2915ms          | BASE          |
+| `tsc -p N` (parallel execution - avoiding build mode)                                  | 2307ms / 2200ms          | 𝚫 -36% / -25% |
+| `tsc -p N` (parallel execution) + (using `incremental` within generate API step)       | 2319ms / x               | 𝚫 -35.5% / x  |
+| `tsc -p N` (parallel execution) + (avoiding exec if `incremental` ran in generate-api) | 2287ms / x               | 𝚫 -36.5% / x  |
+
 `yarn workspace @fluentui/react-combobox just-scripts type-check`
 
 - `tsc -b`
