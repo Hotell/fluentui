@@ -1,5 +1,6 @@
 import { performance } from 'perf_hooks';
 import * as path from 'path';
+import { execSync } from 'node:child_process';
 
 import type { ExtractorMessageCategory, ExtractorResult } from '@microsoft/api-extractor';
 import { workspaceRoot } from '@nx/devkit';
@@ -48,6 +49,15 @@ interface ApiExtractorCliRunCommandArgs {
   local: boolean;
   verbose: boolean;
   'typescript-compiler-folder': string;
+}
+
+export function apiExtractorV2() {
+  performance.mark('apiExtractorCli:start');
+  const result = execSync(`yarn api-extractor run`, { stdio: 'inherit' });
+  performance.mark('apiExtractorCli:end');
+  console.log(performance.measure('apiExtractorCli', 'apiExtractorCli:start', 'apiExtractorCli:end'));
+
+  return result;
 }
 
 export function apiExtractor(): TaskFunction {

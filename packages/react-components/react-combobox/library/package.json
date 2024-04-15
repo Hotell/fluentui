@@ -11,6 +11,32 @@
     "url": "https://github.com/microsoft/fluentui"
   },
   "license": "MIT",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "dts": {
+      "only": true,
+      "resolve": true,
+      "compilerOptions": {
+        "isolatedModules": true,
+        "baseUrl": ".",
+        "skipLibCheck": false,
+        "lib": [
+          "ES2019",
+          "DOM"
+        ],
+        "typeRoots": [
+          "node_modules/@types",
+          "../../../../typings"
+        ],
+        "types": [
+          "static-assets",
+          "environment"
+        ]
+      }
+    }
+  },
   "scripts": {
     "build": "just-scripts build",
     "bundle-size": "monosize measure",
@@ -24,6 +50,8 @@
     "type-check": "just-scripts type-check",
     "type-checkV2": "just-scripts type-checkV2",
     "generate-api": "just-scripts generate-api",
+    "generate-apiV2": "tsup",
+    "generate-apiV3": "rollup -c",
     "test-ssr": "test-ssr \"../stories/src/**/*.stories.tsx\""
   },
   "devDependencies": {

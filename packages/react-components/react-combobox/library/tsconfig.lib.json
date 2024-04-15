@@ -7,8 +7,7 @@
     "declarationDir": "../../../../dist/out-tsc/types",
     "outDir": "../../../../dist/out-tsc",
     "inlineSources": true,
-    "types": ["static-assets", "environment"],
-    "incremental": true
+    "types": ["static-assets", "environment"]
   },
   "exclude": [
     "./src/testing/**",

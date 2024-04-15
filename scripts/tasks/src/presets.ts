@@ -4,7 +4,8 @@ import path from 'path';
 import { isConvergedPackage, shipsAMD } from '@fluentui/scripts-monorepo';
 import { addResolvePath, condition, option, parallel, series, task } from 'just-scripts';
 
-import { apiExtractor } from './api-extractor';
+import { apiExtractor, apiExtractorV2 } from './api-extractor';
+import { apiExtractorRaw } from './api-extractor-raw';
 import { JustArgs, getJustArgv } from './argv';
 import { babel, hasBabel } from './babel';
 import { clean } from './clean';
@@ -67,6 +68,8 @@ export function preset() {
   task('webpack', webpack);
   task('webpack-dev-server', webpackDevServer(args));
   task('api-extractor', apiExtractor);
+  task('api-extractorV2', apiExtractorV2);
+  task('api-extractorRaw', apiExtractorRaw);
   task('lint-imports:all', lintImportTaskAll);
   task('lint-imports:amd', lintImportTaskAmdOnly);
   task('prettier', prettier);

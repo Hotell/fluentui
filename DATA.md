@@ -2,10 +2,74 @@
 
 ### Generate API
 
+| Command                                                        | Time                 | Delta  |
+| -------------------------------------------------------------- | -------------------- | ------ |
+| `just-scripts generate-api` (tsc -p + api-extractor)           | 1637 + 1993 = 3630ms | BASE   |
+| `tsup --dts-only` (types need to be validated via `tsc` after) | 1922ms               | 𝚫 -48% |
+| `rollup` with `dts` plugin (against source: src/index.ts)      | 4500ms               | 𝚫 +24% |
+| 🥇 `rollup` with `dts` plugin (against tsc -p: src/index.d.ts) | 1637 + 225 = 1862ms  | 𝚫 -49% |
+
+**Current tsc -p + api-extractor:**
 `yarn workspace @fluentui/react-combobox just-scripts generate-api`
 
 - `tsc -p` 1637.501874923706
-- `api-extractor` 2374.7210829257965
+- `api-extractor` 1993.7427909374237
+
+_total: 3630ms_
+
+**Using rollup dts plugin within `tsup`**
+
+```json
+{
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "dts": {
+      "only": true,
+      "resolve": true,
+      "compilerOptions": {
+        "isolatedModules": true,
+        "baseUrl": ".",
+        "skipLibCheck": false,
+        "lib": ["ES2019", "DOM"],
+        "typeRoots": ["node_modules/@types", "../../../../typings"],
+        "types": ["static-assets", "environment"]
+      }
+    }
+  }
+}
+```
+
+```
+DTS ⚡️ Build success in 1922ms
+DTS dist/index.d.ts 22.08 KB
+```
+
+_total: 1922ms_
+
+**Using rollup dts plugin**
+
+config:
+
+```js
+import { dts } from 'rollup-plugin-dts';
+
+export default {
+  input: '../../../../dist/out-tsc/types/packages/react-components/react-combobox/library/src/index.d.ts', // path to your main TypeScript file
+  output: {
+    file: './dist/index-rollup.d.ts', // path where the output .d.ts file will be created
+    format: 'es',
+  },
+  plugins: [dts()],
+};
+```
+
+🙌 identifies circular dependencies !
+
+```
+(!) Circular dependencies
+src/contexts/ComboboxContext.ts -> src/components/Combobox/Combobox.types.ts -> src/utils/ComboboxBase.types.ts -> src/contexts/ComboboxContext.ts
+src/contexts/ListboxContext.ts -> src/components/Listbox/Listbox.types.ts -> src/contexts/ListboxContext.ts
+```
 
 ### Type Check
 
