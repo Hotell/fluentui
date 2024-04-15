@@ -50,23 +50,25 @@ export function typeCheck() {
 
 function getTsConfigs(solutionConfig: TsConfig, avoid: { spec: boolean; e2e: boolean }) {
   const refs = solutionConfig.references ?? [];
-  return refs
-    .map(ref => {
-      if (avoid.spec && ref.path.includes('spec')) {
-        return;
-      }
-      if (avoid.e2e && ref.path.includes('cy')) {
-        return;
-      }
-      if (ref.path.includes('tsconfig.lib.json')) {
-        console.log('skipping tsconfig.lib.json type-check which happened within generate-api task...');
-        return;
-      }
+  const tsConfigProjects: string[] = [];
 
-      return ref.path;
-    })
-    .filter(Boolean);
+  for (const ref of refs) {
+    if (avoid.spec && ref.path.includes('spec')) {
+      continue;
+    }
+    if (avoid.e2e && ref.path.includes('cy')) {
+      continue;
+    }
+    if (ref.path.includes('tsconfig.lib.json')) {
+      console.log('skipping tsconfig.lib.json type-check which happened within generate-api task...');
+      continue;
+    }
+    tsConfigProjects.push(ref.path);
+  }
+
+  return tsConfigProjects;
 }
+
 export async function typeCheckV2() {
   performance.mark('typeCheck2:start');
   const { isUsingTsSolutionConfigs, tsConfigs } = getTsPathAliasesConfig();
