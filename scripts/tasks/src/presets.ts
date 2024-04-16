@@ -11,7 +11,7 @@ import { babel, hasBabel } from './babel';
 import { clean } from './clean';
 import { copy, copyCompiled } from './copy';
 import { eslint } from './eslint';
-import { generateApi } from './generate-api';
+import { generateApi, generateApiV2, generateApiV3 } from './generate-api';
 import { jest as jestTask, jestWatch } from './jest';
 import { lintImportTaskAll, lintImportTaskAmdOnly } from './lint-imports';
 import { postprocessTask } from './postprocess';
@@ -77,6 +77,8 @@ export function preset() {
   task('storybook:build', buildStorybookTask());
   task('babel:postprocess', babel);
   task('generate-api', generateApi);
+  task('generate-apiV2', generateApiV2);
+  task('generate-apiV3', generateApiV3);
   task('type-check', typeCheck);
   task('type-checkV2', typeCheckV2);
   task('verify-packaging', () => verifyPackaging(args));

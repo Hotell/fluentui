@@ -50,8 +50,8 @@
     "type-check": "just-scripts type-check",
     "type-checkV2": "just-scripts type-checkV2",
     "generate-api": "just-scripts generate-api",
-    "generate-apiV2": "tsup",
-    "generate-apiV3": "rollup -c",
+    "generate-apiV2": "just-scripts generate-apiV2",
+    "generate-apiV3": "just-scripts generate-apiV3",
     "test-ssr": "test-ssr \"../stories/src/**/*.stories.tsx\""
   },
   "devDependencies": {
