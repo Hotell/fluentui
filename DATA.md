@@ -9,6 +9,12 @@
 | `rollup` with `dts` plugin (against source: src/index.ts)      | 4500ms               | 𝚫 +24% |
 | 🥇 `rollup` with `dts` plugin (against tsc -p: src/index.d.ts) | 1637 + 225 = 1862ms  | 𝚫 -49% |
 
+Effects on whole package build:
+
+| Command              | Current (api-extractor) | New (rollup)        |
+| -------------------- | ----------------------- | ------------------- |
+| `just-scripts build` | 5.39s                   | 3.39s / 𝚫37% faster |
+
 **Current tsc -p + api-extractor:**
 `yarn workspace @fluentui/react-combobox just-scripts generate-api`
 
