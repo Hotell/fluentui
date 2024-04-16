@@ -68,6 +68,11 @@ async function generateApiViaRollup() {
       file: './dist/index-rollup.d.ts', // path where the output .d.ts file will be created
       format: 'es',
     },
+    onwarn(warning, rollupWarn) {
+      if (warning.code !== 'CIRCULAR_DEPENDENCY') {
+        rollupWarn(warning);
+      }
+    },
     plugins: [dts()],
   };
   const result = await rollupDts(rollupConfig);
