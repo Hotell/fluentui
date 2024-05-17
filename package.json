@@ -274,6 +274,7 @@
     "monosize": "0.5.0",
     "monosize-storage-azure": "0.0.10",
     "monosize-bundler-webpack": "0.1.0",
+    "monosize-storage-upstash": "0.0.16",
     "node-plop": "0.25.0",
     "nx": "17.3.2",
     "p-queue": "6.6.2",

@@ -1,0 +1,56 @@
+name: Bundle size
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  bundle-size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: yarn
+          node-version: '18.x'
+
+      - run: yarn install --immutable
+
+      #
+      # Steps for PRs
+      #
+
+      - name: Build packages & create reports (PR Only)
+        if: github.event_name == 'pull_request'
+        run: yarn lage bundle-size --verbose --since $(GITHUB_BASE_REF)
+
+      - name: Compare bundle-size with base (PR Only)
+        if: github.event_name == 'pull_request'
+        run: yarn monosize compare-reports --branch=${GITHUB_BASE_REF} --output=markdown
+
+      - name: Comment bundlesize report (PR Only)
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: 'Bundle Size Report'
+          path: node_modules/monosize/dist/monosize.md
+
+      #
+      # Steps for "master" branch
+      #
+
+      - name: Measure all packages
+        if: (github.event_name == 'push' && github.event_name != 'pull_request')
+        run: yarn lage bundle-size --verbose
+
+      - name: Upload reports
+        if: github.event_name != 'pull_request'
+        run: yarn monosize upload-report --branch=${GITHUB_REF_NAME} --commit-sha=${GITHUB_SHA}
+        env:
+          UPSTASH_WRITE_TOKEN: ${{ secrets.UPSTASH_WRITE_TOKEN }}

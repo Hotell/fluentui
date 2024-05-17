@@ -1,12 +1,13 @@
 // @ts-check
 import webpackBundler from 'monosize-bundler-webpack';
-import createAzureStorage from 'monosize-storage-azure';
+import upstashStorage from 'monosize-storage-upstash';
 
 /** @type {import('monosize').MonoSizeConfig} */
 const config = {
   repository: 'https://github.com/microsoft/fluentui',
-  storage: createAzureStorage({
-    endpoint: 'https://fluentbundlesize.azurewebsites.net/api/latest',
+  storage: upstashStorage({
+    url: 'REST URL (UPSTASH_REDIS_REST_URL)',
+    readonlyToken: 'Readonly token (UPSTASH_REDIS_REST_TOKEN)',
   }),
   bundler: webpackBundler(config => {
     return config;
