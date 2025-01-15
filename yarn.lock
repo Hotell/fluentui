@@ -2637,6 +2637,11 @@
   resolved "https://registry.yarnpkg.com/@microsoft/fast-element/-/fast-element-2.0.0.tgz#4b3551159290f14ec59f9b48c6c4c26b4e086a0f"
   integrity sha512-Tzv4dCGTg10NNyqWWGRy3bYG4vacQUapjy5gpdpmFbSgvNF8aOzJJMkG5CfVUDoC9gWxY1ZyGgjXX0p86ZXX5w==
 
+"@microsoft/fast-element@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-element/-/fast-element-2.0.1.tgz#c8119f632567c3db649e80692e8ae4fd2e177653"
+  integrity sha512-JRAJS/Ib/Z10xSvTIjWEDsnBvKdJR1J0Q1AGttZnpkceih3GE3QfPgrDGhvIkKVF5raaHRfChIJkLYE2Jw7crQ==
+
 "@microsoft/fast-web-utilities@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@microsoft/fast-web-utilities/-/fast-web-utilities-6.0.0.tgz#7678c2b2cd12aeef785f4e2288da93a4db9e38a6"
@@ -4698,7 +4703,7 @@
   dependencies:
     "@tensile-perf/tools" "0.1.7"
 
-"@tensile-perf/web-components@~0.2.0":
+"@tensile-perf/web-components@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@tensile-perf/web-components/-/web-components-0.2.0.tgz#355ac463a121656e68c0567f9c15accf19b61734"
   integrity sha512-NEKH6d/2HrOJgW60E/oZ/O2D4vjzBv9xgSQmAz1cQnrEyQ/Odz/l3OWDwfEobcg8VHm6iODVoNAyvYAr4ESTKQ==
@@ -8297,7 +8302,7 @@ chrome-trace-event@^1.0.2:
   dependencies:
     tslib "^1.9.0"
 
-chromedriver@^125.0.0:
+chromedriver@125.0.3:
   version "125.0.3"
   resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-125.0.3.tgz#4c7cf13e54cd3575b88d4376a53d659cabb0ae05"
   integrity sha512-Qzuk5Wian2o3EVGjtbz6V/jv+pT/AV9246HbG6kUljZXXjsKZLZxqJC+kHR3qEh/wdv4EJD0YwAOWV72v9hogw==
