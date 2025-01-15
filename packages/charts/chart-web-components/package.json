@@ -108,7 +108,8 @@
   "beachball": {
     "disallowedChangeTypes": [
       "major",
-      "minor"
+      "minor",
+      "patch"
     ],
     "tag": "alpha"
   }
