@@ -4,5 +4,5 @@
   "projectType": "library",
   "sourceRoot": "packages/react-components/react-migration-v0-v9/library/src",
   "tags": ["vNext", "react-northstar", "platform:web"],
-  "implicitDependencies": []
+  "implicitDependencies": ["!react-northstar"]
 }

@@ -12,8 +12,6 @@ import type { ComponentProps as ComponentProps_2 } from '@fluentui/react-utiliti
 import type { ComponentState } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
 import { GriffelStyle } from '@fluentui/react-components';
-import { ObjectOf } from '@fluentui/react-northstar';
-import type { ObjectShorthandValue } from '@fluentui/react-northstar';
 import * as React_2 from 'react';
 import { SelectionHookParams } from '@fluentui/react-utilities';
 import { SelectionItemId } from '@fluentui/react-utilities';
@@ -118,7 +116,9 @@ export const FormFieldShim: React_2.ForwardRefExoticComponent<{
     required?: boolean | undefined;
     control?: ({
         content?: React_2.ReactNode;
-    } & ObjectOf<any> & {
+    } & {
+        [key: string]: any;
+    } & {
         children?: unknown;
     } & {
         error?: "true" | "false" | undefined;

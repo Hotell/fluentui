@@ -5,7 +5,7 @@ import {
   useFieldStyles_unstable,
   useField_unstable,
 } from '@fluentui/react-components';
-import type { ObjectShorthandValue } from '@fluentui/react-northstar';
+import type { ObjectShorthandValue } from './v0.types';
 
 import * as React from 'react';
 
