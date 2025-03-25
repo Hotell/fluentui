@@ -110,7 +110,7 @@ jobs:
             const config = {};
             await run({github,context,core,config});
 
-  visual_regression:
+  visual_regression_pr:
     if: github.repository_owner == 'hotell' && github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
