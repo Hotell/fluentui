@@ -24,11 +24,12 @@ async function main(options) {
   });
 
   console.log({ checkRuns });
+  console.log(JSON.stringify(checkRuns.data.check_runs, null, 2));
 
   // Find the check run you want to update (adjust the name if needed)
   const targetCheckRun = checkRuns.data.check_runs.find(
     // checkRun => checkRun.name === 'FORK TEST VRT/visual_regression',
-    checkRun => checkRun.name === 'visual_regression',
+    checkRun => checkRun.name === 'visual_regression_pr',
   );
 
   if (!targetCheckRun) {
