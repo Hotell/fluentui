@@ -40,7 +40,7 @@ jobs:
           node-version: '20'
 
       - run: yarn install --frozen-lockfile
-      - run: yarn playwright install --with-deps
+      - run: yarn playwright install --with-deps chromium
       # NOTE: we need to build the assertion CLI - will be removed once migrated ot ESM
       - run: yarn nx run visual-regression-assert:build
 
@@ -52,7 +52,9 @@ jobs:
           echo "value=$affected_count" >> $GITHUB_OUTPUT
 
       - name: Download Current Baseline
+        id: download_baseline
         uses: actions/download-artifact@v4
+        continue-on-error: true
         with:
           name: vrt_baseline
           # last successful workflow run
@@ -60,6 +62,18 @@ jobs:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
           # download to workspace root to set baseline
           path: '.'
+
+      - name: Download Baseline outcome
+        run: echo "Download baseline ${{ steps.download_baseline.outcome }}"
+
+      # - name: Check if Baseline Artifact Exists
+      #   id: check_baseline_exists
+      #   run: |
+      #     if [ -d vrt_baseline ]; then
+      #       echo "value=true" >> $GITHUB_OUTPUT
+      #     else
+      #       echo "value=false" >> $GITHUB_OUTPUT
+      #     fi
 
       - name: Update Baseline
         run: yarn nx affected -t test-vr-cli -u
@@ -82,6 +96,10 @@ jobs:
       actions: read
       issues: read
     steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/scripts
       - name: Update Existing Check Run
         uses: actions/github-script@v7
         with:
@@ -112,7 +130,7 @@ jobs:
           node-version: '20'
 
       - run: yarn install --frozen-lockfile
-      - run: yarn playwright install --with-deps
+      - run: yarn playwright install --with-deps chromium
       # NOTE: we need to build the assertion CLI - will be removed once migrated ot ESM
       - run: yarn nx run visual-regression-assert:build
 
