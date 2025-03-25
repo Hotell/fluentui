@@ -93,6 +93,8 @@ jobs:
     permissions:
       pull-requests: write
       contents: write
+      statuses: write
+      checks: write
       actions: read
       issues: read
     steps:
