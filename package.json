@@ -77,7 +77,7 @@
     "@microsoft/tsdoc": "0.15.1",
     "@nx/devkit": "19.8.14",
     "@nx/eslint": "19.8.14",
-    "@nx/eslint-plugin": "19.8.14",
+    "@nx/eslint-plugin": "20.6.4",
     "@nx/jest": "19.8.14",
     "@nx/js": "19.8.14",
     "@nx/node": "19.8.14",
