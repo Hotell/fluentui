@@ -28,7 +28,7 @@
       "cache": true
     },
     "test-vr-cli": {
-      "command": "visual-regression-assert assert --baselineDir src/__snapshots__ --outputPath dist/vrt",
+      "command": "visual-regression-assert assert --baselineDir src/__vrt_baseline__ --outputPath dist/vrt",
       "options": {
         "cwd": "{projectRoot}"
       },
