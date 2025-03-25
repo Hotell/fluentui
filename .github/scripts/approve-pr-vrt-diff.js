@@ -8,11 +8,12 @@
 async function main(options) {
   const { context, core, github, config } = options;
 
-  const { owner, repo, issue } = /** @type {typeof context.repo & {issue: {number:number}}} */ (context.repo);
+  const { owner, repo } = context.repo;
+  const pull_number = context.issue.number;
   const pull_request = await github.rest.pulls.get({
     owner,
     repo,
-    pull_number: issue.number,
+    pull_number,
   });
 
   const sha = pull_request.data.head.sha;
