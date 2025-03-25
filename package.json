@@ -68,7 +68,7 @@
     "@griffel/shadow-dom": "0.2.2",
     "@griffel/webpack-loader": "2.2.10",
     "@jest/reporters": "29.7.0",
-    "@mdx-js/loader": "2.3.0",
+    "@mdx-js/loader": "3.1.0",
     "@microsoft/api-extractor": "7.49.1",
     "@microsoft/api-extractor-model": "7.30.2",
     "@microsoft/eslint-plugin-sdl": "0.1.9",
