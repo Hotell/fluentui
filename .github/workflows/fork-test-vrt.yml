@@ -203,163 +203,163 @@ jobs:
           path: |
             pr.txt
 
-  visual_regression_pr_1:
-    if: github.repository_owner == 'hotell' && (github.event_name == 'pull_request' || (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, '/approve-diff')))
-    runs-on: ubuntu-latest
-    permissions:
-      contents: 'read'
-      actions: 'read'
-    steps:
-      - run: |
-          echo "approving VR diff ✅";
-        if: github.event_name == 'issue_comment'
+  # visual_regression_pr_1:
+  #   if: github.repository_owner == 'hotell' && (github.event_name == 'pull_request' || (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, '/approve-diff')))
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: 'read'
+  #     actions: 'read'
+  #   steps:
+  #     - run: |
+  #         echo "approving VR diff ✅";
+  #       if: github.event_name == 'issue_comment'
 
-      - uses: actions/checkout@v4
-        if: github.event_name == 'pull_request'
-        with:
-          fetch-depth: 0
+  #     - uses: actions/checkout@v4
+  #       if: github.event_name == 'pull_request'
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        if: github.event_name == 'pull_request'
-        uses: nrwl/nx-set-shas@dbe0650947e5f2c81f59190a38512cf49126fe6b # v4.3.0
-        with:
-          main-branch-name: 'master'
+  #     - name: Derive appropriate SHAs for base and head for `nx affected` commands
+  #       if: github.event_name == 'pull_request'
+  #       uses: nrwl/nx-set-shas@dbe0650947e5f2c81f59190a38512cf49126fe6b # v4.3.0
+  #       with:
+  #         main-branch-name: 'master'
 
-      - uses: actions/setup-node@v4
-        if: github.event_name == 'pull_request'
-        with:
-          cache: 'yarn'
-          node-version: '20'
+  #     - uses: actions/setup-node@v4
+  #       if: github.event_name == 'pull_request'
+  #       with:
+  #         cache: 'yarn'
+  #         node-version: '20'
 
-      - run: yarn install --frozen-lockfile
-        if: github.event_name == 'pull_request'
-      - run: yarn playwright install --with-deps chromium
-        if: github.event_name == 'pull_request'
-      # NOTE: we need to build the assertion CLI - will be removed once migrated ot ESM
-      - run: yarn nx run visual-regression-assert:build
-        if: github.event_name == 'pull_request'
+  #     - run: yarn install --frozen-lockfile
+  #       if: github.event_name == 'pull_request'
+  #     - run: yarn playwright install --with-deps chromium
+  #       if: github.event_name == 'pull_request'
+  #     # NOTE: we need to build the assertion CLI - will be removed once migrated ot ESM
+  #     - run: yarn nx run visual-regression-assert:build
+  #       if: github.event_name == 'pull_request'
 
-      - name: Affected Projects
-        if: github.event_name == 'pull_request'
-        id: affected_projects_count
-        run: |
-          yarn --silent nx show projects -t test-vr-cli --affected --verbose false
-          affected_count=$(yarn --silent nx show projects -t test-vr-cli --affected --verbose false | wc -l | tr -d ' ')
-          echo "value=$affected_count" >> $GITHUB_OUTPUT
+  #     - name: Affected Projects
+  #       if: github.event_name == 'pull_request'
+  #       id: affected_projects_count
+  #       run: |
+  #         yarn --silent nx show projects -t test-vr-cli --affected --verbose false
+  #         affected_count=$(yarn --silent nx show projects -t test-vr-cli --affected --verbose false | wc -l | tr -d ' ')
+  #         echo "value=$affected_count" >> $GITHUB_OUTPUT
 
-      - name: Run VR tests
-        if: github.event_name == 'pull_request'
-        run: yarn nx affected -t test-vr-cli
+  #     - name: Run VR tests
+  #       if: github.event_name == 'pull_request'
+  #       run: yarn nx affected -t test-vr-cli
 
-      - name: Create Report
-        if: always() && github.event_name == 'pull_request' && steps.affected_projects_count.outputs.value > 0
-        id: report
-        run: |
-          yarn visual-regression-assert report --outputPath dist/vrt
-          cat dist/vrt/vrt-report.md >> $GITHUB_STEP_SUMMARY
-          echo "value=true" >> $GITHUB_OUTPUT
+  #     - name: Create Report
+  #       if: always() && github.event_name == 'pull_request' && steps.affected_projects_count.outputs.value > 0
+  #       id: report
+  #       run: |
+  #         yarn visual-regression-assert report --outputPath dist/vrt
+  #         cat dist/vrt/vrt-report.md >> $GITHUB_STEP_SUMMARY
+  #         echo "value=true" >> $GITHUB_OUTPUT
 
-      - name: Upload Report
-        if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: vrt_report
-          retention-days: 1
-          if-no-files-found: error
-          path: |
-            dist/vrt/
+  #     - name: Upload Report
+  #       if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: vrt_report
+  #         retention-days: 1
+  #         if-no-files-found: error
+  #         path: |
+  #           dist/vrt/
 
-      - name: Save PR number
-        if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
-        run: echo ${{ github.event.number }} > pr.txt
+  #     - name: Save PR number
+  #       if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
+  #       run: echo ${{ github.event.number }} > pr.txt
 
-      - uses: actions/upload-artifact@v4
-        if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
-        with:
-          name: pr-number
-          retention-days: 1
-          if-no-files-found: error
-          path: |
-            pr.txt
+  #     - uses: actions/upload-artifact@v4
+  #       if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
+  #       with:
+  #         name: pr-number
+  #         retention-days: 1
+  #         if-no-files-found: error
+  #         path: |
+  #           pr.txt
 
-  visual_regression_pr_2:
-    if: github.repository_owner == 'hotell' && (github.event_name == 'pull_request' || (github.event_name == 'pull_request_target' && contains(toJson(github.event.pull_request.labels.*.name), 'approve-vrt')))
-    runs-on: ubuntu-latest
-    env:
-      VRT_LABEL_ADDED: ${{(github.event_name == 'pull_request_target' && contains(toJson(github.event.pull_request.labels.*.name), 'approve-vrt'))}}
-    permissions:
-      contents: 'read'
-      actions: 'read'
-      pull-requests: 'read'
-    steps:
-      - run: |
-          echo "approving VR diff ✅";
-        if: env.VRT_LABEL_ADDED
+  # visual_regression_pr_2:
+  #   if: github.repository_owner == 'hotell' && (github.event_name == 'pull_request' || (github.event_name == 'pull_request_target' && contains(toJson(github.event.pull_request.labels.*.name), 'approve-vrt')))
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     VRT_LABEL_ADDED: ${{(github.event_name == 'pull_request_target' && contains(toJson(github.event.pull_request.labels.*.name), 'approve-vrt'))}}
+  #   permissions:
+  #     contents: 'read'
+  #     actions: 'read'
+  #     pull-requests: 'read'
+  #   steps:
+  #     - run: |
+  #         echo "approving VR diff ✅";
+  #       if: env.VRT_LABEL_ADDED
 
-      - uses: actions/checkout@v4
-        if: github.event_name == 'pull_request'
-        with:
-          fetch-depth: 0
+  #     - uses: actions/checkout@v4
+  #       if: github.event_name == 'pull_request'
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        if: github.event_name == 'pull_request'
-        uses: nrwl/nx-set-shas@dbe0650947e5f2c81f59190a38512cf49126fe6b # v4.3.0
-        with:
-          main-branch-name: 'master'
+  #     - name: Derive appropriate SHAs for base and head for `nx affected` commands
+  #       if: github.event_name == 'pull_request'
+  #       uses: nrwl/nx-set-shas@dbe0650947e5f2c81f59190a38512cf49126fe6b # v4.3.0
+  #       with:
+  #         main-branch-name: 'master'
 
-      - uses: actions/setup-node@v4
-        if: github.event_name == 'pull_request'
-        with:
-          cache: 'yarn'
-          node-version: '20'
+  #     - uses: actions/setup-node@v4
+  #       if: github.event_name == 'pull_request'
+  #       with:
+  #         cache: 'yarn'
+  #         node-version: '20'
 
-      - run: yarn install --frozen-lockfile
-        if: github.event_name == 'pull_request'
-      - run: yarn playwright install --with-deps chromium
-        if: github.event_name == 'pull_request'
-      # NOTE: we need to build the assertion CLI - will be removed once migrated ot ESM
-      - run: yarn nx run visual-regression-assert:build
-        if: github.event_name == 'pull_request'
+  #     - run: yarn install --frozen-lockfile
+  #       if: github.event_name == 'pull_request'
+  #     - run: yarn playwright install --with-deps chromium
+  #       if: github.event_name == 'pull_request'
+  #     # NOTE: we need to build the assertion CLI - will be removed once migrated ot ESM
+  #     - run: yarn nx run visual-regression-assert:build
+  #       if: github.event_name == 'pull_request'
 
-      - name: Affected Projects
-        if: github.event_name == 'pull_request'
-        id: affected_projects_count
-        run: |
-          yarn --silent nx show projects -t test-vr-cli --affected --verbose false
-          affected_count=$(yarn --silent nx show projects -t test-vr-cli --affected --verbose false | wc -l | tr -d ' ')
-          echo "value=$affected_count" >> $GITHUB_OUTPUT
+  #     - name: Affected Projects
+  #       if: github.event_name == 'pull_request'
+  #       id: affected_projects_count
+  #       run: |
+  #         yarn --silent nx show projects -t test-vr-cli --affected --verbose false
+  #         affected_count=$(yarn --silent nx show projects -t test-vr-cli --affected --verbose false | wc -l | tr -d ' ')
+  #         echo "value=$affected_count" >> $GITHUB_OUTPUT
 
-      - name: Run VR tests
-        if: github.event_name == 'pull_request'
-        run: yarn nx affected -t test-vr-cli
+  #     - name: Run VR tests
+  #       if: github.event_name == 'pull_request'
+  #       run: yarn nx affected -t test-vr-cli
 
-      - name: Create Report
-        if: always() && github.event_name == 'pull_request' && steps.affected_projects_count.outputs.value > 0
-        id: report
-        run: |
-          yarn visual-regression-assert report --outputPath dist/vrt
-          cat dist/vrt/vrt-report.md >> $GITHUB_STEP_SUMMARY
-          echo "value=true" >> $GITHUB_OUTPUT
+  #     - name: Create Report
+  #       if: always() && github.event_name == 'pull_request' && steps.affected_projects_count.outputs.value > 0
+  #       id: report
+  #       run: |
+  #         yarn visual-regression-assert report --outputPath dist/vrt
+  #         cat dist/vrt/vrt-report.md >> $GITHUB_STEP_SUMMARY
+  #         echo "value=true" >> $GITHUB_OUTPUT
 
-      - name: Upload Report
-        if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: vrt_report
-          retention-days: 1
-          if-no-files-found: error
-          path: |
-            dist/vrt/
+  #     - name: Upload Report
+  #       if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: vrt_report
+  #         retention-days: 1
+  #         if-no-files-found: error
+  #         path: |
+  #           dist/vrt/
 
-      - name: Save PR number
-        if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
-        run: echo ${{ github.event.number }} > pr.txt
+  #     - name: Save PR number
+  #       if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
+  #       run: echo ${{ github.event.number }} > pr.txt
 
-      - uses: actions/upload-artifact@v4
-        if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
-        with:
-          name: pr-number
-          retention-days: 1
-          if-no-files-found: error
-          path: |
-            pr.txt
+  #     - uses: actions/upload-artifact@v4
+  #       if: always() && github.event_name == 'pull_request' && steps.report.outputs.value == 'true'
+  #       with:
+  #         name: pr-number
+  #         retention-days: 1
+  #         if-no-files-found: error
+  #         path: |
+  #           pr.txt
