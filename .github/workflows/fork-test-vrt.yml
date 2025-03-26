@@ -55,28 +55,21 @@ jobs:
           echo "value=$affected_count" >> $GITHUB_OUTPUT
 
       - name: Download Current Baseline
+        if: steps.affected_projects_count.outputs.value > 0
         id: download_baseline
-        uses: actions/download-artifact@v4
+        run: |
+          gh run download -n ${{env.BASELINE_ID}}
         continue-on-error: true
-        with:
-          name: ${{ env.BASELINE_ID }}
-          # last successful workflow run
-          # run-id: ${{ github.event.head_commit.id }}
-          # github-token: ${{ secrets.GITHUB_TOKEN }}
-          # download to workspace root to set baseline
-          path: '.'
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Download Baseline outcome
         run: echo "Download baseline ${{ steps.download_baseline.outcome }}"
 
-      # - name: Check if Baseline Artifact Exists
-      #   id: check_baseline_exists
-      #   run: |
-      #     if [ -d vrt_baseline ]; then
-      #       echo "value=true" >> $GITHUB_OUTPUT
-      #     else
-      #       echo "value=false" >> $GITHUB_OUTPUT
-      #     fi
+      - name: Debug baseline
+        continue-on-error: true
+        run: |
+          find . -type f -path "*/__vrt_baseline__/*" -not -path "*node_modules*" -print
 
       - name: Update Baseline
         run: yarn nx affected -t test-vr-cli -u
@@ -88,8 +81,8 @@ jobs:
           retention-days: 90
           if-no-files-found: error
           path: |
-            !node_modules/**/*
             **/__vrt_baseline__/*.png
+            !./node_modules/
 
   approve_vrt_diff:
     if: github.repository_owner == 'hotell' && github.event.issue.pull_request && contains(github.event.comment.body,'/approve-vrt')
