@@ -88,6 +88,7 @@ jobs:
           retention-days: 90
           if-no-files-found: error
           path: |
+            !node_modules/**/*
             **/__vrt_baseline__/*.png
 
   approve_vrt_diff:
@@ -151,15 +152,11 @@ jobs:
       - name: Download Current Baseline
         if: steps.affected_projects_count.outputs.value > 0
         id: download_baseline
-        uses: actions/download-artifact@v4
+        run: |
+          gh run download -n ${{env.BASELINE_ID}}
         continue-on-error: true
-        with:
-          name: ${{ env.BASELINE_ID }}
-          # last successful workflow run
-          # run-id: ${{ github.event.head_commit.id }}
-          # github-token: ${{ secrets.GITHUB_TOKEN }}
-          # download to workspace root to set baseline
-          path: '.'
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Download Baseline outcome
         run: echo "Download baseline ${{ steps.download_baseline.outcome }}"
@@ -167,7 +164,7 @@ jobs:
       - name: Debug baseline
         continue-on-error: true
         run: |
-          ls -la packages/react-components/react-text/visual-regression/src/__vrt_baseline__/
+          find . -type f -path "*/__vrt_baseline__/*" -not -path "*node_modules*" -print
 
       - name: Run VR tests
         run: yarn nx affected -t test-vr-cli

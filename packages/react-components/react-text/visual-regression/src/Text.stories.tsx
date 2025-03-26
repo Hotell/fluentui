@@ -161,6 +161,7 @@ export const DefaultDarkMode = getStoryVariant(Default, DARK_MODE);
 export const TypographyPresets = {
   render: () => (
     <>
+      <Body1 block>Haloooo</Body1>
       <Body1 block>Body1</Body1>
       <Body1Strong block>Body1Strong</Body1Strong>
       <Body1Stronger block>Body1Stronger</Body1Stronger>
