@@ -162,7 +162,7 @@ export const TypographyPresets = {
   render: () => (
     <>
       <Body1 block>
-        <b style={{ color: 'blue' }}>Haloooo</b>
+        <b style={{ color: 'green' }}>Whooo?</b>
       </Body1>
       <Body1 block>Body1</Body1>
       <Body1Strong block>Body1Strong</Body1Strong>
@@ -188,3 +188,10 @@ export const TypographyPresets = {
 } satisfies StoryObj;
 
 export const TypographyPresetsRTL = getStoryVariant(TypographyPresets, RTL);
+
+export const JohnWick: StoryObj = {
+  render: () => {
+    return <Title1 block>Hello Jonathan</Title1>;
+  },
+  name: 'John Wick',
+};
