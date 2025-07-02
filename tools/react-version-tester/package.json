@@ -1,0 +1,15 @@
+{
+  "name": "@fluentui/react-version-tester",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "react-version-tester": "./bin/react-version-tester.js"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {}
+}
