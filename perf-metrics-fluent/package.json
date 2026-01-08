@@ -1,0 +1,23 @@
+{
+  "name": "perf-metrics-fluent",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "measure": "npx webpack --config build/webpack.config.js"
+  },
+  "nx": {
+    "targets": {
+      "measure": {
+        "dependsOn": [
+          {
+            "projects": [
+              "react-components"
+            ],
+            "target": "build"
+          }
+        ]
+      }
+    }
+  }
+}
