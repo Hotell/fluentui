@@ -138,6 +138,7 @@ export const useOptionStyles_unstable = (state: OptionState): OptionState => {
 
   const { disabled, multiselect, selected } = state;
   const styles = useStyles();
+  // eslint-disable-next-line react-hooks/immutability
   state.root.className = mergeClasses(
     optionClassNames.root,
     styles.root,
@@ -148,6 +149,7 @@ export const useOptionStyles_unstable = (state: OptionState): OptionState => {
   );
 
   if (state.checkIcon) {
+    // eslint-disable-next-line react-hooks/immutability
     state.checkIcon.className = mergeClasses(
       optionClassNames.checkIcon,
       styles.checkIcon,

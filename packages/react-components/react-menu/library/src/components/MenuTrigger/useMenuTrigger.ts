@@ -31,6 +31,8 @@ function noop() {
  * @param props - props from this instance of MenuTrigger
  */
 export const useMenuTrigger_unstable = (props: MenuTriggerProps): MenuTriggerState => {
+  'use no memo';
+
   const { children, disableButtonEnhancement = false } = props;
 
   const triggerRef = useMenuContext_unstable(context => context.triggerRef);
@@ -161,7 +163,9 @@ export const useMenuTrigger_unstable = (props: MenuTriggerProps): MenuTriggerSta
     onMouseEnter: useEventCallback(child?.props.onMouseEnter ?? noop),
     onMouseLeave: useEventCallback(mergeCallbacks(child?.props.onMouseLeave, onMouseLeave)),
     onContextMenu: useEventCallback(mergeCallbacks(child?.props.onContextMenu, onContextMenu)),
+    // eslint-disable-next-line react-hooks/refs
     onMouseMove: useEventCallback(mergeCallbacks(child?.props.onMouseMove, onMouseMove)),
+    // eslint-disable-next-line react-hooks/refs
     onMouseOver: useEventCallback(mergeCallbacks(child?.props.onMouseOver, onMouseOver)),
   };
 
@@ -169,7 +173,9 @@ export const useMenuTrigger_unstable = (props: MenuTriggerProps): MenuTriggerSta
     'aria-haspopup': 'menu',
     'aria-expanded': !open && !isSubmenu ? undefined : open,
     ...contextMenuProps,
+    // eslint-disable-next-line react-hooks/refs
     onClick: useEventCallback(mergeCallbacks(child?.props.onClick, onClick)),
+    // eslint-disable-next-line react-hooks/refs
     onKeyDown: useEventCallback(mergeCallbacks(child?.props.onKeyDown, onKeyDown)),
   } as const;
 
