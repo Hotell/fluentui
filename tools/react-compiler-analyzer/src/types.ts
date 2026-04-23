@@ -1,0 +1,88 @@
+// ── Shared types ──
+
+export interface FileEntry {
+  filePath: string;
+  packageName: string;
+}
+
+// ── Directive analysis types ──
+
+export type DirectiveStatus = 'redundant' | 'active' | 'skipped';
+
+export interface DirectiveLocation {
+  /** 1-based line number in the original source */
+  line: number;
+  /** The full text of the directive line (for removal) */
+  lineText: string;
+  /** Whether the directive has a `// justified: <reason>` comment */
+  justified: boolean;
+  /** The justification reason, if present */
+  justification?: string;
+}
+
+export interface DirectiveAnalysis {
+  filePath: string;
+  packageName: string;
+  line: number;
+  functionName: string | null;
+  status: DirectiveStatus;
+  compilerEvent: 'CompileError' | 'CompileSuccess' | 'PipelineError' | 'none' | 'skipped';
+  reason?: string;
+}
+
+export interface AnalyzerOptions {
+  concurrency: number;
+  verbose: boolean;
+}
+
+export interface FixResult {
+  filesModified: number;
+  directivesRemoved: number;
+  directivesJustified: number;
+}
+
+// ── Coverage analysis types ──
+
+export type CompilationMode = 'infer' | 'annotation' | 'all';
+
+export type FunctionStatus = 'compiled' | 'skipped' | 'error';
+
+export interface MemoStats {
+  memoSlots: number;
+  memoBlocks: number;
+  memoValues: number;
+  prunedMemoBlocks: number;
+  prunedMemoValues: number;
+}
+
+export interface ManualMemoization {
+  useMemo: number;
+  useCallback: number;
+  reactMemo: boolean;
+}
+
+export interface FunctionAnalysis {
+  filePath: string;
+  packageName: string;
+  line: number;
+  column: number;
+  functionName: string | null;
+  status: FunctionStatus;
+  compilerEvent: 'CompileSuccess' | 'CompileError' | 'CompileSkip' | 'PipelineError';
+  reason?: string;
+  memoStats?: MemoStats;
+  manualMemo?: ManualMemoization;
+  bodyInsertionLine?: number;
+}
+
+export interface AnnotateResult {
+  filesModified: number;
+  functionsAnnotated: number;
+}
+
+export interface CoverageAnalyzerOptions {
+  concurrency: number;
+  verbose: boolean;
+  compilationMode: CompilationMode;
+  annotate?: boolean;
+}
