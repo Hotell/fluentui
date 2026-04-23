@@ -53,7 +53,7 @@ export function useStaggerItemsVisibility({
   onMotionFinish,
   hideMode = 'visibleProp',
 }: UseStaggerItemsVisibilityParams): { itemsVisibility: Record<string, boolean> } {
-  'use no memo';
+  'use no memo'; // justified: compiler would optimize useStaggerItemsVisibility — manual opt-out to preserve runtime behavior
 
   const [requestAnimationFrame, cancelAnimationFrame] = useAnimationFrame();
 

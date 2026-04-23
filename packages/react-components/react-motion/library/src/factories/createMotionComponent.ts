@@ -68,7 +68,7 @@ export function createMotionComponent<MotionParams extends Record<string, Motion
   value: AtomMotion | AtomMotion[] | AtomMotionFn<MotionParams>,
 ): MotionComponent<MotionParams> {
   const Atom: React.FC<MotionComponentProps & MotionParams> = props => {
-    'use no memo';
+    'use no memo'; // justified: compiler would optimize createMotionComponent — manual opt-out to preserve runtime behavior
 
     const {
       children,

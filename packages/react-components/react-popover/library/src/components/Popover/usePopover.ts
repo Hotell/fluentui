@@ -214,8 +214,6 @@ export const usePopoverBase_unstable = (props: PopoverBaseProps): PopoverBaseSta
 function useOpenState(
   state: Pick<PopoverBaseState, 'setContextTarget' | 'onOpenChange'> & Pick<PopoverBaseProps, 'open' | 'defaultOpen'>,
 ) {
-  'use no memo';
-
   const onOpenChange: PopoverBaseState['onOpenChange'] = useEventCallback((e, data) => state.onOpenChange?.(e, data));
 
   const [open, setOpenState] = useControllableState({
@@ -253,8 +251,6 @@ function usePopoverRefs(
   state: Pick<PopoverBaseState, 'contextTarget'> &
     Pick<PopoverBaseProps, 'positioning' | 'openOnContext' | 'withArrow'>,
 ) {
-  'use no memo';
-
   const positioningOptions = {
     position: 'above' as const,
     align: 'center' as const,

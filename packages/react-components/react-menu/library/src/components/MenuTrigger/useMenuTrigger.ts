@@ -31,8 +31,6 @@ function noop() {
  * @param props - props from this instance of MenuTrigger
  */
 export const useMenuTrigger_unstable = (props: MenuTriggerProps): MenuTriggerState => {
-  'use no memo';
-
   const { children, disableButtonEnhancement = false } = props;
 
   const triggerRef = useMenuContext_unstable(context => context.triggerRef);

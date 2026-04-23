@@ -18,7 +18,7 @@ export const withAriaLive = (Story: () => JSXElement, context: FluentStoryContex
 };
 
 const AriaLiveWrapper: React.FC<{ children: React.ReactNode }> = props => {
-  'use no memo';
+  'use no memo'; // justified: compiler would optimize return — manual opt-out to preserve runtime behavior
 
   const [mounted, setMounted] = React.useState(false);
 

@@ -69,8 +69,6 @@ export const useCardHeaderBase_unstable = (
   props: CardHeaderBaseProps,
   ref: React.Ref<HTMLElement>,
 ): CardHeaderBaseState => {
-  'use no memo';
-
   const { image, header, description, action } = props;
 
   const {
