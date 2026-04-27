@@ -1,4 +1,5 @@
 const rootMain = require('../../../.storybook/main');
+const { registerRules, rules } = require('@fluentui/scripts-storybook');
 
 module.exports = /** @type {Omit<import('../../../.storybook/main'), 'typescript'|'babel'>} */ ({
   ...rootMain,
@@ -17,6 +18,10 @@ module.exports = /** @type {Omit<import('../../../.storybook/main'), 'typescript
   },
   webpackFinal: (config, options) => {
     const localConfig = /** @type config */ ({ ...rootMain.webpackFinal(config, options) });
+
+    if (process.env.REACT_COMPILER) {
+      registerRules({ rules: rules.reactCompilerRule, config: localConfig });
+    }
 
     return localConfig;
   },
