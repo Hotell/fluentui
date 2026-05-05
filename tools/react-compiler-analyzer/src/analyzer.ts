@@ -3,16 +3,11 @@ import { readFile } from 'node:fs/promises';
 import { compileSource, extractDetailReason } from './compiler';
 import type { CompilerEvent } from './compiler';
 import { processFilesConcurrently } from './concurrency';
+import { USE_NO_MEMO_LINE_RE, USE_MEMO_LINE_RE } from './patterns';
 import type { DirectiveAnalysis, DirectiveLocation, DirectiveType, FileEntry, AnalyzerOptions } from './types';
 
 // Regex matching the ESLint rule's justification pattern
 const JUSTIFIED_RE = /^\s*justified:/;
-
-// Match 'use no memo' as either a plain expression statement or parenthesized
-const USE_NO_MEMO_RE = /^\s*(?:\(?'use no memo'\)?;?\s*)(\/\/.*)?$/;
-
-// Match 'use memo' as either a plain expression statement or parenthesized
-const USE_MEMO_RE = /^\s*(?:\(?'use memo'\)?;?\s*)(\/\/.*)?$/;
 
 /**
  * Parse source text to find all directive locations ('use no memo' and 'use memo').
@@ -25,9 +20,9 @@ function findDirectiveLocations(source: string): DirectiveLocation[] {
     const line = lines[i];
     let directiveType: DirectiveType | null = null;
 
-    if (USE_NO_MEMO_RE.test(line)) {
+    if (USE_NO_MEMO_LINE_RE.test(line)) {
       directiveType = 'use-no-memo';
-    } else if (USE_MEMO_RE.test(line)) {
+    } else if (USE_MEMO_LINE_RE.test(line)) {
       directiveType = 'use-memo';
     }
 

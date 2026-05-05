@@ -3,9 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { basename, dirname, join, resolve } from 'node:path';
 
 import type { FileEntry } from './types';
-
-const USE_NO_MEMO_RE = /['(]use no memo[')]/;
-const USE_MEMO_RE = /['(]use memo[')]/;
+import { USE_NO_MEMO_CONTENT_RE, USE_MEMO_CONTENT_RE } from './patterns';
 
 /**
  * Walk up from `startDir` to find the nearest package.json and return its `name` field.
@@ -52,7 +50,7 @@ export async function discoverFilesWithDirectives(
 
   for (const filePath of tsFiles) {
     const content = await readFile(filePath, 'utf-8');
-    if (USE_NO_MEMO_RE.test(content) || USE_MEMO_RE.test(content)) {
+    if (USE_NO_MEMO_CONTENT_RE.test(content) || USE_MEMO_CONTENT_RE.test(content)) {
       files.push({ filePath, packageName });
     }
   }

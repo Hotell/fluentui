@@ -291,4 +291,54 @@ export function MyComponent({ label }: { label: string }) {
       expect(results[0].directiveType).toBe('use-memo');
     });
   });
+
+  describe('double-quoted directives', () => {
+    it('detects double-quoted use-memo directive', async () => {
+      const componentFile = join(tempDir, 'src', 'DoubleQuoteMemo.tsx');
+      writeFileSync(
+        componentFile,
+        `import { useState } from 'react';
+
+export function MyComponent({ label }: { label: string }) {
+  "use memo";
+  const [count, setCount] = useState(0);
+  return <div>{label} {count}</div>;
+}
+`,
+      );
+
+      const files: FileEntry[] = [{ filePath: componentFile, packageName: 'test-lint-pkg' }];
+      const results = await analyzeFiles(files, {
+        concurrency: 1,
+        verbose: false,
+        compilationMode: 'annotation',
+      });
+
+      expect(results.length).toBe(1);
+      expect(results[0].status).toBe('active');
+      expect(results[0].directiveType).toBe('use-memo');
+    });
+
+    it('detects double-quoted use-no-memo directive', async () => {
+      const componentFile = join(tempDir, 'src', 'DoubleQuoteNoMemo.tsx');
+      writeFileSync(
+        componentFile,
+        `import { useState } from 'react';
+
+export function MyComponent({ label }: { label: string }) {
+  "use no memo";
+  const [count, setCount] = useState(0);
+  return <div onClick={() => setCount(c => c + 1)}>{label} {count}</div>;
+}
+`,
+      );
+
+      const files: FileEntry[] = [{ filePath: componentFile, packageName: 'test-lint-pkg' }];
+      const results = await analyzeFiles(files, { concurrency: 1, verbose: false });
+
+      expect(results.length).toBe(1);
+      expect(results[0].status).toBe('active');
+      expect(results[0].directiveType).toBe('use-no-memo');
+    });
+  });
 });
