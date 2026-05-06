@@ -3,6 +3,9 @@ import { type DocsContextProps } from '@storybook/addon-docs/blocks';
 import { type FluentParameters } from '../hooks';
 
 const docsDefaults = {
+  page: 'fluent' as const,
+  sourcePanel: 'default' as const,
+  disclaimer: false as string | string[] | boolean,
   copyAsMarkdown: true,
   tableOfContents: true,
   dirSwitcher: true,
@@ -43,6 +46,9 @@ export function isDocsEnabled(context: DocsContextProps): boolean {
  * Gets the docs page configuration from context
  */
 export function getDocsPageConfig(context: DocsContextProps): {
+  page: 'fluent' | 'headless';
+  sourcePanel: 'multi-file' | 'default';
+  disclaimer: string | string[] | boolean;
   tableOfContents: boolean;
   dirSwitcher: boolean;
   themePicker: boolean;
@@ -62,6 +68,9 @@ export function getDocsPageConfig(context: DocsContextProps): {
   // If docs is an object, extract the configuration directly
   if (typeof docsConfig === 'object' && docsConfig !== null) {
     return {
+      page: docsConfig.page ?? 'fluent',
+      sourcePanel: docsConfig.sourcePanel ?? 'default',
+      disclaimer: docsConfig.disclaimer ?? false,
       copyAsMarkdown: docsConfig.copyAsMarkdown !== false,
       tableOfContents: docsConfig.tableOfContents !== false,
       dirSwitcher: docsConfig.dirSwitcher !== false,

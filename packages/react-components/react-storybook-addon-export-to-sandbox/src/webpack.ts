@@ -1,4 +1,5 @@
 import type { PresetConfig } from './types';
+import { registerCssModuleRules } from './register-css-module-rules';
 
 type WebpackFinalFn = NonNullable<import('@storybook/react-webpack5').StorybookConfig['webpackFinal']>;
 export type WebpackFinalConfig = Parameters<WebpackFinalFn>[0];
@@ -8,6 +9,12 @@ export function webpack(config: WebpackFinalConfig, options: WebpackFinalOptions
   const addonPresetConfig = getAddonOptions(options);
 
   registerRules({ config, rules: [createBabelLoaderRule(addonPresetConfig)] });
+
+  // When cssModules is enabled, also register css-loader module rules so
+  // *.module.css files get scoped class names without manual webpack config.
+  if (addonPresetConfig.cssModules) {
+    registerCssModuleRules(config);
+  }
 
   return config;
 }

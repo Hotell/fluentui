@@ -40,6 +40,11 @@ export const withFluentProvider = (StoryFn: () => JSXElement, context: FluentSto
     return StoryFn();
   }
 
+  // Headless page variant does not use FluentProvider — stories rely on globally-loaded CSS tokens
+  if (parameters.reactStorybookAddon?.docs?.page === 'headless') {
+    return StoryFn();
+  }
+
   const isVrTest = mode === 'vr-test';
   const dir = parameters.dir ?? globals[DIR_ID] ?? 'ltr';
   const globalTheme = findTheme(globals[THEME_ID]);

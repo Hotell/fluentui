@@ -6,7 +6,6 @@ const {
   getImportMappingsForExportToSandboxAddon,
   processBabelLoaderOptions,
 } = require('@fluentui/scripts-storybook');
-const { registerCssModuleRules } = require('./css-modules-webpack');
 
 const repoRoot = path.resolve(__dirname, '../../../../..');
 const tsConfigPath = path.resolve(repoRoot, 'tsconfig.base.json');
@@ -40,8 +39,6 @@ module.exports = /** @type {Omit<import('../../../../../.storybook/main'), 'type
   ],
   webpackFinal: (config, options) => {
     const localConfig = /** @type {any} */ ({ ...rootMain.webpackFinal(config, options) });
-
-    registerCssModuleRules({ config: localConfig });
 
     return localConfig;
   },

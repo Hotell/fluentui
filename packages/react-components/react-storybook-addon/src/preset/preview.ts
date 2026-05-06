@@ -3,7 +3,8 @@ import type { Preview } from '@storybook/react-webpack5';
 import { withFluentProvider } from '../decorators/withFluentProvider';
 import { withReactStrictMode } from '../decorators/withReactStrictMode';
 import { withAriaLive } from '../decorators/withAriaLive';
-import { FluentDocsContainer, FluentDocsPage } from '../docs';
+import { DocsContainerRouter } from '../docs/DocsContainerRouter';
+import { DocsPageRouter } from '../docs/DocsPageRouter';
 
 import { DIR_ID, STRICT_MODE_ID, THEME_ID } from '../constants';
 
@@ -16,8 +17,8 @@ const preview: Preview = {
   initialGlobals,
   parameters: {
     docs: {
-      container: FluentDocsContainer,
-      page: FluentDocsPage,
+      container: DocsContainerRouter,
+      page: DocsPageRouter,
     },
   },
 };

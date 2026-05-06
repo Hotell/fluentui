@@ -1,7 +1,9 @@
 import * as React from 'react';
 import {
   DocsContext,
+  Anchor,
   ArgTypes,
+  Canvas,
   Title,
   Subtitle,
   Description,
@@ -25,8 +27,8 @@ import { themes } from '../theme';
 import { getDocsPageConfig } from './utils';
 import { DirSwitch } from './DirSwitch';
 import { ThemePicker } from './ThemePicker';
-import { Toc, nameToHash } from './Toc';
 import { CopyAsMarkdownButton } from './CopyAsMarkdownButton';
+import { Disclaimer, FluentSourcePanel, Toc, nameToHash } from './blocks';
 
 type PrimaryStory = PreparedStory<Renderer>;
 
@@ -312,12 +314,34 @@ const RenderArgsTable = ({
 const RenderPrimaryStory = ({
   primaryStory,
   skipPrimaryStory,
+  sourcePanel,
 }: {
   primaryStory: PrimaryStory;
   skipPrimaryStory: boolean;
+  sourcePanel: 'multi-file' | 'default';
 }) => {
   const styles = useStyles();
-  return skipPrimaryStory ? null : (
+
+  if (skipPrimaryStory) {
+    return null;
+  }
+
+  if (sourcePanel === 'multi-file') {
+    return (
+      <>
+        <hr className={styles.divider} />
+        <HeaderMdx as="h3" id={nameToHash(primaryStory.name)}>
+          {primaryStory.name}
+        </HeaderMdx>
+        <Anchor storyId={primaryStory.id}>
+          <Canvas of={primaryStory.moduleExport} />
+          <FluentSourcePanel of={primaryStory.moduleExport} />
+        </Anchor>
+      </>
+    );
+  }
+
+  return (
     <>
       <hr className={styles.divider} />
       <HeaderMdx as="h3" id={nameToHash(primaryStory.name)}>
@@ -370,6 +394,8 @@ export const FluentDocsPage = (): JSXElement => {
     dirSwitcher: showDirSwitcher,
     themePicker: showThemePicker,
     copyAsMarkdown: showCopyAsMarkdown,
+    sourcePanel,
+    disclaimer,
     argTable,
   } = docsPageConfig;
 
@@ -402,9 +428,11 @@ export const FluentDocsPage = (): JSXElement => {
             <Description />
             {videos && <VideoPreviews videos={videos} />}
           </div>
+          {disclaimer && <Disclaimer message={disclaimer} />}
           <RenderPrimaryStory
             primaryStory={primaryStory as unknown as PrimaryStory}
             skipPrimaryStory={skipPrimaryStory}
+            sourcePanel={sourcePanel}
           />
           <RenderArgsTable
             story={primaryStory as unknown as PrimaryStory}
@@ -412,7 +440,24 @@ export const FluentDocsPage = (): JSXElement => {
             showSlotsApi={argTable.slotsApi}
             showNativePropsApi={argTable.nativePropsApi}
           />
-          <Stories />
+          {sourcePanel === 'multi-file' ? (
+            stories.length > 1 && (
+              <>
+                {stories.slice(1).map(story => (
+                  <Anchor key={story.id} storyId={story.id}>
+                    <HeaderMdx as="h3" id={nameToHash(story.name)}>
+                      {story.name}
+                    </HeaderMdx>
+                    <Description of={story.moduleExport} />
+                    <Canvas of={story.moduleExport} />
+                    <FluentSourcePanel of={story.moduleExport} />
+                  </Anchor>
+                ))}
+              </>
+            )
+          ) : (
+            <Stories />
+          )}
         </div>
         {showTableOfContents && (
           <div className={styles.toc}>

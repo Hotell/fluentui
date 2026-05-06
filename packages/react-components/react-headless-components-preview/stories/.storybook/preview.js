@@ -1,14 +1,11 @@
 import { polyfillBodyAndObserve } from '@microsoft/focusgroup-polyfill/shadowless';
 
 import * as rootPreview from '../../../../../.storybook/preview';
+import theme from './theme';
 
 // Design tokens — loaded once for every story. Defines :root (light) and
 // [data-theme="dark"] CSS custom properties consumed by all *.module.css files.
 import './tokens.css';
-
-// Custom docs page chrome and the tabbed source panel for CSS modules
-import './headless-docs-page.css';
-import { HeadlessDocsPage } from './HeadlessDocsPage';
 
 polyfillBodyAndObserve();
 
@@ -19,8 +16,20 @@ export const decorators = [...rootPreview.decorators];
 export const parameters = {
   ...rootPreview.parameters,
   docs: {
-    ...rootPreview.parameters.docs,
-    page: HeadlessDocsPage,
+    theme,
+  },
+  reactStorybookAddon: {
+    ...rootPreview.parameters?.reactStorybookAddon,
+    docs: {
+      page: 'headless',
+      sourcePanel: 'multi-file',
+      disclaimer: [
+        'Heads up: headless components ship without default styles. The CSS shown in these stories is provided purely as a demonstration of one possible look.',
+        'Preview: these controls are in preview and their APIs are subject to change.',
+      ],
+      tableOfContents: true,
+      argTable: { slotsApi: true, nativePropsApi: true },
+    },
   },
 };
 
