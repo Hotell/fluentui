@@ -59,6 +59,40 @@ const baseConfig = {
   maxWorkers: isCI() ? 1 : '50%',
 };
 
+/**
+ * Returns TS/TSX transform entry for package-level jest.config.js files.
+ * Uses SWC by default and Babel+React Compiler when explicitly enabled.
+ *
+ * Usage:
+ * ```js
+ * transform: { '^.+\\.tsx?$': getTsJestTransformer(swcJestConfig) }
+ * ```
+ *
+ * @param {Record<string, unknown>} swcJestConfig
+ * @returns {import('@jest/types').Config.TransformerConfig}
+ */
+function getTsJestTransformer(swcJestConfig) {
+  const useReactCompiler = process.env.FLUENT_REACT_COMPILER === 'true';
+
+  if (useReactCompiler) {
+    return [
+      'babel-jest',
+      {
+        babelrc: false,
+        configFile: false,
+        presets: [
+          ['@babel/preset-env', { targets: { node: 'current' } }],
+          ['@babel/preset-typescript', { allExtensions: true, isTSX: true }],
+          ['@babel/preset-react', { runtime: 'automatic' }],
+        ],
+        plugins: ['babel-plugin-react-compiler'],
+      },
+    ];
+  }
+
+  return ['@swc/jest', swcJestConfig];
+}
+
 module.exports = {
   ...baseConfig,
   /* TODO: Update to latest Jest snapshotFormat
@@ -72,6 +106,12 @@ module.exports = {
    */
   snapshotFormat: { escapeString: true, printBasicPrototype: true },
 };
+
+// Keep helper out of Jest preset option validation by making it non-enumerable.
+Object.defineProperty(module.exports, 'getTsJestTransformer', {
+  value: getTsJestTransformer,
+  enumerable: false,
+});
 
 function isCI() {
   return (

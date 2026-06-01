@@ -4,6 +4,7 @@ import * as path from 'path';
 import { defineConfig } from 'cypress';
 import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin';
 import type { Configuration } from 'webpack';
+import { reactCompilerLoader } from 'react-compiler-webpack';
 
 const projectRoot = process.cwd();
 
@@ -35,12 +36,16 @@ export const baseWebpackConfig: Configuration = {
 
 const cypressWebpackConfig = (): Configuration => {
   if (baseWebpackConfig.module) {
-    baseWebpackConfig.module.rules?.push({
-      test: /\.(ts|tsx)$/,
+    const esbuildLoader = {
       loader: 'esbuild-loader',
       options: {
         tsconfig: './tsconfig.cy.json',
       },
+    };
+
+    baseWebpackConfig.module.rules?.push({
+      test: /\.(ts|tsx)$/,
+      use: process.env.FLUENT_REACT_COMPILER === 'true' ? [esbuildLoader, reactCompilerLoader] : [esbuildLoader],
     });
   }
 

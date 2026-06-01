@@ -2,6 +2,7 @@
 
 const { readFileSync } = require('node:fs');
 const { join } = require('node:path');
+const { getTsJestTransformer } = require('../../../jest.preset.js');
 
 // Reading the SWC compilation config and remove the "exclude"
 // for the test files to be compiled by SWC
@@ -25,7 +26,7 @@ module.exports = {
   displayName: 'eslint-plugin-react-components',
   preset: '../../../jest.preset.js',
   transform: {
-    '^.+\\.tsx?$': ['@swc/jest', swcJestConfig],
+    '^.+\\.tsx?$': getTsJestTransformer(swcJestConfig),
   },
   coverageDirectory: './coverage',
   setupFilesAfterEnv: ['./config/tests.js'],

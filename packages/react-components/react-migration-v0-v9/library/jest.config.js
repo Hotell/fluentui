@@ -3,6 +3,7 @@
 
 const { readFileSync } = require('node:fs');
 const { join } = require('node:path');
+const { getTsJestTransformer } = require('../../../../jest.preset.js');
 
 // Reading the SWC compilation config and remove the "exclude"
 // for the test files to be compiled by SWC
@@ -26,7 +27,7 @@ module.exports = {
   displayName: 'react-migration-v0-v9',
   preset: '../../../../jest.preset.js',
   transform: {
-    '^.+\\.tsx?$': ['@swc/jest', swcJestConfig],
+    '^.+\\.tsx?$': getTsJestTransformer(swcJestConfig),
   },
   // Keeps Jest from using too much memory as GC gets invokes more often, makes tests slower
   // https://stackoverflow.com/a/75857711

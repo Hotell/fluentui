@@ -1074,6 +1074,100 @@ describe(`workspace-plugin`, () => {
         });
       });
     });
+
+    describe(`React Compiler integration for v9 libraries`, () => {
+      it('should add react-compiler configuration to test target for v9 library with jest config', async () => {
+        await tempFs.createFiles({
+          'proj/library/project.json': serializeJson({
+            root: 'proj/library',
+            name: 'proj',
+            projectType: 'library',
+            tags: ['vNext'],
+          } satisfies ProjectConfiguration),
+          'proj/library/package.json': serializeJson({
+            name: '@proj/proj',
+            private: true,
+          } satisfies Partial<PackageJson>),
+          'proj/library/jest.config.js': 'module.exports = {};',
+          'proj/library/.swcrc': '{}',
+        });
+        const results = await createNodesFunction(['proj/library/project.json'], options, context);
+        const targets = getTargets(results, 'proj/library');
+
+        expect(targets?.test?.configurations).toMatchInlineSnapshot(`
+          Object {
+            "react-compiler": Object {
+              "env": Object {
+                "FLUENT_REACT_COMPILER": "true",
+              },
+            },
+          }
+        `);
+        expect(targets?.test?.inputs).toEqual(
+          expect.arrayContaining([
+            'default',
+            '^production',
+            '{workspaceRoot}/jest.preset.js',
+            { externalDependencies: ['jest'] },
+            { env: 'FLUENT_REACT_COMPILER' },
+          ]),
+        );
+      });
+
+      it('should add react-compiler configuration to e2e target for v9 library with cypress config', async () => {
+        await tempFs.createFiles({
+          'proj/library/project.json': serializeJson({
+            root: 'proj/library',
+            name: 'proj',
+            projectType: 'library',
+            tags: ['vNext'],
+          } satisfies ProjectConfiguration),
+          'proj/library/package.json': serializeJson({
+            name: '@proj/proj',
+            private: true,
+          } satisfies Partial<PackageJson>),
+          'proj/library/cypress.config.ts': 'export default {};',
+          'proj/library/tsconfig.cy.json': '{}',
+        });
+        const results = await createNodesFunction(['proj/library/project.json'], options, context);
+        const targets = getTargets(results, 'proj/library');
+
+        expect(targets?.e2e?.configurations).toMatchInlineSnapshot(`
+          Object {
+            "local": Object {
+              "command": "yarn cypress open --component",
+            },
+            "react-compiler": Object {
+              "env": Object {
+                "FLUENT_REACT_COMPILER": "true",
+              },
+            },
+          }
+        `);
+        expect(targets?.e2e?.inputs).toEqual(
+          expect.arrayContaining([
+            'default',
+            '{projectRoot}/cypress.config.ts',
+            '!{projectRoot}/**/?(*.)+cy.[jt]s?(x)?',
+            { externalDependencies: ['cypress', '@cypress/react'] },
+            { env: 'FLUENT_REACT_COMPILER' },
+          ]),
+        );
+      });
+
+      it('should NOT add react-compiler configuration to test target for non-v9 projects', async () => {
+        await tempFs.createFiles({
+          'proj/project.json': serializeJson({}),
+          'proj/package.json': serializeJson({}),
+          'proj/jest.config.js': 'module.exports = {};',
+        });
+        const results = await createNodesFunction(['proj/project.json'], options, context);
+        const targets = getTargets(results);
+
+        expect(targets?.test?.configurations).toBeUndefined();
+        expect(targets?.test?.inputs).not.toEqual(expect.arrayContaining([{ env: 'FLUENT_REACT_COMPILER' }]));
+      });
+    });
   });
 });
 
