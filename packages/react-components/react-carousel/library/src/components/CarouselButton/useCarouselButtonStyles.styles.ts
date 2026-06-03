@@ -31,7 +31,6 @@ const useStyles = makeStyles({
  * Apply styling to the CarouselButton slots based on the state
  */
 export const useCarouselButtonStyles_unstable = (state: CarouselButtonState): CarouselButtonState => {
-  'use no memo'; // justified: compiler would optimize useCarouselButtonStyles_unstable — manual opt-out to preserve runtime behavior
 
   const styles = useStyles();
 

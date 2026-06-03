@@ -113,7 +113,6 @@ const useLiveRegionStyles = makeStyles({
  * @internal
  */
 export const useCalendarStyles_unstable = (props: CalendarStyleProps): CalendarStyles => {
-  'use no memo'; // justified: compiler would optimize useCalendarStyles_unstable — manual opt-out to preserve runtime behavior
 
   const rootStyles = useRootStyles();
   const dividerStyles = useDividerStyles();
