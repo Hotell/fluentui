@@ -75,19 +75,7 @@ function getTsJestTransformer(swcJestConfig) {
   const useReactCompiler = process.env.FLUENT_REACT_COMPILER === 'true';
 
   if (useReactCompiler) {
-    return [
-      'babel-jest',
-      {
-        babelrc: false,
-        configFile: false,
-        presets: [
-          ['@babel/preset-env', { targets: { node: 'current' } }],
-          ['@babel/preset-typescript', { allExtensions: true, isTSX: true }],
-          ['@babel/preset-react', { runtime: 'automatic' }],
-        ],
-        plugins: ['babel-plugin-react-compiler'],
-      },
-    ];
+    return [path.join(__dirname, 'scripts/jest/react-compiler-transformer.js'), { swcJestConfig }];
   }
 
   return ['@swc/jest', swcJestConfig];
