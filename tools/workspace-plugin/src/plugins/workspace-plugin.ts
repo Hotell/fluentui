@@ -409,19 +409,12 @@ function buildTestTarget(
     return null;
   }
 
-  const isV9Library = config.tags.includes('vNext') && config.projectJSON.projectType === 'library';
-
   const inputs: TargetConfiguration['inputs'] = [
     'default',
     '^production',
     '{workspaceRoot}/jest.preset.js',
     { externalDependencies: ['jest'] },
   ];
-
-  // Add env to inputs for cache isolation when React Compiler is enabled
-  if (isV9Library) {
-    inputs.push({ env: 'FLUENT_REACT_COMPILER' });
-  }
 
   const target: TargetConfiguration<JestConfig.InitialOptions & Pick<RunCommandsOptions, 'cwd'>> = {
     command: `${config.pmc.exec} jest`,
@@ -442,15 +435,6 @@ function buildTestTarget(
       },
     },
   };
-
-  // Add React Compiler configuration for v9 libraries
-  if (isV9Library) {
-    target.configurations = {
-      'react-compiler': {
-        env: { FLUENT_REACT_COMPILER: 'true' },
-      },
-    };
-  }
 
   return target;
 }
@@ -568,19 +552,12 @@ function buildE2eTarget(
       existsSync(join(projectRoot, 'tsconfig.spec.json')));
 
   if (hasCypress) {
-    const isV9Library = config.tags.includes('vNext') && config.projectJSON.projectType === 'library';
-
     const inputs: TargetConfiguration['inputs'] = [
       'default',
       '{projectRoot}/cypress.config.ts',
       '!{projectRoot}/**/?(*.)+cy.[jt]s?(x)?',
       { externalDependencies: ['cypress', '@cypress/react'] },
     ];
-
-    // Add env to inputs for cache isolation when React Compiler is enabled
-    if (isV9Library) {
-      inputs.push({ env: 'FLUENT_REACT_COMPILER' });
-    }
 
     const target: TargetConfiguration = {
       command: `${config.pmc.exec} cypress run --component`,
@@ -599,13 +576,6 @@ function buildE2eTarget(
         },
       },
     };
-
-    // Add React Compiler configuration for v9 libraries
-    if (isV9Library) {
-      target.configurations!['react-compiler'] = {
-        env: { FLUENT_REACT_COMPILER: 'true' },
-      };
-    }
 
     return target;
   }
