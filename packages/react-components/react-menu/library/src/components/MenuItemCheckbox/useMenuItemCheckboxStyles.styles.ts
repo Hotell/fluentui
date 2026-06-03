@@ -17,6 +17,8 @@ export const menuItemCheckboxClassNames: SlotClassNames<Omit<MenuItemSlots, 'sub
 };
 
 export const useMenuItemCheckboxStyles_unstable = (state: MenuItemCheckboxState): MenuItemCheckboxState => {
+  'use no memo'; // justified: hook mutates `state.*.className` in place via `mergeClasses(...)`; when the compiler memoizes `state`, re-renders re-append classes producing duplicated tokens (see MenuItemRadio regression).
+
   // eslint-disable-next-line react-hooks/immutability
   state.root.className = mergeClasses(menuItemCheckboxClassNames.root, state.root.className);
 

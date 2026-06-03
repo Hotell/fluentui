@@ -23,6 +23,8 @@ import type { MenuPopoverProps, MenuPopoverState } from './MenuPopover.types';
  * @param ref - reference to root HTMLElement of MenuPopover
  */
 export const useMenuPopoverBase_unstable = (props: MenuPopoverProps, ref: React.Ref<HTMLElement>): MenuPopoverState => {
+  'use no memo'; // justified: compiler-optimizing this wrapper changes child re-render counts and unmasks in-place mutation in useMenuItem*Styles_unstable hooks, producing duplicated className tokens (observed in MenuItemRadio under `e2e -c local`).
+
   const safeZone = useMenuContext_unstable(context => context.safeZone);
   const popoverRef = useMenuContext_unstable(context => context.menuPopoverRef);
   const setOpen = useMenuContext_unstable(context => context.setOpen);

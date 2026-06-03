@@ -258,6 +258,8 @@ const useMultilineStyles = makeStyles({
 
 /** Applies style classnames to slots */
 export const useMenuItemStyles_unstable = (state: MenuItemState): MenuItemState => {
+  'use no memo'; // justified: hook mutates `state.*.className` in place via `mergeClasses(...)`; when the compiler memoizes `state`, re-renders re-append classes producing duplicated tokens (observed in MenuItemRadio under `e2e -c local`).
+
   const styles = useStyles();
   const rootBaseStyles = useRootBaseStyles();
   const contentBaseStyles = useContentBaseStyles();
