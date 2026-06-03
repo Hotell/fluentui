@@ -12,8 +12,6 @@ export const useCharacterSearch = (): {
   characterSearchOnKeyDown: React.KeyboardEventHandler<HTMLElement>;
   characterSearchRef: React.RefObject<HTMLElement | null>;
 } => {
-  'use no memo'; // justified: compiler would optimize useCharacterSearch — manual opt-out to preserve runtime behavior
-
   const characterSearchRef = React.useRef<HTMLDivElement>(null);
 
   const { setFocusByFirstCharacter } = useMenuGridContext_unstable();

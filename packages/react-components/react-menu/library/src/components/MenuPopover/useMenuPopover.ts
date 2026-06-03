@@ -23,8 +23,6 @@ import type { MenuPopoverProps, MenuPopoverState } from './MenuPopover.types';
  * @param ref - reference to root HTMLElement of MenuPopover
  */
 export const useMenuPopoverBase_unstable = (props: MenuPopoverProps, ref: React.Ref<HTMLElement>): MenuPopoverState => {
-  'use no memo'; // justified: compiler would optimize useMenuPopoverBase_unstable — manual opt-out to preserve runtime behavior
-
   const safeZone = useMenuContext_unstable(context => context.safeZone);
   const popoverRef = useMenuContext_unstable(context => context.menuPopoverRef);
   const setOpen = useMenuContext_unstable(context => context.setOpen);

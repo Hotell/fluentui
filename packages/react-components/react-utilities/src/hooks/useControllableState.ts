@@ -43,8 +43,6 @@ function isFactoryDispatch<State>(newState: React.SetStateAction<State>): newSta
 export const useControllableState = <State>(
   options: UseControllableStateOptions<State>,
 ): [State, React.Dispatch<React.SetStateAction<State>>] => {
-  'use no memo'; // justified: compiler would optimize useControllableState — manual opt-out to preserve runtime behavior
-
   if (process.env.NODE_ENV !== 'production') {
     if (options.state !== undefined && options.defaultState !== undefined) {
       // eslint-disable-next-line no-console

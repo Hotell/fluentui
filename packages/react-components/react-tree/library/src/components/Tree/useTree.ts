@@ -22,8 +22,6 @@ export const useTree_unstable = (props: TreeProps, ref: React.Ref<HTMLElement>):
 };
 
 function useNestedRootTree(props: TreeProps, ref: React.Ref<HTMLElement>): TreeState {
-  'use no memo'; // justified: compiler would optimize useNestedRootTree — manual opt-out to preserve runtime behavior
-
   const [openItems, setOpenItems] = useControllableOpenItems(props);
   const checkedItems = useNestedCheckedItems(props);
   const navigation = useTreeNavigation(props.navigationMode);

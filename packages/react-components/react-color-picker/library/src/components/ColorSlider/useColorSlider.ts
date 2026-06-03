@@ -33,8 +33,6 @@ export const useColorSlider_unstable = (
   props: ColorSliderProps,
   ref: React.Ref<HTMLInputElement>,
 ): ColorSliderState => {
-  'use no memo'; // justified: compiler would optimize useColorSlider_unstable — manual opt-out to preserve runtime behavior
-
   const { dir } = useFluent();
   const onChangeFromContext = useColorPickerContextValue_unstable(ctx => ctx.requestChange);
   const colorFromContext = useColorPickerContextValue_unstable(ctx => ctx.color);
