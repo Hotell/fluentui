@@ -30,8 +30,6 @@ const useStyles = makeStyles({
  * Apply styling to the MenuItemLink slots based on the state
  */
 export const useMenuItemLinkStyles_unstable = (state: MenuItemLinkState): MenuItemLinkState => {
-  'use no memo'; // justified: hook mutates `state.*.className` in place via `mergeClasses(...)`; when the compiler memoizes `state`, re-renders re-append classes producing duplicated tokens (see MenuItemRadio regression).
-
   useMenuItemStyles_unstable(state as MenuItemState);
   const styles = useStyles();
   // eslint-disable-next-line react-hooks/immutability

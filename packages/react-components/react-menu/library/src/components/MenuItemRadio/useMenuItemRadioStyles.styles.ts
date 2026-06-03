@@ -17,8 +17,6 @@ export const menuItemRadioClassNames: SlotClassNames<Omit<MenuItemSlots, 'submen
 };
 
 export const useMenuItemRadioStyles_unstable = (state: MenuItemRadioState): void => {
-  'use no memo'; // justified: hook mutates `state.*.className` in place via `mergeClasses(...)`; when the compiler memoizes `state`, re-renders re-append classes producing duplicated tokens (observed in MenuItemRadio under `e2e -c local`).
-
   // eslint-disable-next-line react-hooks/immutability
   state.root.className = mergeClasses(menuItemRadioClassNames.root, state.root.className);
 

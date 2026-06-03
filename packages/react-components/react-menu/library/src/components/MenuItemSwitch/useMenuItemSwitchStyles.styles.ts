@@ -97,8 +97,6 @@ const useMultilineStyles = makeStyles({
  * Apply styling to the MenuItemSwitch slots based on the state
  */
 export const useMenuItemSwitchStyles_unstable = (state: MenuItemSwitchState): MenuItemSwitchState => {
-  'use no memo'; // justified: hook mutates `state.*.className` in place via `mergeClasses(...)`; when the compiler memoizes `state`, re-renders re-append classes producing duplicated tokens (see MenuItemRadio regression).
-
   const { checked, subText } = state;
   const multiline = !!subText;
   const switchIndicatorStyles = useSwitchIndicatorStyles();
