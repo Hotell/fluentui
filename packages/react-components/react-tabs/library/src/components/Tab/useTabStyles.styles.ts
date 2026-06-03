@@ -598,8 +598,6 @@ const useContentStyles = makeStyles({
  * Apply styling to the Tab slots based on the state
  */
 export const useTabStyles_unstable = (state: TabState): TabState => {
-  'use no memo'; // justified: compiler would optimize useTabStyles_unstable — manual opt-out to preserve runtime behavior
-
   useTabIndicatorStyles_unstable(state);
 
   useTabButtonStyles_unstable(state, state.root);
