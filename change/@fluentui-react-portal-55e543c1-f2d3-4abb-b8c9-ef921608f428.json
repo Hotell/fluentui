@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "add cypress component tests for usePortalMountNode",
+  "packageName": "@fluentui/react-portal",
+  "email": "martinhochel@microsoft.com",
+  "dependentChangeType": "none"
+}
