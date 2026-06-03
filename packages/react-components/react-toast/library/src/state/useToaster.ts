@@ -26,6 +26,8 @@ export function useToaster<TElement extends HTMLElement = HTMLDivElement>(
   tryRestoreFocus: () => void;
   closeAllToasts: () => void;
 } {
+  'use no memo'; // justified: the returned `toastsToRender` reads mutable internal state of a singleton `toaster` whose reference never changes; React Compiler would memoize the read and miss subsequent updates after `forceUpdate()`.
+
   const forceUpdate = useForceUpdate();
   const { toasterId: userToasterId, shortcuts } = options;
   // Currently the toaster options can never be changed at runtime
