@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "remove final 'use no memo' directives validated under React Compiler",
+  "packageName": "@fluentui/react-toast",
+  "email": "martinhochel@microsoft.com",
+  "dependentChangeType": "none"
+}

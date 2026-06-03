@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "remove 'use no memo' directive validated under React Compiler",
+  "packageName": "@fluentui/react-calendar-compat",
+  "email": "martinhochel@microsoft.com",
+  "dependentChangeType": "none"
+}

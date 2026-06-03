@@ -54,8 +54,6 @@ export const useToastTitleBase_unstable = (
  * @param ref - reference to root HTMLElement of ToastTitle
  */
 export const useToastTitle_unstable = (props: ToastTitleProps, ref: React.Ref<HTMLElement>): ToastTitleState => {
-  'use no memo';
-
   const backgroundAppearance = useBackgroundAppearance();
   const baseState = useToastTitleBase_unstable(props, ref);
 

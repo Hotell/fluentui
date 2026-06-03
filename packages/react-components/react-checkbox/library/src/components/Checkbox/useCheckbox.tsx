@@ -86,8 +86,6 @@ export const useCheckboxBase_unstable = (
   props: CheckboxBaseProps,
   ref: React.Ref<HTMLInputElement>,
 ): CheckboxBaseState => {
-  'use no memo'; // justified: compiler would optimize useCheckboxBase_unstable — manual opt-out to preserve runtime behavior
-
   const { disabled = false, required, labelPosition = 'after', onChange } = props;
 
   const [checked, setChecked] = useControllableState({
